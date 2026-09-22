@@ -1,0 +1,73 @@
+---
+name: express-copy
+description: Design a one-page website structure and write complete build-ready copy in a single stage from the approved brand concept and research. Use after /brand-concept in an Express session instead of /structure and /copy; produces 07-website-structure.md and 08-website-copy.md.
+---
+
+# Express copy (structure + copy)
+
+Read `CLAUDE.md`, all active session stage files through `06-brand-concept.md`, and these references: `.claude/references/SESSION-AND-EVIDENCE.md`, `.claude/references/CONVERSION-STRATEGY.md`, `.claude/references/WEBSITE-STRUCTURE.md`, and `.claude/references/WEBSITE-COPY.md`. Inspect founder writing samples and customer-language material in `assets/` without modifying them.
+
+## Entry gate
+
+Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Express`, `Next command: /express-copy`, and every Express stage through a complete approved `06-brand-concept.md`. If anything is incomplete, name the earliest unfinished command. Do not recreate the missing stage here.
+
+## Defaults
+
+- One page. Add a separate page only for a legal or privacy requirement, and only as a stub.
+- Website language: the one approved in the session; ask once if unresolved.
+- Ask at most one further question, only if unknown: “What exactly happens when someone clicks the main button: which working page or system receives the action, what is saved or completed, and what confirmation does the person get?” Accept “not decided yet,” classify the website as `Connection required before launch` or `Prototype only`, and use a specific exploration action without simulating conversion.
+
+## Structure
+
+Design the belief journey for the priority visitor arriving from the expected traffic source: arrival → relevance → value → mechanism → difference → proof → offer and fit → risk → action → confirmation. Give every section a stable ID (`S01-hero`, `S02-situation`, …), a visitor question, a belief change, an evidence source, a claim limit, and a CTA or next question. Remove any section without a research-backed job. Place proof next to the claim it supports and objections where they arise.
+
+Record the conversion implementation state as `Connected`, `Connection required before launch`, or `Prototype only`. Specify the exact destination, stored data or completed action, owner, consent/privacy need, success evidence, error state, and follow-up. Do not describe an unrecorded click as demand validation. If no action is persisted, the website objective is prototype review.
+
+For `Prototype only`, use a useful on-page destination and request no discarded input. Do not create a fake form, preference picker, validation, submission, or confirmation. Use at most one concise availability disclosure when needed. Omit unsupported experiment pricing because no price-response test is captured.
+
+## Checkpoint 1 — structure and first screen
+
+Show at most five bullets: the section list with IDs and one-line jobs, the CTA path with conversion implementation state, the strongest objection and its honest answer, and the biggest missing proof, asset, or launch blocker. Then show three materially different customer-facing first-screen routes from `WEBSITE-COPY.md`, recommend one, and ask one confirmation or correction question. Keep evidence annotations and internal research language outside the displayed copy.
+
+After confirmation, retain the approved structure for this stage but do not save it yet. This allows the final copy review to correct a section job, order, or CTA path without leaving the structure file inconsistent.
+
+## Write the copy
+
+Write exact, build-ready copy for every section ID: navigation labels, eyebrow, headline, subheadline, body, proof introductions and exact approved quotations, offer details, objection answers, CTA labels, form labels, validation, consent, confirmation, footer and legal labels, SEO title, meta description, and social preview. Keep missing proof, integration notes, and implementation placeholders in internal requirements rather than customer-facing copy.
+
+Use `Join`, `Reserve`, `Order`, `Book`, `You're on the list`, or equivalent success language only when the action is genuinely connected and persisted or completed. For `Prototype only`, use a specific exploration CTA such as `See what’s included` and add one concise disclosure only when needed to prevent misunderstanding. Do not repeat “we are testing,” “working preview,” `TBD`, evidence labels, or similar internal commentary. For `Connection required before launch`, treat the missing connection as a launch blocker.
+
+If price is experimental, follow `WEBSITE-COPY.md`: show it only when the approved experiment captures price response and uses truthful approved framing. Otherwise omit it from public copy. Never write “still figuring out the real price.”
+
+Run the seven focused conversion sweeps and the five integrity checks from `WEBSITE-COPY.md`. Freeze facts, prices, quotations, necessary public qualifications, and CTA destinations before editing. For launch copy, add the conversion, UX, skeptical target-visitor, and brand perspectives; every requested change needs a concrete reason.
+
+## Checkpoint 2 — copy
+
+Show a compact section-by-section preview: headline and one line per section, full copy for the hero and offer sections. Add at most three unresolved items: missing proof, placeholders, claims needing qualification. Ask one final approval question.
+
+## Save
+
+After approval, write both files:
+
+1. `07-website-structure.md` in compact form: objective and conversion event; conversion implementation state; destination, stored data or completed action, owner, consent/privacy, confirmation and error path; audience, traffic, and device assumptions; belief journey; section plan with IDs; first-screen requirements; claim-to-proof placement; objections; mobile priorities; analytics events; assumptions and exclusions.
+2. `08-website-copy.md` using the output structure in `WEBSITE-COPY.md`, including the research-to-copy traceability table and semantic-integrity report.
+
+Ensure the final section IDs, order, and CTA path match across both files. Update `SESSION.md` once after both files are saved.
+
+Finish with the saved files and this handoff, using the exact active-session paths:
+
+1. Open the Visual Direction tool.
+2. Use `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md` from the active session as inputs.
+3. Save the completed export as `assets/brand/visual-direction.md` and add any required visual assets.
+4. Run `/build`.
+
+## Quality gate
+
+- A first-time visitor can identify what this is, who it is for, the credible value, and the next action from the first screen.
+- Every section ID has final copy or a named evidence gap.
+- Material claims trace to `02-research.md` or `04-offer-and-positioning.md` and keep their qualifications.
+- A relevant competitor could not paste the hero unchanged onto its own website.
+- One primary CTA; its implementation state, destination, persistence, confirmation, and launch consequence are explicit.
+- No prototype interaction simulates a successful real-world conversion.
+- Internal research labels, drafting commentary, and implementation placeholders do not appear as marketing copy.
+- No fact, quote, number, price, condition, or destination changed during the human-voice pass.

@@ -1,0 +1,9 @@
+# Participant work and private source material
+sessions/
+assets/**
+!assets/brand/
+!assets/brand/README.md
+
+# Local application and operating-system files
+.claude/settings.local.json
+.DS_Store

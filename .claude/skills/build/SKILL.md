@@ -1,0 +1,73 @@
+---
+name: build
+description: Build the first local website from the active session's approved strategy, brand concept, structure, copy, and Visual Direction without publishing it. Use after copy and visual inputs are ready.
+---
+
+# Build
+
+Read `CLAUDE.md`, the active session's `SESSION.md` and stage files through `08-website-copy.md`, `.claude/references/WEBSITE-QUALITY.md`, and the completed Visual Direction export and implementation assets in `assets/brand/`.
+
+## Source authority
+
+Use the ownership rules in `WEBSITE-QUALITY.md`:
+
+- approved upstream stages own audience, offer, positioning, proof, and claim limits;
+- `06-brand-concept.md` owns brand meaning, voice, messaging, and conceptual boundaries;
+- `07-website-structure.md` owns pages, section order, section roles, and the CTA path;
+- `08-website-copy.md` owns the exact customer-facing wording;
+- `assets/brand/visual-direction.md` owns visual execution.
+
+Do not replace the approved structure with a generic landing-page sequence. Do not rewrite approved copy during layout. Do not let visual choices weaken comprehension, proof integrity, accessibility, or the primary action.
+
+## Pre-build check
+
+Run the mandatory progression gate in `CLAUDE.md`. Require every stage file for the recorded path through complete approved `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md`.
+
+Then require `assets/brand/visual-direction.md`. It must contain all ten current blocks from Visual Foundation through AI Visual Direction; each website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
+
+Read the conversion implementation state from `07-website-structure.md`. Require an exact destination and persistence/completion rule for `Connected`. If it says `Connection required before launch`, build the interface only when useful but keep the missing connection as a launch blocker and do not show real-success language. If it says `Prototype only`, implement the approved exploration path and never simulate submission, reservation, purchase, booking, preference capture, or list entry.
+
+After this visual gate passes, mark Visual Direction `Approved` and `/build` `In progress` in `SESSION.md`, then continue. Do not mark `/build` approved until the website and `09-build-notes.md` both pass the build checks.
+
+If `visual-direction.md` is missing, stop with one short instruction: complete Visual Direction using the three approved session files, then save the export as `assets/brand/visual-direction.md`.
+
+Confirm that any `Instructions for AI` or `Instrucciones para la IA` section is preserved. Apply the direction-precedence rule in `WEBSITE-QUALITY.md`; do not let a system default override an explicit project answer. Verify that referenced logo, font, image, illustration, icon, and license files exist or have explicit placeholders. Calculate contrast from exported color values rather than trusting a written ratio.
+
+If an unresolved issue materially changes the code, identify the decision owner and ask exactly one question. Do not reopen approved decisions, ask about non-website applications, or request a batch of setup answers. Begin without another permission question when there is no material conflict.
+
+## Build
+
+- Record the short intentional design statement required by `WEBSITE-QUALITY.md`, then follow its Shape → Build → Audit → Polish and harden loop. Do not create a separate design document.
+- Create the website only inside the active session's `site-v1/`.
+- For an Express session, build a dependency-free static one-page site with semantic HTML, CSS, and minimal JavaScript. No framework, build step, external code CDN, or font CDN.
+- For a Full session, implement the approved architecture with the simplest maintainable approach that supports its actual requirements.
+- Centralize reusable visual values in `site-v1/styles/tokens.css` and follow the token, visual translation, asset, responsive, accessibility, and verification rules in `WEBSITE-QUALITY.md`.
+- Use stable page and section IDs from `07-website-structure.md` to connect architecture, copy, visual applications, navigation, and review findings.
+- Create and follow the visual architecture implementation map from `WEBSITE-QUALITY.md`. Block 05 chooses visual archetypes and alternation for existing section IDs; it cannot add, remove, merge, or reorder the approved content architecture.
+- Keep essential content and actions functional without JavaScript; use JavaScript only for progressive enhancement.
+- Use approved supplied assets or clearly labelled local placeholders. Do not invent photography direction, brand assets, proof, testimonials, customer logos, statistics, scarcity, guarantees, or results.
+- Treat block 10 AI prompts as a future asset handoff, not permission to generate or approve imagery automatically.
+- Treat every explicit block 05 `non-negotiable` rule as a rendered review requirement, with `Pass`, `Adapted with reason`, or `Blocked` recorded in `09-build-notes.md`.
+- Implement the primary action according to its recorded state. For `Connected`, verify the real destination or persisted/completed action and truthful post-action state. For `Prototype only`, use a specific exploration action and a concise availability disclosure when needed. Never display `You're on the list`, `Reserved`, `Order confirmed`, or equivalent unless that result actually occurred.
+- For a public `Prototype only` page, do not build discarded-input forms, fake preference capture, fake validation, or fake confirmation. Use the approved exploration CTA and on-page destination. Keep facilitated UX mock interactions separate from the public marketing page.
+- Render and inspect the complete page using the visual-layout-integrity checklist in `WEBSITE-QUALITY.md`. Check mobile, tablet, desktop, and any width where the composition changes. Fix clear overlap, clipping, alignment, spacing, wrapping, stacking, and responsive defects before completing the build.
+- Reject generic repeated-card or centered-section layouts that ignore the approved Visual Direction. Confirm that the result has one recognisable visual quality from the supplied direction without compromising clarity.
+- Do not publish or deploy.
+
+## Build notes
+
+Create only `09-build-notes.md` in addition to the website. Include:
+
+- what was built and how to preview it;
+- exact strategy, structure, copy, Visual Direction, and asset sources used;
+- derived implementation decisions and their source;
+- missing content, proof, assets, licenses, and integrations;
+- image slots with purpose, aspect ratio, applicable base and negative prompts, and prohibited treatments when relevant;
+- responsive, interaction, accessibility, contrast, and visual checks performed;
+- exact viewport sizes inspected, visible layout defects found, and fixes applied;
+- checks not performed and known limitations.
+- conversion implementation state and evidence of destination, network response, stored record, or completed action; if unavailable, the exact launch blocker.
+
+Update `SESSION.md`.
+
+Finish with the local result, preview instructions, saved locations, and “Next: `/review`”.
