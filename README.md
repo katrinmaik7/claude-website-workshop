@@ -81,7 +81,7 @@ The live two-hour workshop uses the **Express path**. It keeps the core business
 | Best for | One live workshop session; every participant builds a first one-page website experiment | Working at your own pace over several sessions |
 | Commands | `/express-start` → `/express-research` → `/express-offer` → `/brand-concept` → `/express-copy` → Visual Direction → `/build` → `/review` | `/setup` → `/vision` → `/research` → `/audience` → `/offer` → `/positioning` → `/brand-concept` → `/structure` → `/copy` → Visual Direction → `/build` → `/review` |
 | Questions asked | Six at the start, then at most one or two per stage | Several per stage, one at a time |
-| Research | One focused 25–30 minute deep desk-research pass covering market, audience, demand signals, pricing, and commercial reality | Separate market and audience passes |
+| Research | One focused five-minute market-and-audience scan using a small, varied source set | Separate deeper market and audience passes |
 | Website format | One page by default | One or several pages, decided from the evidence |
 
 During the live workshop, follow only the Express commands below. Do not switch paths inside a session. `/setup` and the Full commands are included only for optional deeper work later.
@@ -98,7 +98,7 @@ Six short questions: the idea and its stage, who might buy, one real situation, 
 
 `/express-research`
 
-One focused deep desk-research pass: direct competitors, indirect and status-quo alternatives, real customer language, audience situations, demand signals, counter-evidence, price bands, fulfillment, trust, and commercial risks. It compares several possible audience situations before selecting one test audience and separates what is safe to claim from what still needs testing. Saves `02-research.md`.
+One focused five-minute scan: direct competitors, indirect and status-quo alternatives, real customer language, two audience situations, available price and trust signals, and at least one contradiction. It selects one test audience and separates what is safe to claim from what still needs testing. Saves `02-research.md`.
 
 ### 3. Offer and positioning
 
@@ -296,7 +296,7 @@ Express path only:
 | Command | Purpose |
 |---|---|
 | `/express-start` | Creates a clean Express session; six questions covering setup and vision. |
-| `/express-research` | One focused deep desk-research pass over market, competitors, alternatives, audience situations, demand signals, pricing, and commercial reality. |
+| `/express-research` | Runs a five-minute market-and-audience scan using 6–8 varied sources, then records the strongest evidence, contradiction, and website implications. |
 | `/express-offer` | Defines the offer and the positioning decision in one stage. |
 | `/express-copy` | Designs a one-page structure and writes the complete website copy. |
 
