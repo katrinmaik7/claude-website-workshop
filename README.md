@@ -30,9 +30,21 @@ You can still participate without these inputs. Claude will label the result as 
 
 Open the repository root in Claude Code. If the workshop commands do not appear when you type `/`, confirm that `.claude/skills/` is present and restart Claude Code from the repository root.
 
+## Download from GitHub
+
+You do not need Git or a GitHub account.
+
+1. On the repository page, click the green **Code** button above the file list.
+2. In the menu that opens, click **Download ZIP**.
+3. Open your Downloads folder and double-click the ZIP file if your browser did not unzip it automatically.
+4. Keep the extracted folder intact. Its name will usually end in `-main`.
+5. Open that entire extracted folder in Claude Code. Do not open only `assets/`, `sessions/`, or `.claude/`.
+
+The `.claude/` folder is included in the download even if macOS Finder hides folders whose names begin with a dot.
+
 ## Start here
 
-1. Download the complete repository and unzip it, or clone it with Git.
+1. Download and unzip the complete repository using the steps above, or clone it with Git.
 2. Open the complete folder in Claude Code.
 3. Optional: add useful existing materials to `assets/`.
 4. Start a new Claude Code chat and type `/express-start`.
