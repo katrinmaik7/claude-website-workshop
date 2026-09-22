@@ -213,7 +213,7 @@ sessions/<project>-<date-time>/
 
 A stage file appears only after you approve that stage. `site-v1/` appears during `/build`.
 
-The starter repository does not include anyone's generated `sessions/` or completed `assets/brand/visual-direction.md`. Those are created or added locally by each participant and are excluded from Git by `.gitignore`.
+The starter repository includes an empty `sessions/` workspace with a short guide, but no generated participant sessions. Completed sessions and `assets/brand/visual-direction.md` are created or added locally by each participant and are excluded from Git by `.gitignore`.
 
 ## Complete starter kit
 
@@ -267,7 +267,7 @@ You may inspect every file. Keep the `.claude/` names and paths unchanged so Cla
 | `README.md` | Participant instructions and the complete workflow. |
 | `assets/` | Your source materials. Claude reads them but does not rewrite them. |
 | `assets/brand/README.md` | Instructions for the completed Visual Direction export and implementation assets. |
-| `sessions/` | Created automatically for your research, decisions, copy, website, and review. |
+| `sessions/` | Empty participant workspace. Claude creates a new project session here for research, decisions, copy, website, and review. |
 
 `visual-direction.md` is not included in the starter kit. You add the completed export after `/express-copy` or `/copy`, depending on the session path.
 

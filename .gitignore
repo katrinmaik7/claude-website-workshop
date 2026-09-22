@@ -1,5 +1,6 @@
 # Participant work and private source material
-sessions/
+sessions/*
+!sessions/README.md
 assets/**
 !assets/brand/
 !assets/brand/README.md
