@@ -15,7 +15,7 @@ Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Express`, `Nex
 
 - One page. Add a separate page only for a legal or privacy requirement, and only as a stub.
 - Website language: the one approved in the session; ask once if unresolved.
-- Ask at most one further question, only if unknown: “What exactly happens when someone clicks the main button: which working page or system receives the action, what is saved or completed, and what confirmation does the person get?” Accept “not decided yet,” classify the website as `Connection required before launch` or `Prototype only`, and use a specific exploration action without simulating conversion.
+- Ask at most one further question, only if unknown: “What exactly happens when someone clicks the main button: which working page or system receives the action, what is saved or completed, and what confirmation does the person get?” A form, email, Instagram DM, WhatsApp conversation, booking page, checkout, or other external destination can qualify when the promised action genuinely reaches and remains with its owner. If it is not decided, default a conversion-focused project to `Connection required before launch`. Use `Prototype only` only after the participant explicitly accepts that the page will collect no response and cannot validate demand.
 
 ## Context coverage
 
@@ -33,13 +33,29 @@ Mark each material item `Used`, `Guardrail`, `Intentionally excluded`, or `Block
 
 Design the belief journey for the priority visitor arriving from the expected traffic source: arrival → relevance → value → mechanism → difference → proof → offer and fit → risk → action → confirmation. Give every section a stable ID (`S01-hero`, `S02-situation`, …), a visitor question, a belief change, an evidence source, a claim limit, and a CTA or next question. Remove any section without a research-backed job. Place proof next to the claim it supports and objections where they arise.
 
-Record the conversion implementation state as `Connected`, `Connection required before launch`, or `Prototype only`. Specify the exact destination, stored data or completed action, owner, consent/privacy need, success evidence, error state, and follow-up. Do not describe an unrecorded click as demand validation. If no action is persisted, the website objective is prototype review.
+Record the conversion implementation state as `Connected`, `Connection required before launch`, or `Prototype only`. Specify the exact destination, stored data or completed action, owner, consent/privacy need, success evidence, error state, and follow-up. Do not describe an unrecorded click as demand validation.
 
-For `Prototype only`, use a useful on-page destination and request no discarded input. Do not create a fake form, preference picker, validation, submission, or confirmation. Use at most one concise availability disclosure when needed. Omit unsupported experiment pricing because no price-response test is captured.
+Do not silently downgrade an approved `Test offer` or measurable website objective to prototype review merely because the destination is not connected yet. Show the participant the concrete consequence in the checkpoint: what CTA, learning, follow-up, and launch capability will be lost. Preserve the intended conversion and use `Connection required before launch` unless the participant explicitly changes the website objective after seeing that consequence.
+
+For `Prototype only`, use a useful on-page destination and request no discarded input. Do not create a fake form, preference picker, validation, submission, or confirmation. Use at most one concise availability disclosure when needed. Keep the complete approved proposition visible. A participant-approved experiment price may appear as `Proposed launch price`, `Expected price`, or another approved truthful label even when the prototype does not capture a price response; make clear internally that no price learning is produced. Lack of tracking is never by itself a reason to remove the offer, price, meaningful difference, fit, or objections from the page.
+
+## Research-payoff gate
+
+Before the structure checkpoint, prove that the research changes the public website. Map visible content to all applicable categories:
+
+1. the priority audience's concrete situation or trigger;
+2. the real alternative or status-quo friction;
+3. the differentiated mechanism and why it matters;
+4. the complete offer, including deliverables and approved price or commitment;
+5. a reason to believe, process evidence, specification, provenance, or transparent current status;
+6. researched objections, fit boundaries, and trade-offs;
+7. one meaningful next action and what happens after it.
+
+Do not satisfy this gate with internal annotations or a traceability table alone. The relevant insight must materially affect customer-facing wording, content, or interaction. If removing `02-research.md` and `04-offer-and-positioning.md` would leave substantially the same page, the structure and copy are too weak to approve.
 
 ## Checkpoint 1 — structure and first screen
 
-Show at most five bullets: the section list with IDs and one-line jobs, the CTA path with conversion implementation state, the strongest objection and its honest answer, and the biggest missing proof, asset, or launch blocker. Then show three materially different customer-facing first-screen routes from `WEBSITE-COPY.md`, recommend one, and ask one confirmation or correction question. Keep evidence annotations and internal research language outside the displayed copy.
+Show at most five bullets: the section list with IDs and one-line jobs, the CTA path with conversion implementation state, the strongest research-derived difference, the strongest objection and its honest answer, and the biggest missing proof, asset, or launch blocker. If the proposed state removes a previously approved test, name exactly what would disappear and what business learning would be lost. Then show three materially different customer-facing first-screen routes from `WEBSITE-COPY.md`, recommend one, and ask one confirmation or correction question. Keep evidence annotations and internal research language outside the displayed copy.
 
 After confirmation, retain the approved structure for this stage but do not save it yet. This allows the final copy review to correct a section job, order, or CTA path without leaving the structure file inconsistent.
 
@@ -49,7 +65,7 @@ Write exact, build-ready copy for every section ID: navigation labels, eyebrow, 
 
 Use `Join`, `Reserve`, `Order`, `Book`, `You're on the list`, or equivalent success language only when the action is genuinely connected and persisted or completed. For `Prototype only`, use a specific exploration CTA such as `See what’s included` and add one concise disclosure only when needed to prevent misunderstanding. Do not repeat “we are testing,” “working preview,” `TBD`, evidence labels, or similar internal commentary. For `Connection required before launch`, treat the missing connection as a launch blocker.
 
-If price is experimental, follow `WEBSITE-COPY.md`: show it only when the approved experiment captures price response and uses truthful approved framing. Otherwise omit it from public copy. Never write “still figuring out the real price.”
+If price is experimental, follow `WEBSITE-COPY.md`: use truthful approved framing and never present it as a validated live price. Capturing a response determines whether the page tests price; it does not determine whether the approved proposed price can be communicated.
 
 Run the seven focused conversion sweeps and the five integrity checks from `WEBSITE-COPY.md`. Freeze facts, prices, quotations, necessary public qualifications, and CTA destinations before editing. For launch copy, add the conversion, UX, skeptical target-visitor, and brand perspectives; every requested change needs a concrete reason.
 
@@ -78,6 +94,9 @@ Finish with the saved files and this handoff, using the exact active-session pat
 - A first-time visitor can identify what this is, who it is for, the credible value, and the next action from the first screen.
 - Every section ID has final copy or a named evidence gap.
 - Every material upstream item has a source pointer and a coverage status; nothing material was dropped silently.
+- The public page passes the research-payoff gate; the traceability table is evidence of use, not a substitute for visible value.
+- No approved offer detail, price, difference, or fit information was removed solely because analytics, a form, or another destination is not connected.
+- A `Test offer` remains a measurable test or an explicit `Connection required before launch`; any move to `Prototype only` records the participant's informed objective change and its lost learning.
 - Material claims trace to `02-research.md` or `04-offer-and-positioning.md` and keep their qualifications.
 - A relevant competitor could not paste the hero unchanged onto its own website.
 - One primary CTA; its implementation state, destination, persistence, confirmation, and launch consequence are explicit.

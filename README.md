@@ -118,6 +118,8 @@ Same stage as the Full path, limited to two questions. Saves `06-brand-concept.m
 
 One page. Claude checks every material decision from the earlier answers and research, marking it as used, a copy guardrail, intentionally excluded, or blocked. It then proposes the section list, first screen, and exact conversion path before writing the complete build-ready copy. A lead, signup, booking, reservation, purchase, or research response is treated as real only when a working destination records it. Saves `07-website-structure.md` and `08-website-copy.md`.
 
+The public page must visibly benefit from the research: it should express the relevant audience situation, real alternative or friction, meaningful difference, complete offer and approved price or commitment, available reason to believe or transparent status, researched objections and fit, and a meaningful next action. Missing analytics or an unconnected form affects measurement and launch readiness; it does not justify reducing the approved proposition to generic copy. If the intended action is not connected yet, the default is `Connection required before launch`.
+
 ### 6. Visual Direction, build, review
 
 Identical to steps 6 and 7 of the Full path below.
@@ -153,6 +155,8 @@ Claude imports the approved research, offer, and positioning decisions. It asks 
 `/structure` → `/copy`
 
 Decide the page architecture, visitor journey, proof placement, objections, CTA path, and exact build-ready website copy.
+
+The structure and copy must pass the same research-payoff test used on the Express path. If removing the research and offer work would leave substantially the same public page, the copy is not ready for `/build`.
 
 ### 6. Complete Visual Direction
 

@@ -144,6 +144,8 @@ Before approving the structure, assign the conversion implementation one state:
 - **Connection required before launch:** the exact integration and required data are specified, but it is not yet connected.
 - **Prototype only:** no data will be recorded. A public concept page uses a navigational or exploration CTA and does not imitate a form submission, preference capture, booking, order, or confirmation.
 
+For a conversion-focused project, `Connection required before launch` is the default when the intended destination is missing. `Prototype only` is an explicit change of objective. Before accepting it, show the participant which CTA, follow-up, measurement, and business learning will disappear.
+
 A decision to collect no contact data is compatible with an anonymous preference test only when the selected response is actually persisted through a suitable structured event or form endpoint. If nothing is persisted, change the website objective from demand validation to prototype review.
 
 For `Prototype only`:
@@ -153,12 +155,26 @@ For `Prototype only`:
 - use an on-page destination such as offer details, mechanism, examples, or `See what’s included`;
 - use at most one concise availability disclosure when needed, such as `Concept preview — ordering is not open`;
 - do not create a dedicated disclosure section as a substitute for customer value or proof;
-- omit an unsupported experiment price from public offer cards when no real price-response test is captured;
+- keep the complete approved proposition visible; an approved experiment price may use truthful proposed-price framing, while the internal plan states that no price learning is produced without a recorded response;
 - if the actual goal is a facilitated UX prototype, keep that mock interaction clearly separate from the public marketing page and do not treat it as business evidence.
 
 A request to “fake it,” “mock it,” or “make the button look real” defaults to a non-collecting concept presentation with an exploration CTA. It is not permission to build a fake conversion flow.
 
 Do not defer the measurement mechanism to `/build` without specifying what will be recorded, where it will go, and what success means. Build may implement an approved mechanism; it must not invent the conversion model.
+
+## Research-payoff test
+
+Before structure approval, confirm that the public journey has a visible role for every applicable decision category:
+
+1. concrete audience situation or trigger;
+2. real alternative or status-quo friction;
+3. differentiated mechanism and practical value;
+4. complete offer, approved price or commitment, and fit;
+5. reason to believe, process evidence, specification, provenance, or transparent current status;
+6. researched objections and trade-offs;
+7. meaningful next action and post-action expectation.
+
+These do not require seven sections. They do require visible customer value. A traceability table, internal evidence label, or `Intentionally excluded` status is not a substitute. Apply a subtraction test: if removing market and audience research would leave substantially the same architecture, the research has not been converted into the website.
 
 ## 9. Navigation and orientation
 

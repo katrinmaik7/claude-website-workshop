@@ -35,6 +35,22 @@ Include:
 
 Run a reverse coverage check after drafting: scan each upstream stage file again and confirm that every material approved decision, useful observation, contradiction, qualification, founder boundary, and exact customer-language item has one ledger row. Do not force every answer onto the public page; some inputs belong only as guardrails or justified exclusions. Nothing material may disappear silently.
 
+### Research-payoff and subtraction tests
+
+The ledger documents use; it does not prove that the website benefits from the research. Customer-facing copy must visibly express every applicable category:
+
+1. a concrete priority-customer situation or trigger;
+2. the real alternative or status-quo friction;
+3. the differentiated mechanism and why it matters;
+4. the complete offer, including deliverables and approved price or commitment;
+5. a reason to believe, process evidence, specification, provenance, or transparent current status;
+6. researched objections, fit boundaries, and trade-offs;
+7. a meaningful action and what happens next.
+
+Do not force seven sections or pad the page. A category may appear in a headline, caption, comparison, process step, offer block, proof note, objection answer, or CTA support. When an applicable category is absent, record a material evidence or decision blocker; `short page`, `prototype`, or `no analytics` is not enough.
+
+Then apply the subtraction test: compare the draft with what could have been written from the initial business description alone. If the audience, message, offer, contrast, objections, trust, and action would remain substantially the same without the research and offer stages, the copy is too generic to approve.
+
 ## 2. Define the copy foundation
 
 Make these decisions explicit:
@@ -153,9 +169,10 @@ State deliverables, process, price or commitment, timing, eligibility, exclusion
 If a price is still an experiment:
 
 - do not write “still figuring out the real price” or similar drafting commentary;
-- show the price only when the approved experiment genuinely tests price and captures a response;
+- distinguish communicating the proposition from validating willingness to pay;
 - label it with concise truthful language such as `Proposed launch price` only when that framing is approved;
-- otherwise omit the price from public copy and preserve the gap in the internal requirements;
+- when no response is captured, record internally that the page produces no price evidence, but do not remove an approved price solely for that reason;
+- omit it only when the amount is genuinely undecided, unsafe to disclose, or intentionally excluded by the participant for a business reason;
 - never present an economically unsupported price as an available live offer.
 
 ### Risk and objections
@@ -375,6 +392,7 @@ The copy is complete when:
 - the build can proceed without reopening every research file;
 - unresolved visual decisions remain in the visual direction.
 - every CTA, loading state, and confirmation describes behavior the approved implementation can actually perform.
+- the public page passes the research-payoff and subtraction tests rather than merely documenting upstream material in an internal table.
 
 ## Method sources
 

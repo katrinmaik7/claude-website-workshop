@@ -51,7 +51,7 @@ Keep three decisions distinct:
 2. **Pricing metric:** what the customer pays per, when relevant.
 3. **Price point:** the actual amount and terms.
 
-Competitor prices are comparison evidence, not a target. Cost creates a practical floor; it does not by itself establish customer value. For an early offer, choose a price only when it creates a real learning opportunity and the site records a meaningful response to it. Otherwise keep the price internal or omit it from a non-collecting prototype.
+Competitor prices are comparison evidence, not a target. Cost creates a practical floor; it does not by itself establish customer value. For an early offer, distinguish communication from validation. A participant-approved experiment price may be communicated with truthful framing such as `Proposed launch price`; it becomes price evidence only when the site captures a meaningful response to that price. Never present it as validated, viable, or currently purchasable when those facts are unknown.
 
 ## Desirability, feasibility, and viability gate
 
@@ -79,7 +79,7 @@ Cover at minimum:
 
 If price is materially below the observed market range, require an explicit cost or model rationale. If none exists, preserve it as an **experiment price**, not an approved viable price.
 
-An experiment price belongs on the public page only when a real test captures a meaningful response to that price. If the site is `Demo only` and records nothing, omit the unsupported price from the public offer rather than presenting it as live or adding drafting commentary.
+An experiment price may appear on a public page when the participant approves its truthful status and wording. Use framing such as `Proposed launch price` or `Expected price`, and keep economic uncertainty internal. If the page records no response, state internally that it communicates the proposition but does not validate willingness to pay. Omit the price only when it is genuinely undecided, unsafe to disclose, or intentionally excluded by the participant for a business reason.
 
 Assign one offer status:
 
@@ -88,6 +88,8 @@ Assign one offer status:
 - **Demo only** — the action cannot record behavior; the website cannot be described as market validation.
 
 Participant approval cannot turn an unsupported assumption into evidence.
+
+An unconnected destination does not automatically turn an approved `Test offer` into `Demo only`. Preserve the intended test as `Connection required before launch` unless the participant explicitly changes the objective after seeing which CTA, follow-up, and learning will be lost.
 
 ## Positioning sequence
 

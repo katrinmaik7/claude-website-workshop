@@ -28,6 +28,8 @@ Run the compact desirability, feasibility, and viability gate from `CONVERSION-S
 
 Assign the result one status: `Evidence-backed offer`, `Test offer`, or `Demo only`. If direct customer or commercial evidence is weak, frame the downstream website as a measured test and define what must be captured. If the action cannot capture evidence, use `Demo only`.
 
+If the result is a `Test offer`, record that later stages must preserve the intended measurable action as `Connected` or `Connection required before launch`. They may change it to a non-collecting prototype only after the participant explicitly accepts which CTA, follow-up, and learning will be lost. Missing implementation is a launch blocker, not a reason to strip the public proposition of its approved offer, price, differentiation, or fit.
+
 Then build the positioning chain: genuine alternatives in the priority situation → what differs → the value that creates → who cares most → market frame → proof available and proof still needed. Output a plain-language positioning decision, not a slogan.
 
 Offer a second option only when the evidence supports a real choice, and say which one you recommend and why.

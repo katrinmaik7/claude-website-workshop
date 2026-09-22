@@ -67,9 +67,11 @@ Map the complete path:
 
 The actual order must follow the evidence and visitor awareness; do not force every label into a separate section.
 
-Do not defer the conversion mechanism vaguely to `/build`. A waitlist requires contact details to reach a real destination; a preference test requires a persisted structured response; a booking requires a working booking destination; a purchase or reservation requires a real transaction or reservation system. If nothing is persisted or completed, change the website objective to prototype review and use `Prototype only`. Do not call an unrecorded click demand validation.
+Do not defer the conversion mechanism vaguely to `/build`. A waitlist requires contact details to reach a real destination; a preference test requires a persisted structured response; a booking requires a working booking destination; a purchase or reservation requires a real transaction or reservation system. An external form, email, Instagram DM, WhatsApp conversation, booking page, checkout, or similar destination can qualify when the promised action genuinely reaches and remains with its owner. If the intended conversion is not connected yet, default to `Connection required before launch`; do not silently change the objective. Use `Prototype only` only after the participant explicitly accepts that the page records no response and cannot validate demand.
 
-For `Prototype only`, end the public journey at a useful on-page destination. Use a specific exploration CTA, request no discarded input, and create no fake validation or confirmation state. One concise availability disclosure is enough when needed; do not repeat research caveats or create a dedicated prototype-disclosure section. Omit unsupported experiment pricing when no real price-response test is captured. Treat “just fake it” as a request for a non-collecting concept presentation, never as permission to imitate a successful conversion.
+For `Prototype only`, end the public journey at a useful on-page destination. Use a specific exploration CTA, request no discarded input, and create no fake validation or confirmation state. One concise availability disclosure is enough when needed; do not repeat research caveats or create a dedicated prototype-disclosure section. Keep the complete approved proposition visible. A participant-approved experiment price may use truthful proposed-price framing even when the page captures no price response; record that it produces no price learning. Treat “just fake it” as a request for a non-collecting concept presentation, never as permission to imitate a successful conversion.
+
+Before approval, run the research-payoff test from `WEBSITE-COPY.md`. The architecture must visibly accommodate the priority situation, real alternative or status-quo friction, differentiated mechanism, complete offer and approved commitment, reason to believe or transparent current status, researched objections and fit, and meaningful action. Do not let a short format collapse a researched proposition into a generic hero, process, offer list, and FAQ.
 
 ## Synthesis checkpoint
 
@@ -120,3 +122,5 @@ Update `SESSION.md`. Finish with the approved architecture, saved file, largest 
 - Mobile visitors can understand the offer and complete the primary path without unnecessary friction.
 - Measurement events reveal both conversion and the largest strategic assumptions.
 - No generic section remains without a research-backed reason.
+- Removing the research and offer files would materially weaken or change the page; otherwise the architecture fails the research-payoff test.
+- Missing measurement changes what can be learned and claimed, not how completely the approved offer and differentiation are explained.

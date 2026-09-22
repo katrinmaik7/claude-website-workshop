@@ -23,6 +23,10 @@ Do not replace the approved structure with a generic landing-page sequence. Do n
 
 Run the mandatory progression gate in `CLAUDE.md`. Require every stage file for the recorded path through complete approved `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md`.
 
+Before visual work, run the research-payoff and subtraction tests in `WEBSITE-COPY.md` against the customer-facing copy. Stop and return to `/express-copy` or `/copy` when the page omits an applicable audience situation, alternative friction, differentiated mechanism, complete offer or approved commitment, reason to believe or transparent status, researched objections and fit, or meaningful action without a material evidence or decision blocker. A traceability table does not compensate for generic or missing public content. Also stop if an approved price, difference, or offer detail was removed solely because analytics or a destination is not connected.
+
+If an upstream `Test offer` or measurable objective became `Prototype only`, require an explicit recorded participant decision that names the lost CTA, follow-up, and learning. Otherwise return to the owning structure stage and default to `Connection required before launch`.
+
 Then require `assets/brand/visual-direction.md`. It must contain all ten current blocks from Visual Foundation through AI Visual Direction; each website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
 
 Run a cross-source visual consistency check before approving Visual Direction:

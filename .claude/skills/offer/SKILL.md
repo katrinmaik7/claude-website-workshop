@@ -42,6 +42,8 @@ Assign one status:
 
 When feasibility or viability is materially unknown, do not describe the offer as ready to sell. Define the smallest test and the evidence that would change the decision.
 
+For a `Test offer`, record that later stages must preserve the intended measurable action as `Connected` or `Connection required before launch`. They may change it to a non-collecting prototype only after the participant explicitly accepts which CTA, follow-up, and learning will be lost. Missing implementation is a launch blocker, not a reason to strip the public proposition of its approved offer, price, differentiation, or fit.
+
 ## Synthesis checkpoint
 
 Propose the offer in plain language:
