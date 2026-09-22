@@ -188,7 +188,7 @@ Do not place implementation placeholders, missing-proof notes, research caveats,
 
 ## 7. Human copy quality pass
 
-This method is informed by the MIT-licensed [`blader/humanizer`](https://github.com/blader/humanizer) and adapted for evidence-led conversion websites. See `.claude/THIRD-PARTY-NOTICES.md`.
+This method applies selected writing-quality patterns from [`blader/humanizer`](https://github.com/blader/humanizer) within an independently written process for evidence-led conversion websites.
 
 Humanization improves how approved copy sounds. It does not create strategy, strengthen evidence or make a weak claim acceptable. The editor may leave strong copy unchanged.
 
@@ -369,7 +369,7 @@ The copy is complete when:
 ## Method sources
 
 - Marketing Skills, “Copywriting” and “Copy Editing”: https://github.com/coreyhaines31/marketingskills
-- Humanizer adaptation details: `.claude/THIRD-PARTY-NOTICES.md`
+- Humanizer, writing-quality patterns: https://github.com/blader/humanizer
 
 Use this structure:
 

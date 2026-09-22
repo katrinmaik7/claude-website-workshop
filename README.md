@@ -226,7 +226,6 @@ claude-website-workshop/
 │   └── brand/
 │       └── README.md
 └── .claude/
-    ├── THIRD-PARTY-NOTICES.md
     ├── references/
     │   ├── AUDIENCE-RESEARCH.md
     │   ├── BRAND-CONCEPT.md
@@ -277,7 +276,6 @@ You may inspect every file. Keep the `.claude/` names and paths unchanged so Cla
 |---|---|
 | `CLAUDE.md` | Shared rules for participant interaction, evidence, file safety, and external actions. |
 | `.gitignore` | Prevents generated sessions, private source materials, and local system files from being added to the public repository accidentally. |
-| `.claude/THIRD-PARTY-NOTICES.md` | Attribution for the adapted human-copy methodology. |
 
 ### Commands in `.claude/skills/`
 
