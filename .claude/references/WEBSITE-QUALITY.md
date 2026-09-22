@@ -53,6 +53,8 @@ Before coding, state in `09-build-notes.md` the page's purpose, priority visitor
 
 Do not use visual novelty as a substitute for the approved concept. Avoid a generic stack of identical cards, default gradients, arbitrary rounded containers, or repeated centered sections unless Visual Direction specifically calls for them.
 
+Content remains primary. `Low density`, `one idea per screen`, generous whitespace, short sentences, or a restrained visual system controls grouping and emphasis; it does not authorize deleting decision-critical content or stretching one generic sentence into an oversized section. Use content-driven section height. A deliberate brand-moment section may be sparse only when the surrounding page already carries the complete buying decision and the moment has a distinct narrative job.
+
 ## Implementation profile
 
 For the Express path, build a dependency-free static one-page site with semantic HTML, CSS, and minimal JavaScript. It must work locally without a build step or external code and font CDNs.
@@ -152,6 +154,7 @@ CSS custom properties cannot be used directly in standard media-query conditions
 - Use semantic landmarks, one clear `h1` per page, and heading levels that reflect content hierarchy.
 - Keep important content and actions available without JavaScript. JavaScript may add progressive enhancement such as navigation state or motion.
 - Vary section composition according to Visual Direction and content purpose rather than repeating one generic card layout.
+- Preserve the `D1`–`D10` customer-facing consequences and the decision contribution of every section. Do not reduce body copy to fit an archetype; adapt the archetype to the approved content volume.
 - Use honest placeholders for missing proof or assets. A placeholder must not resemble a real testimonial, client logo, statistic, or result.
 - Implement the primary action according to the approved conversion implementation state. A missing connection is a launch blocker, not a successful local substitute.
 - Do not simulate a successful waitlist entry, reservation, order, booking, saved response, or other conversion when no real destination persisted it. Build an explicitly labelled prototype state instead.
@@ -213,6 +216,8 @@ At every width check:
 - consistent spacing rhythm inside components and between sections;
 - section transitions, background boundaries, and unintended gaps;
 - visual hierarchy, content density, and whether the primary action remains easy to find;
+- whether large areas of whitespace express intentional hierarchy or merely expose missing content;
+- whether every section visibly delivers the distinct decision value approved in `07` and `08`;
 - image aspect ratio, focal-point cropping, distortion, and placeholder behavior;
 - footer completeness and alignment;
 - browser font fallback and layout shift when approved fonts are unavailable;

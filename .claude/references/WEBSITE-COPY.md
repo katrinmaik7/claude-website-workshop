@@ -51,6 +51,14 @@ Do not force seven sections or pad the page. A category may appear in a headline
 
 Then apply the subtraction test: compare the draft with what could have been written from the initial business description alone. If the audience, message, offer, contrast, objections, trust, and action would remain substantially the same without the research and offer stages, the copy is too generic to approve.
 
+Map these decisions using the stable `D1`–`D10` IDs from `SESSION-AND-EVIDENCE.md`. Structure owns the section destination; copy owns the exact public wording. A decision is covered only when the visitor can perceive its consequence or when it is explicitly a guardrail that should remain invisible.
+
+### Decision-density test
+
+Every section must add a new piece of the buying decision. A heading followed by a poetic restatement is not enough. For each section, name the new question answered, the sourced or approved information delivered, and why the visitor is better able to decide afterward. Remove repetitive sections or add the missing specificity. Do not use arbitrary word counts; judge information value.
+
+Concise voice governs sentence length, rhythm, and repetition. It must not erase price, mechanism, differentiation, proof state, fit, objections, or action detail.
+
 ## 2. Define the copy foundation
 
 Make these decisions explicit:
@@ -393,6 +401,8 @@ The copy is complete when:
 - unresolved visual decisions remain in the visual direction.
 - every CTA, loading state, and confirmation describes behavior the approved implementation can actually perform.
 - the public page passes the research-payoff and subtraction tests rather than merely documenting upstream material in an internal table.
+- the final `D1`–`D10` map links each applicable decision to exact customer-facing wording;
+- every section passes the decision-density test.
 
 ## Method sources
 

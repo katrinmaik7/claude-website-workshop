@@ -32,6 +32,8 @@ If the result is a `Test offer`, record that later stages must preserve the inte
 
 Then build the positioning chain: genuine alternatives in the priority situation → what differs → the value that creates → who cares most → market frame → proof available and proof still needed. Output a plain-language positioning decision, not a slogan.
 
+Create the canonical business decision spine `D1`–`D9` from `SESSION-AND-EVIDENCE.md`. Import the evidence pack from `02-research.md`; make `D4`, `D6`, and `D9` concrete here; resolve `D5`; and preserve proof gaps and trade-offs in `D7`–`D8`. Every row must state the approved decision, evidence status, source pointer, customer-facing consequence, and blocker when present.
+
 Offer a second option only when the evidence supports a real choice, and say which one you recommend and why.
 
 ## Checkpoint
@@ -49,5 +51,8 @@ After confirmation, write only `04-offer-and-positioning.md` with:
 5. desirability-feasibility-viability table, price basis, cost drivers, dependencies, and offer status;
 6. fit boundary and rejected alternatives with reasons;
 7. validation mechanism, risks, falsifying evidence, and open questions for `/brand-concept`.
+8. canonical `D1`–`D9` business decision spine for downstream Brand Concept, structure, and copy.
 
 Update `SESSION.md`. Finish with the outcome, saved file, and “Next: `/brand-concept`”.
+
+The stage fails if the decision spine is generic, if any material research implication disappears without a reason, or if the approved test cannot be understood from `D9` alone.

@@ -33,6 +33,8 @@ Evaluate:
 - whether the visual result expresses the approved concept and one recognisable quality instead of falling back to generic repeated cards, arbitrary gradients, or repeated centered sections.
 - research payoff: whether customer-facing content visibly uses the priority situation, alternative friction, differentiated mechanism, complete offer and commitment, reason to believe or transparent status, researched objections and fit, and meaningful action;
 - the subtraction test: whether the site would remain substantially the same if market research, audience research, and offer strategy were removed.
+- `D1`–`D10` rendered coverage: whether every applicable decision reaches visible copy or a working interaction in the expected section;
+- decision density: whether every section adds useful information or merely restates a slogan, and whether whitespace amplifies hierarchy or exposes missing content.
 
 Inspect the complete rendered page at the viewport sizes required by `WEBSITE-QUALITY.md`, including mobile, tablet, desktop, and any material breakpoint. Scroll through every section rather than checking only the first viewport. Interact with navigation and the primary path. Distinguish manual checks, automated checks, and items not tested. Do not claim WCAG compliance or conversion impact without adequate evidence.
 
@@ -54,6 +56,8 @@ An unconnected primary action is always a `Blocker` when the stated objective is
 On a public `Prototype only` page, discarded-input forms, fake preference capture, fake validation, fake submission, and fake confirmation are `Important` at minimum and `Blocker` when they could make a visitor believe an action occurred. Replace them with a useful exploration path.
 
 Treat failure of the research-payoff test as `Important` at minimum. Treat it as a `Blocker` when the workshop objective is a converting or validating website but the page has no meaningful conversion action, hides an approved offer or price solely because tracking is absent, or turns a researched test offer into a generic concept brochure. Direct the participant back to `/express-copy` or `/copy`; visual polish cannot repair missing strategy content.
+
+Treat missing applicable `D1`–`D10` coverage, repetitive low-information sections, or a page whose main claims could have been written from the opening idea alone as `Important` at minimum. Treat the combination of weak research payoff and no meaningful action as a content `Blocker`, even when the site is visually polished and technically sound.
 
 ## Findings
 

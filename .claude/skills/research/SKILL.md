@@ -37,6 +37,7 @@ Include:
 - gaps, contradictions, and limitations;
 - potential differentiation ideas tested for relevance, distinction, proof, and deliverability.
 - price, fulfillment, capacity, and operating-model signals that could constrain the offer.
+- a website evidence pack using the outcome-contract IDs in `SESSION-AND-EVIDENCE.md`: alternative friction (`D2`), candidate difference (`D5`), trust or proof conventions (`D7`), and objections or trade-offs (`D8`), each with a customer-facing consequence.
 
 Avoid unsupported market-size estimates and arbitrary scorecards.
 
@@ -55,7 +56,8 @@ After confirmation, write only `02-market-research.md`. Include:
 5. differentiation hypotheses;
 6. evidence-strength table with `Safe to claim` and `Safe to test`;
 7. commercial and operational signals for `/offer`;
-8. source records and limitations;
-9. decisions and open questions for `/audience`.
+8. website evidence pack for `D2`, `D5`, `D7`, and `D8`;
+9. source records and limitations;
+10. decisions and open questions for `/audience`.
 
 Update `SESSION.md`. Finish with the outcome, saved file, and “Next: `/audience`”.

@@ -30,6 +30,8 @@ Develop up to three positioning directions when evidence supports a real choice.
 
 Re-run the relevant / distinct / provable / deliverable test. A direction that does not pass all four remains a positioning hypothesis. Participant approval selects it for testing but cannot make it a proven differentiator. Preserve this status in the saved file and downstream claim guardrails.
 
+Finalize `D5` in the business decision spine from `04-offer.md`. Verify that the selected difference matters in the `D1` situation, improves on the `D2` alternative, follows from `D4`, respects `D7`, and creates a concrete customer-facing consequence. Preserve the other spine rows unchanged unless the participant explicitly revises them.
+
 ## Synthesis checkpoint
 
 Recommend one direction and show:
@@ -45,6 +47,6 @@ Ask one confirmation question.
 
 ## Save
 
-After confirmation, write only `05-positioning.md`. Include alternative directions considered, decision rationale, the four-part differentiation test, status as evidence-backed decision or test hypothesis, risks, falsifying evidence, and message guardrails. Update `SESSION.md`.
+After confirmation, write only `05-positioning.md`. Include alternative directions considered, decision rationale, the four-part differentiation test, status as evidence-backed decision or test hypothesis, risks, falsifying evidence, message guardrails, and the updated canonical `D1`–`D9` business decision spine. Update `SESSION.md`.
 
 Finish with the outcome, saved file, and “Next: `/brand-concept`”.

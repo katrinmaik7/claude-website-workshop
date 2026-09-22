@@ -44,6 +44,8 @@ When feasibility or viability is materially unknown, do not describe the offer a
 
 For a `Test offer`, record that later stages must preserve the intended measurable action as `Connected` or `Connection required before launch`. They may change it to a non-collecting prototype only after the participant explicitly accepts which CTA, follow-up, and learning will be lost. Missing implementation is a launch blocker, not a reason to strip the public proposition of its approved offer, price, differentiation, or fit.
 
+Create the current business decision spine from `SESSION-AND-EVIDENCE.md`: import `D1`–`D3` and the research inputs for `D5`, `D7`, and `D8`; make `D4`, `D6`, and `D9` concrete. Positioning will finalize `D5`. Every row must include evidence status, source, customer-facing consequence, and blocker.
+
 ## Synthesis checkpoint
 
 Propose the offer in plain language:
@@ -61,6 +63,6 @@ Ask one confirmation question.
 
 ## Save
 
-After confirmation, write only `04-offer.md`, including the desirability-feasibility-viability table, price and cost status, offer status, rejected alternatives, the smallest validation test, and the evidence that would falsify the choice. Update `SESSION.md`.
+After confirmation, write only `04-offer.md`, including the desirability-feasibility-viability table, price and cost status, offer status, rejected alternatives, the smallest validation test, the evidence that would falsify the choice, and the current `D1`–`D9` business decision spine with `D5` marked for positioning refinement. Update `SESSION.md`.
 
 Finish with the outcome, saved file, and “Next: `/positioning`”.

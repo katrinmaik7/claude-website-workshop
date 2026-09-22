@@ -13,6 +13,8 @@ Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Full`, `Next c
 
 Act as a conversion-focused information architect. Design the route from the visitor's arrival context to the confidence required for one clear action. Do not start with a generic landing-page template.
 
+Import the canonical `D1`–`D10` Website message handoff from `06-brand-concept.md`. Preserve the business decisions and map every applicable ID to at least one page section, interaction, or justified guardrail. A citation without a customer-facing consequence is not coverage.
+
 ## Establish missing context
 
 Use approved session evidence first. In Workshop mode, ask only missing questions, exactly one per turn, in this order:
@@ -106,6 +108,7 @@ After confirmation, write only `07-website-structure.md` with:
 14. analytics events and learning questions;
 15. content, asset, integration, legal, and privacy requirements;
 16. exclusions, assumptions, open questions, and next-stage guardrails.
+17. `D1`–`D10` content-coverage map from the Website message handoff to page and section IDs.
 
 Update `SESSION.md`. Finish with the approved architecture, saved file, largest unresolved risk, and “Next: `/copy`”.
 
@@ -124,3 +127,4 @@ Update `SESSION.md`. Finish with the approved architecture, saved file, largest 
 - No generic section remains without a research-backed reason.
 - Removing the research and offer files would materially weaken or change the page; otherwise the architecture fails the research-payoff test.
 - Missing measurement changes what can be learned and claimed, not how completely the approved offer and differentiation are explained.
+- Every section adds a distinct decision contribution; no full section exists merely to restate the hero, a brand belief, or another section.

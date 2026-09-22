@@ -63,6 +63,10 @@ Preserve the ownership rules and quality criteria in the reference. Do not repea
 
 Treat distinctive codes created in the workshop as candidates. Treat messaging as an approved message system rather than finished website copy. Ensure promises and claims remain within the evidence limits of the approved offer file (`04-offer.md` or `04-offer-and-positioning.md`).
 
+Finish the synthesis with a **Website message handoff** containing the canonical `D1`–`D9` business spine imported without loss and `D10` for core message, observable voice behavior, distinctive cues, and brand boundaries. Brand language may sharpen expression but must not replace a concrete audience situation, offer, price or commitment, difference, proof state, objection, or action with a generic purpose statement.
+
+Concise voice means economical sentences and low repetition. It never means removing decision-critical information or producing a sparse website.
+
 ## Checkpoint
 
 Present exactly five compact groups so the participant can approve every material part of the concept without reading the full file:
@@ -95,3 +99,4 @@ Finish with the approved essence, saved file, unresolved hypotheses, and the nex
 - Every material claim has proof, qualification, or a clear prohibition.
 - Workshop-created distinctive codes are labeled as candidates.
 - Structure, copy, and the Visual Direction tool can use the file without requiring a second Brand Concept questionnaire.
+- The Website message handoff contains `D1`–`D10`, preserves every approved business decision, and is specific enough to map directly into public content.

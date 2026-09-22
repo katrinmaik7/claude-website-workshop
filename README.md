@@ -120,6 +120,8 @@ One page. Claude checks every material decision from the earlier answers and res
 
 The public page must visibly benefit from the research: it should express the relevant audience situation, real alternative or friction, meaningful difference, complete offer and approved price or commitment, available reason to believe or transparent status, researched objections and fit, and a meaningful next action. Missing analytics or an unconnected form affects measurement and launch readiness; it does not justify reducing the approved proposition to generic copy. If the intended action is not connected yet, the default is `Connection required before launch`.
 
+Across the workflow Claude carries one stable decision spine from research into the final website: customer situation, alternative friction, desired progress, offer and mechanism, meaningful difference, price or commitment, reason to believe, objections and fit, conversion action, and brand expression. Before saving the copy, Claude shows the complete customer-facing page in reading order rather than a headline-only summary.
+
 ### 6. Visual Direction, build, review
 
 Identical to steps 6 and 7 of the Full path below.

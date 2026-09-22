@@ -183,6 +183,29 @@ Evidence label and confidence:
 
 Only turn the implication into a `Decision` after confirmation.
 
+## Website outcome contract
+
+The workshop succeeds only when research and decisions materially change the public website. Use this stable decision spine across stages:
+
+| ID | Decision carried downstream |
+|---|---|
+| `D1` | Priority customer and concrete triggering situation |
+| `D2` | Current alternative or status quo and its relevant friction |
+| `D3` | Desired practical, emotional, or social progress supported by evidence |
+| `D4` | Offer, deliverables, and mechanism |
+| `D5` | Meaningful difference and why it matters to this customer |
+| `D6` | Price, effort, commitment, timing, and material conditions |
+| `D7` | Reason to believe, proof, specification, provenance, or transparent current status |
+| `D8` | Objections, trade-offs, fit boundaries, and exclusions |
+| `D9` | Primary action, destination, what is recorded or completed, confirmation, and follow-up |
+| `D10` | Brand expression: core message, voice behavior, distinctive cues, and boundaries |
+
+`02` research creates the evidence pack for `D1`–`D3`, `D5`, `D7`, and `D8`. `04` offer work makes `D4`, `D6`, `D7`, `D8`, and `D9` concrete. Positioning finalizes `D5`. Brand Concept consolidates `D1`–`D10` without replacing business decisions with generic brand language. Structure maps every applicable ID to a section or interaction. Copy turns the mapped IDs into exact customer-facing language. Visual Direction determines presentation. Build preserves the content. Review verifies the rendered result.
+
+A later stage may refine an unresolved item, but it may not silently delete, weaken, or replace an approved one. Record the old item, the explicit participant decision, and its downstream consequence when a material change occurs.
+
+Use the spine as a compact transfer contract, not as public copy and not as a reason to duplicate long research reports. Traceability is necessary but insufficient: the relevant decision must be visible in the visitor experience unless it is a genuine guardrail or has a material blocker.
+
 A `Decision` is not evidence that the decision is correct. For every material commercial decision, retain both the decision and the evidence strength behind it. Use one of these decision states when helpful:
 
 - **Evidence-backed decision** — supported by relevant direct, behavioral, commercial, or convergent independent evidence.

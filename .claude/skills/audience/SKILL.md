@@ -37,6 +37,8 @@ Build a situation-based audience view, not a decorative persona. Compare plausib
 
 Map strong insights to website messages, proof, offer details, objections, and calls to action.
 
+Complete the audience-owned outcome-contract fields from `SESSION-AND-EVIDENCE.md`: `D1` priority customer and trigger, `D3` desired progress, and the audience evidence for `D2`, `D7`, and `D8`. Include the customer-facing consequence and preserve material contradictions.
+
 ## Synthesis checkpoint
 
 Present at most five bullets:
@@ -51,6 +53,6 @@ Ask one confirmation or correction question.
 
 ## Save
 
-After confirmation, write only `03-audience-research.md`. Include the evidence matrix, decision-strength table, participant view versus independent evidence, `Safe to claim` versus `Safe to test`, source records, content implications, limitations, and a direct-validation plan when evidence is weak. Update `SESSION.md`.
+After confirmation, write only `03-audience-research.md`. Include the evidence matrix, decision-strength table, participant view versus independent evidence, `Safe to claim` versus `Safe to test`, the audience-owned outcome-contract fields, source records, content implications, limitations, and a direct-validation plan when evidence is weak. Update `SESSION.md`.
 
 Finish with the outcome, saved file, and “Next: `/offer`”.

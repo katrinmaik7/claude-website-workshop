@@ -29,6 +29,8 @@ Before designing the structure, build the upstream-context ledger from `WEBSITE-
 
 Mark each material item `Used`, `Guardrail`, `Intentionally excluded`, or `Blocked`, with a source pointer and destination section when used. Do not put every answer on the website; require a reason when relevant context is omitted. Resolve no contradiction silently.
 
+Import the `D1`–`D10` Website message handoff from `06-brand-concept.md`. Create a content-coverage map that assigns every applicable ID to at least one public section, interaction, or justified guardrail. The map must name the exact customer-facing consequence; a source citation or internal note alone is not coverage.
+
 ## Structure
 
 Design the belief journey for the priority visitor arriving from the expected traffic source: arrival → relevance → value → mechanism → difference → proof → offer and fit → risk → action → confirmation. Give every section a stable ID (`S01-hero`, `S02-situation`, …), a visitor question, a belief change, an evidence source, a claim limit, and a CTA or next question. Remove any section without a research-backed job. Place proof next to the claim it supports and objections where they arise.
@@ -71,7 +73,7 @@ Run the seven focused conversion sweeps and the five integrity checks from `WEBS
 
 ## Checkpoint 2 — copy
 
-Show a compact section-by-section preview: headline and one line per section, full copy for the hero and offer sections. Add at most three unresolved items: missing proof, placeholders, claims needing qualification. Ask one final approval question.
+Show the complete customer-facing one-page copy in reading order: every heading, body paragraph, list, offer detail, proof or transparent-status line, objection answer, CTA, form field, disclosure, and footer text. Hide internal tables and annotations from this preview. Then add at most three unresolved items: missing proof, placeholders, or claims needing qualification. Ask one final approval question. Do not ask the participant to approve a summary when the full copy is what will be built.
 
 ## Save
 
@@ -79,6 +81,8 @@ After approval, write both files:
 
 1. `07-website-structure.md` in compact form: objective and conversion event; conversion implementation state; destination, stored data or completed action, owner, consent/privacy, confirmation and error path; audience, traffic, and device assumptions; belief journey; section plan with IDs; first-screen requirements; claim-to-proof placement; objections; mobile priorities; analytics events; assumptions and exclusions.
 2. `08-website-copy.md` using the output structure in `WEBSITE-COPY.md`, including the upstream-context coverage table, research-to-copy traceability table, and semantic-integrity report.
+
+Include the final `D1`–`D10` content-coverage map in both files: `07` maps IDs to section jobs and interactions; `08` maps IDs to exact public wording.
 
 Ensure the final section IDs, order, and CTA path match across both files. Update `SESSION.md` once after both files are saved.
 
@@ -97,6 +101,8 @@ Finish with the saved files and this handoff, using the exact active-session pat
 - The public page passes the research-payoff gate; the traceability table is evidence of use, not a substitute for visible value.
 - No approved offer detail, price, difference, or fit information was removed solely because analytics, a form, or another destination is not connected.
 - A `Test offer` remains a measurable test or an explicit `Connection required before launch`; any move to `Prototype only` records the participant's informed objective change and its lost learning.
+- Every public section adds new decision value. A large section may not merely restate its heading, hero promise, or another section in different words.
+- Concise brand voice changes sentence form, not the amount of decision-critical content.
 - Material claims trace to `02-research.md` or `04-offer-and-positioning.md` and keep their qualifications.
 - A relevant competitor could not paste the hero unchanged onto its own website.
 - One primary CTA; its implementation state, destination, persistence, confirmation, and launch consequence are explicit.

@@ -195,9 +195,12 @@ The final `06-brand-concept.md` must include:
 5. voice rules with do/don't examples;
 6. existing, candidate, and prohibited distinctive codes;
 7. hypotheses and decisions still requiring testing;
-8. a concise Visual Direction handoff describing what is locked, open, and risky.
+8. a `D1`–`D10` Website message handoff using the stable outcome contract in `SESSION-AND-EVIDENCE.md`, preserving the complete business proposition and adding observable brand expression;
+9. a concise Visual Direction handoff describing what is locked, open, and risky.
 
 The result is complete when `/structure` and `/copy` (or `/express-copy`) and the Visual Direction tool can use it without rereading raw research or asking the participant to recreate approved strategy.
+
+The Website message handoff is not a slogan summary. It must retain the concrete audience situation, alternative friction, offer, mechanism, meaningful difference, price or commitment, proof state, fit, objections, and action. Brand purpose and concise voice may sharpen these decisions but may not replace or remove them.
 
 ## Visual Direction boundary
 

@@ -49,6 +49,8 @@ Use the upstream-context ledger in `WEBSITE-COPY.md`. Reverse-scan every approve
 
 Run the research-payoff test in `WEBSITE-COPY.md` before drafting. A coverage table does not count as use when the public copy remains generic. Lack of analytics or an integration is not a valid reason to remove approved offer detail, price, differentiation, audience situations, fit information, or objections.
 
+Import the `D1`–`D10` mapping from `07-website-structure.md`. Give every applicable ID exact customer-facing wording. If the structure maps an ID only to an internal note, return it to `/structure`.
+
 Resolve no contradiction silently. Ask one decision question when conflicting approved files would materially change the copy.
 
 Treat the brand concept as expression guidance. It cannot override audience evidence, approved positioning, offer conditions, proof limits, legal requirements, accessibility, or the website's conversion path. Brand narrative pillars are not automatically website claims.
@@ -104,7 +106,7 @@ Review explicit and implied claims created by copy combinations. Flag claims req
 
 ## Final checkpoint and save
 
-Present a compact page-by-page preview: headline and one line per section, full copy for the first screen and the offer section. Add at most three unresolved items: claims needing qualification, missing proof, or placeholders. Ask one final approval question.
+Present the complete customer-facing copy page by page in reading order: every heading, paragraph, list, proof or transparent-status line, offer detail, CTA, field, error, confirmation, disclosure, utility label, and footer item. Hide internal evidence tables and implementation annotations from this preview. Add at most three unresolved items: claims needing qualification, missing proof, or placeholders. Ask one final approval question. Do not ask the participant to approve a summary when the full copy is what will be built.
 
 After approval, write only `08-website-copy.md` with:
 
@@ -120,6 +122,7 @@ After approval, write only `08-website-copy.md` with:
 10. research-to-copy traceability table;
 11. semantic-integrity report;
 12. approved decisions and unresolved questions.
+13. final `D1`–`D10` content-coverage map linking each applicable decision to exact public wording.
 
 Update `SESSION.md`. Do not edit earlier stage files.
 
@@ -149,3 +152,5 @@ Finish with the approved copy direction, saved file, and unresolved content bloc
 - Search language serves the reader and is not repeated mechanically.
 - No fact, quote, number, price, condition, disclosure, or destination changed during humanization.
 - The file can be handed to a designer or builder without asking Claude to reconstruct the strategy.
+- Every public section adds new decision value; body copy does not merely restate its heading or the hero.
+- Concise brand voice shortens sentences and removes repetition without deleting commercially necessary information.

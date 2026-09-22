@@ -60,6 +60,7 @@ Cover:
 - differentiation ideas that pass the relevant / distinct / provable / deliverable test, and those that fail;
 - an evidence-strength table with `Safe to claim`, `Safe to test`, `Unknown`, and `What would change the decision`;
 - 3 implications for the offer, positioning, website message, proof, and conversion experiment.
+- a compact website evidence pack using the outcome-contract IDs in `SESSION-AND-EVIDENCE.md`: evidence for `D1`–`D3`, candidate `D5`, proof and trust inputs for `D7`, and objections or trade-offs for `D8`. For each, include the customer-facing consequence and the exact source or evidence gap.
 
 Label everything. Public comments are directional, not validation. Do not estimate market size. Keep participant-provided evidence, public-signal research, and future direct research separate; name the stronger follow-up method required for every high-risk conclusion.
 
@@ -80,9 +81,10 @@ After confirmation, write only `02-research.md` with:
 5. customer-language bank with provenance and safe-use notes;
 6. price, trust, fulfillment, demand, and counter-evidence signals found;
 7. three website and offer implications;
-8. evidence-strength table with `Safe to claim`, `Safe to test`, `Unknown`, and `What would change the decision`;
-9. recommended website experiment and what it must capture;
-10. source records, limitations, direct-validation plan, and open questions for `/express-offer`.
+8. website evidence pack keyed to `D1`–`D3`, `D5`, `D7`, and `D8`;
+9. evidence-strength table with `Safe to claim`, `Safe to test`, `Unknown`, and `What would change the decision`;
+10. recommended website experiment and what it must capture;
+11. source records, limitations, direct-validation plan, and open questions for `/express-offer`.
 
 Update `SESSION.md`. Finish with the outcome, saved file, and “Next: `/express-offer`”.
 
@@ -97,3 +99,4 @@ Update `SESSION.md`. Finish with the outcome, saved file, and “Next: `/express
 - At least one meaningful contradiction or failed assumption is reported, or the search limitation explains why none was found.
 - Participant approval does not upgrade evidence strength.
 - The report states what desk research cannot establish and specifies the next direct or behavioral validation.
+- The evidence pack contains concrete downstream message, offer, proof, objection, and conversion implications rather than only market description.
