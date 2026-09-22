@@ -1,17 +1,19 @@
 ---
 name: structure
-description: Design website architecture as a separate stage in an active Full-path session after /brand-concept. Express sessions use /express-copy for structure and copy together.
+description: Design website architecture as a separate stage in an active Full-path session after Visual Direction. Reconcile research, conversion logic, brand concept, and visual composition; Express sessions use /express-copy for structure and copy together.
 ---
 
 # Website structure and belief journey
 
-Read `CLAUDE.md`, active session files through `06-brand-concept.md`, `.claude/references/SESSION-AND-EVIDENCE.md`, `.claude/references/CONVERSION-STRATEGY.md`, `.claude/references/BRAND-CONCEPT.md`, and `.claude/references/WEBSITE-STRUCTURE.md`.
+Read `CLAUDE.md`, active session files through `06-brand-concept.md`, `assets/brand/visual-direction.md`, `.claude/references/SESSION-AND-EVIDENCE.md`, `.claude/references/CONVERSION-STRATEGY.md`, `.claude/references/BRAND-CONCEPT.md`, and `.claude/references/WEBSITE-STRUCTURE.md`.
 
 ## Entry gate
 
-Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Full`, `Next command: /structure`, and every stage through a complete approved `06-brand-concept.md`. If anything is incomplete, name the earliest unfinished command. Do not reconstruct or approve brand decisions inside `/structure`.
+Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Full`, `Next command: Complete Visual Direction`, every stage through a complete approved `06-brand-concept.md`, and a complete active-project `assets/brand/visual-direction.md`. If anything is incomplete, name the earliest unfinished step. Do not reconstruct or approve brand decisions inside `/structure`. When the visual gate passes, mark Visual Direction `Approved`, mark Structure `In progress`, and continue.
 
 Act as a conversion-focused information architect. Design the route from the visitor's arrival context to the confidence required for one clear action. Do not start with a generic landing-page template.
+
+Treat block 05 Page Architecture as visual input, not an already approved sitemap. Reconcile its archetypes, focal rules, alternation, density, surfaces, and draft sequence with the evidence-led belief journey. This stage owns the final pages, stable section IDs, order, message jobs, proof placement, CTA path, and content requirements. Preserve useful visual intent, but do not use an archetype that lacks the required evidence or asset, cannot hold the real content, or weakens mobile comprehension or conversion logic.
 
 Import the canonical `D1`–`D10` Website message handoff from `06-brand-concept.md`. Preserve the business decisions and map every applicable ID to at least one page section, interaction, or justified guardrail. A citation without a customer-facing consequence is not coverage.
 
@@ -43,6 +45,7 @@ Determine:
 - required utility, legal, contact, scheduling, checkout, confirmation, and error pages or states.
 - the exact CTA destination, stored data or completed action, consent/privacy need, owner, confirmation evidence, and recovery path.
 - brand-concept implications for comprehension, trust, narrative rhythm, and expression without letting aesthetics determine the conversion logic.
+- Visual Direction opportunities and constraints that affect composition, content grouping, asset needs, and responsive behavior without determining the argument order.
 
 If more than one architecture is credible, compare no more than three options using visitor fit, business fit, content/proof requirements, complexity, and conversion risk. Recommend one.
 
@@ -128,3 +131,4 @@ Update `SESSION.md`. Finish with the approved architecture, saved file, largest 
 - Removing the research and offer files would materially weaken or change the page; otherwise the architecture fails the research-payoff test.
 - Missing measurement changes what can be learned and claimed, not how completely the approved offer and differentiation are explained.
 - Every section adds a distinct decision contribution; no full section exists merely to restate the hero, a brand belief, or another section.
+- The final structure explicitly maps suitable block 05 archetypes to stable section IDs and records every visual proposal that was changed or omitted because of evidence, content, asset, accessibility, mobile, or conversion constraints.

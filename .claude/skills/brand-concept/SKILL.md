@@ -11,7 +11,7 @@ Read `CLAUDE.md`, every approved stage file in the active session, `.claude/refe
 
 Run the mandatory progression gate in `CLAUDE.md` and require `Next command: /brand-concept`. On the Full path, require every stage through an approved `05-positioning.md`. On the Express path, require every stage through an approved `04-offer-and-positioning.md`. If anything is incomplete, name the earliest missing stage and recommend its command. Do not recreate positioning here.
 
-This stage creates the final verbal and conceptual brand system used by `/structure`, `/copy`, and Visual Direction. It does not choose colors, typography, logos, page composition, illustration or materials, graphic elements, visual applications, or AI visual direction.
+This stage creates the final verbal and conceptual brand system used by Visual Direction, `/structure`, and `/copy`. It does not choose colors, typography, logos, page composition, illustration or materials, graphic elements, visual applications, or AI visual direction.
 
 ## Build the prefill before asking questions
 
@@ -85,7 +85,14 @@ Ask one question, for example “Does this sound like your business?” Do not s
 
 After confirmation, write only `06-brand-concept.md` using the required output standard in `.claude/references/BRAND-CONCEPT.md`. Update `SESSION.md`. Do not edit earlier stage files and do not create a duplicate in `assets/brand/`.
 
-Finish with the approved essence, saved file, unresolved hypotheses, and the next command for the session's path: “Next: `/structure`” on the Full path or “Next: `/express-copy`” on the Express path.
+Finish with the approved essence, saved file, unresolved hypotheses, and this handoff:
+
+1. Open the Visual Direction tool using the approved `06-brand-concept.md` and the active session's research and offer files as factual context.
+2. Treat the dashboard's Page Architecture answer as a visual composition proposal. It may suggest archetypes, focal points, rhythm, and a draft sequence; it does not finalize the information architecture.
+3. Download and unzip the export. Move its language-specific Markdown file into `assets/brand/`, rename it `visual-direction.md`, and add any required visual assets.
+4. Run `/structure` on the Full path or `/express-copy` on the Express path. That stage reconciles the dashboard with the research and makes the final section-order decision.
+
+Update `SESSION.md` to `Next command: Complete Visual Direction`.
 
 ## Quality gate
 

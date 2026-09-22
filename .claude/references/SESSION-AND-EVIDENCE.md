@@ -30,8 +30,8 @@ Express session:
 | Research | 02-research.md | Not started |
 | Offer and positioning | 04-offer-and-positioning.md | Not started |
 | Brand concept | 06-brand-concept.md | Not started |
-| Structure and copy | 07-website-structure.md; 08-website-copy.md | Not started |
 | Visual Direction | assets/brand/visual-direction.md | Not started |
+| Structure and copy | 07-website-structure.md; 08-website-copy.md | Not started |
 | Build | 09-build-notes.md; site-v1/ | Not started |
 | Review | 10-launch-audit.md | Not started |
 
@@ -52,16 +52,16 @@ Full session:
 | Offer | 04-offer.md | Not started |
 | Positioning | 05-positioning.md | Not started |
 | Brand concept | 06-brand-concept.md | Not started |
+| Visual Direction | assets/brand/visual-direction.md | Not started |
 | Structure | 07-website-structure.md | Not started |
 | Copy | 08-website-copy.md | Not started |
-| Visual Direction | assets/brand/visual-direction.md | Not started |
 | Build | 09-build-notes.md; site-v1/ | Not started |
 | Review | 10-launch-audit.md | Not started |
 
 Next command: /vision
 ```
 
-After each approval, change only the completed row and `Next command:`. While a stage is being worked on, use `In progress`. After `/express-copy` or `/copy`, set `Next command: Complete Visual Direction`, then allow `/build` only through the special Visual Direction gate in `CLAUDE.md`. After `/review`, set `Next command: Complete`.
+After each approval, change only the completed row and `Next command:`. While a stage is being worked on, use `In progress`. After `/brand-concept`, set `Next command: Complete Visual Direction`. Once the export passes the special Visual Direction gate in `CLAUDE.md`, mark that row `Approved` and continue into `/express-copy` or `/structure`. After `/express-copy` or `/copy`, set the next command to `/build`. After `/review`, set `Next command: Complete`.
 
 ## Paths and stage files
 
@@ -76,9 +76,9 @@ A session follows one path from start to finish. Do not mix commands from the tw
 | `/offer` → `04-offer.md` | `/express-offer` → `04-offer-and-positioning.md` |
 | `/positioning` → `05-positioning.md` | |
 | `/brand-concept` → `06-brand-concept.md` | `/brand-concept` → `06-brand-concept.md` |
+| Visual Direction → `assets/brand/visual-direction.md` | Visual Direction → `assets/brand/visual-direction.md` |
 | `/structure` → `07-website-structure.md` | `/express-copy` → `07-website-structure.md` and `08-website-copy.md` |
 | `/copy` → `08-website-copy.md` | |
-| Visual Direction → `assets/brand/visual-direction.md` | Visual Direction → `assets/brand/visual-direction.md` |
 | `/build` → `09-build-notes.md`, `site-v1/` | `/build` → `09-build-notes.md`, `site-v1/` |
 | `/review` → `10-launch-audit.md` | `/review` → `10-launch-audit.md` |
 
@@ -90,8 +90,8 @@ Use this order as a gate, not merely as a recommendation.
 
 | Path | Required order |
 |---|---|
-| Express | `/express-start` → `/express-research` → `/express-offer` → `/brand-concept` → `/express-copy` → Visual Direction → `/build` → `/review` |
-| Full | `/setup` → `/vision` → `/research` → `/audience` → `/offer` → `/positioning` → `/brand-concept` → `/structure` → `/copy` → Visual Direction → `/build` → `/review` |
+| Express | `/express-start` → `/express-research` → `/express-offer` → `/brand-concept` → Visual Direction → `/express-copy` → `/build` → `/review` |
+| Full | `/setup` → `/vision` → `/research` → `/audience` → `/offer` → `/positioning` → `/brand-concept` → Visual Direction → `/structure` → `/copy` → `/build` → `/review` |
 
 Before entering a stage, run the mandatory progression gate in `CLAUDE.md`. Never use a later skill to manufacture or infer a missing earlier approval.
 
@@ -118,9 +118,9 @@ Approval records the participant's decision to use an output in this website ver
 
 An output file without this metadata, with blank required sections, or with unresolved unapproved recommendations is incomplete even if its filename is correct.
 
-Visual Direction is complete only when all ten current blocks are present, website-relevant `Still to define` or `Pendiente de definir` items are resolved by an explicit answer, a named system default, or a justified `Not applicable`, and the export matches the active project's brand concept, structure, and copy. `/build` performs this check before marking the visual step approved.
+Visual Direction is complete only when all ten current blocks are present, website-relevant `Still to define` or `Pendiente de definir` items are resolved by an explicit answer, a named system default, or a justified `Not applicable`, and the export matches the active project's brand concept and upstream business context. `/express-copy` or `/structure` performs this check before marking the visual step approved.
 
-When `/build` validates Visual Direction, update its progress row to `Approved`, set the `/build` row to `In progress`, and continue in the same command. Mark `/build` approved only after both `site-v1/` and the approved `09-build-notes.md` exist and pass the build quality gate.
+When `/express-copy` or `/structure` validates Visual Direction, update its progress row to `Approved`, set the current content stage to `In progress`, and continue in the same command. Mark `/build` approved only after both `site-v1/` and the approved `09-build-notes.md` exist and pass the build quality gate.
 
 ## Active session
 
@@ -200,7 +200,7 @@ The workshop succeeds only when research and decisions materially change the pub
 | `D9` | Primary action, destination, what is recorded or completed, confirmation, and follow-up |
 | `D10` | Brand expression: core message, voice behavior, distinctive cues, and boundaries |
 
-`02` research creates the evidence pack for `D1`–`D3`, `D5`, `D7`, and `D8`. `04` offer work makes `D4`, `D6`, `D7`, `D8`, and `D9` concrete. Positioning finalizes `D5`. Brand Concept consolidates `D1`–`D10` without replacing business decisions with generic brand language. Structure maps every applicable ID to a section or interaction. Copy turns the mapped IDs into exact customer-facing language. Visual Direction determines presentation. Build preserves the content. Review verifies the rendered result.
+`02` research creates the evidence pack for `D1`–`D3`, `D5`, `D7`, and `D8`. `04` offer work makes `D4`, `D6`, `D7`, `D8`, and `D9` concrete. Positioning finalizes `D5`. Brand Concept consolidates `D1`–`D10` without replacing business decisions with generic brand language. Visual Direction supplies composition constraints and visual possibilities. Structure then maps every applicable ID to a section or interaction and makes the final content-order decision. Copy turns the mapped IDs into exact customer-facing language. Build preserves the content. Review verifies the rendered result.
 
 A later stage may refine an unresolved item, but it may not silently delete, weaken, or replace an approved one. Record the old item, the explicit participant decision, and its downstream consequence when a material change occurs.
 

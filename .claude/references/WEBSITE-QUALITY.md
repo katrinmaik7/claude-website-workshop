@@ -87,7 +87,7 @@ The current Visual Direction export uses these blocks:
 2. **Name & Typography** — implement the approved brand-name casing, primary and secondary type roles, display/body scale, tracking, leading, italics, and typography restrictions. Use supplied licensed font files or an approved system fallback; do not fetch fonts from a CDN. A descriptive typeface direction is not a licensed font asset.
 3. **Color System** — use the supplied color values, roles, proportions, allowed pairings, and prohibited combinations. Calculate text contrast from the actual exported values.
 4. **Composition** — translate the approved grid, alignment, symmetry, density, margins, rhythm, spacing scale, layering, block treatment, dividers, and image/text ratios into responsive layout rules.
-5. **Page Architecture** — assign approved visual archetypes, focal points, alternation, surface changes, and alignment rules to the stable section IDs. This block controls how sections look and vary; `07-website-structure.md` still controls which sections exist, their order, their message jobs, and the CTA path.
+5. **Page Architecture** — supplies an upstream palette of visual archetypes, focal points, alternation, surface changes, alignment rules, and possibly a draft sequence. `/express-copy` or `/structure` reconciles that palette with the business argument and assigns compatible archetypes to stable section IDs. The later `07-website-structure.md` controls which sections exist, their order, their message jobs, proof placement, and the CTA path.
 6. **Illustration & Materiality** — implement the approved illustration position and surface, paper, texture, grain, and material cues. Do not infer a positive photography style from this block.
 7. **Graphic Language** — implement only the approved patterns, separators, frames, borders, devices, and repeated motifs.
 8. **Distinctive Visual Codes** — make the signature moves perceptible early and consistently. Use a coherent combination in the first viewport when it supports clarity; do not force every code into the hero when that weakens comprehension.
@@ -96,7 +96,7 @@ The current Visual Direction export uses these blocks:
 
 If no photography direction exists, solve the site with approved typography, color, layout, graphic elements, illustration, and materials. Ask one question only when photography is essential to the approved content or offer. Otherwise use a clearly labelled local placeholder.
 
-The archetypes in block 05 form a palette unless they are explicitly assigned to approved section IDs. Use only the archetypes supported by the actual content and proof. The exact section order always comes from `07-website-structure.md`; placeholder or instructional text in the export is not architecture. Review block 09 together with the conceptual and visual boundaries in `06-brand-concept.md`, so a dashboard omission cannot erase an approved restriction.
+The archetypes in block 05 form a palette. Use only the archetypes supported by the actual content, proof, and assets. The exact section order always comes from the later `07-website-structure.md`; a dashboard draft, placeholder, or instructional text is not final architecture. Review block 09 together with the conceptual and visual boundaries in `06-brand-concept.md`, so a dashboard omission cannot erase an approved restriction.
 
 ### Direction precedence inside the export
 

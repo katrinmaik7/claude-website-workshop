@@ -198,15 +198,15 @@ The final `06-brand-concept.md` must include:
 8. a `D1`–`D10` Website message handoff using the stable outcome contract in `SESSION-AND-EVIDENCE.md`, preserving the complete business proposition and adding observable brand expression;
 9. a concise Visual Direction handoff describing what is locked, open, and risky.
 
-The result is complete when `/structure` and `/copy` (or `/express-copy`) and the Visual Direction tool can use it without rereading raw research or asking the participant to recreate approved strategy.
+The result is complete when the Visual Direction tool and the later `/structure` and `/copy` (or `/express-copy`) can use it without asking the participant to recreate approved strategy.
 
 The Website message handoff is not a slogan summary. It must retain the concrete audience situation, alternative friction, offer, mechanism, meaningful difference, price or commitment, proof state, fit, objections, and action. Brand purpose and concise voice may sharpen these decisions but may not replace or remove them.
 
 ## Visual Direction boundary
 
-The later Visual Direction phase owns `visual-direction.md`: Visual Foundation, Name & Typography, Color System, Composition, Page Architecture, Illustration & Materiality, Graphic Language, Distinctive Visual Codes, Visual Restrictions, and AI Visual Direction. Page Architecture owns visual archetypes and alternation, not the business-led page list, section order, message sequence, or CTA path. The export may restrict photography but does not establish a positive photography direction unless it says so explicitly.
+The next Visual Direction phase owns `visual-direction.md`: Visual Foundation, Name & Typography, Color System, Composition, Page Architecture, Illustration & Materiality, Graphic Language, Distinctive Visual Codes, Visual Restrictions, and AI Visual Direction. Page Architecture supplies visual archetypes, focal rules, alternation, density, and a possible draft sequence. It does not finalize the business-led page list, section order, message sequence, proof placement, content requirements, or CTA path. The export may restrict photography but does not establish a positive photography direction unless it says so explicitly.
 
-Use `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md` as its inputs. The visual system must express them without overriding evidence, claim limits, comprehension, conversion logic, accessibility, or content density.
+Use `06-brand-concept.md` and the approved research and offer files as its inputs. Then `/structure` or `/express-copy` reads the export and makes the final content-architecture decision. The visual system must express the approved business context without overriding evidence, claim limits, comprehension, conversion logic, accessibility, or commercially necessary content.
 
 ## Conflict protocol
 

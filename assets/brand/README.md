@@ -2,9 +2,9 @@
 
 This folder receives the completed Visual Direction export and the real assets needed to implement it. The workshop creates the approved brand concept inside the active session as `06-brand-concept.md`; do not duplicate it here.
 
-## Required before `/build`
+## Required before `/express-copy` or `/structure`
 
-After `/express-copy` or `/copy`, complete all ten blocks in the Visual Direction tool:
+After `/brand-concept`, complete all ten blocks in the Visual Direction tool:
 
 1. Visual Foundation
 2. Name & Typography
@@ -21,19 +21,15 @@ Also keep the export's `Still to define` / `Pendiente de definir` and `Instructi
 
 The question guide is provided inside the tool. Add the completed export to this folder, not the unfilled guide.
 
-Use these three workshop files as context:
+Use the active session's approved `06-brand-concept.md` and its research and offer files as context. They supply the factual business context, approved positioning, brand character, distinctive-code candidates, boundaries, name state, proof limits, and image restrictions.
 
-- `sessions/<your-session>/06-brand-concept.md`;
-- `sessions/<your-session>/07-website-structure.md`;
-- `sessions/<your-session>/08-website-copy.md`.
-
-Use `06` for brand character, distinctive codes, restrictions, and name state; `07` for the exact section IDs, order, section jobs, CTA path, and proof placement; and `08` for final copy, content volume, available proof, and assets. Visual Direction controls how that approved content is expressed. It does not create a different offer, audience, page order, claim, CTA, or proof source.
+The dashboard's **Page Architecture** answer is a visual composition proposal at this point. Use it to choose archetypes, focal points, rhythm, alternation, surfaces, alignment, and density. If the dashboard asks for section order, answer with a useful draft visual sequence; do not treat it as the final information architecture. `/express-copy` or `/structure` will reconcile it with the complete research, offer, objections, proof, CTA path, and copy volume.
 
 Download the completed ZIP. Your computer may unzip it automatically. Find the language-specific Markdown file inside, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into this folder, and rename it exactly:
 
 `visual-direction.md`
 
-The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path. `/build` reads it automatically.
+The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path. `/express-copy` or `/structure` reads it before deciding the final architecture, and `/build` reads it again for implementation.
 
 ## Implementation assets
 
@@ -49,9 +45,9 @@ The Markdown export describes the system; it does not replace the actual assets.
 
 You may organize these in subfolders such as `logos/`, `fonts/`, `images/`, `illustrations/`, and `icons/`. Keep `visual-direction.md` at the top of `assets/brand/` so Claude can find it reliably.
 
-The **Page Architecture** block controls visual section archetypes, focal points, alternation, and composition. It does not replace the page list, section order, belief journey, or CTA path approved in `07-website-structure.md`. Apply its visual rules to the stable section IDs and make sure they accommodate the actual content volume in `08-website-copy.md`.
+The **Page Architecture** block proposes visual section archetypes, focal points, alternation, and composition. The later `07-website-structure.md` becomes the final source for page list, section IDs, section order, belief journey, proof placement, and CTA path. `/express-copy` or `/structure` maps suitable visual rules to stable IDs and records any visual suggestion it changes because the business argument, evidence, assets, accessibility, mobile layout, or content volume requires it.
 
-An archetype list is a visual palette, not a requirement to use every archetype. Do not assign a figures band, quote, comparison, image layout, or similar component unless the approved structure, copy, proof, and supplied assets contain what it needs. A placeholder or instructional sentence in the export's `Section order` field never overrides the exact order in `07-website-structure.md`.
+An archetype list is a visual palette, not a requirement to use every archetype. Do not assign a figures band, quote, comparison, image layout, or similar component unless the approved research, structure, copy, proof, and supplied assets contain what it needs. A placeholder, instructional sentence, or early draft in the export's `Section order` field never overrides the later exact order in `07-website-structure.md`.
 
 Treat the completed visual files as read-only. Claude may implement them during `/build` but must not silently redesign the identity.
 

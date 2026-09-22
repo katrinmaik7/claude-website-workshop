@@ -5,7 +5,7 @@ description: Create complete build-ready website copy as a separate stage in an 
 
 # Website copy context
 
-Read `CLAUDE.md`, every approved active-session stage file through `07-website-structure.md`, and these references:
+Read `CLAUDE.md`, every approved active-session stage file through `07-website-structure.md`, `assets/brand/visual-direction.md`, and these references:
 
 - `.claude/references/SESSION-AND-EVIDENCE.md`
 - `.claude/references/CONVERSION-STRATEGY.md`
@@ -15,7 +15,7 @@ Read `CLAUDE.md`, every approved active-session stage file through `07-website-s
 
 Use the approved `06-brand-concept.md` from the active session. Inspect relevant founder writing samples and customer-language material in `assets/` without modifying them.
 
-This stage owns the content and exact words of the website. It does not define or change visual brand direction.
+This stage owns the content and exact words of the website. It does not define or change visual brand direction. Use the approved visual direction to understand composition and realistic copy volume, but never delete decision-critical content merely to fit a sparse archetype.
 
 ## Entry gate
 
@@ -126,12 +126,7 @@ After approval, write only `08-website-copy.md` with:
 
 Update `SESSION.md`. Do not edit earlier stage files.
 
-Finish with the approved copy direction, saved file, and unresolved content blockers. Then give this concise handoff using the exact active-session paths:
-
-1. Open the Visual Direction tool.
-2. Use `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md` from the active session as inputs.
-3. Download and unzip the completed dashboard export. Move its language-specific Markdown file, such as `visual-direction-en.md`, into `assets/brand/`, rename it `visual-direction.md`, and add any required visual assets.
-4. Run `/build`.
+Finish with the approved copy direction, saved file, unresolved content blockers, and “Next: `/build`”.
 
 ## Quality gate
 

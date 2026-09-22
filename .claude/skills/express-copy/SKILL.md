@@ -1,15 +1,21 @@
 ---
 name: express-copy
-description: Design a one-page website structure and write complete build-ready copy in a single stage from the approved brand concept and research. Use after /brand-concept in an Express session instead of /structure and /copy; produces 07-website-structure.md and 08-website-copy.md.
+description: Design a one-page website structure and write complete build-ready copy in a single stage from the approved research, brand concept, and Visual Direction. Use after Visual Direction in an Express session instead of /structure and /copy; produces 07-website-structure.md and 08-website-copy.md.
 ---
 
 # Express copy (structure + copy)
 
-Read `CLAUDE.md`, all active session stage files through `06-brand-concept.md`, and these references: `.claude/references/SESSION-AND-EVIDENCE.md`, `.claude/references/CONVERSION-STRATEGY.md`, `.claude/references/WEBSITE-STRUCTURE.md`, and `.claude/references/WEBSITE-COPY.md`. Inspect founder writing samples and customer-language material in `assets/` without modifying them.
+Read `CLAUDE.md`, all active session stage files through `06-brand-concept.md`, `assets/brand/visual-direction.md`, and these references: `.claude/references/SESSION-AND-EVIDENCE.md`, `.claude/references/CONVERSION-STRATEGY.md`, `.claude/references/WEBSITE-STRUCTURE.md`, and `.claude/references/WEBSITE-COPY.md`. Inspect founder writing samples, customer-language material, and approved visual assets in `assets/` without modifying them.
 
 ## Entry gate
 
-Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Express`, `Next command: /express-copy`, and every Express stage through a complete approved `06-brand-concept.md`. If anything is incomplete, name the earliest unfinished command. Do not recreate the missing stage here.
+Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Express`, `Next command: Complete Visual Direction`, every Express stage through a complete approved `06-brand-concept.md`, and a complete active-project `assets/brand/visual-direction.md`. If anything is incomplete, name the earliest unfinished step. Do not recreate the missing stage here. When the visual gate passes, mark Visual Direction `Approved`, mark Structure and copy `In progress`, and continue.
+
+## Visual input contract
+
+Use Visual Direction before finalizing the information architecture. Block 05 Page Architecture supplies possible section archetypes, focal rules, alternation, density, surface, alignment, and draft visual sequence. It does not own the final page list, section IDs, argument order, proof placement, CTA path, or the amount of decision-critical content.
+
+Reconcile the block 05 proposal with the research-backed belief journey. Preserve useful visual intent, but change, omit, or reassign an archetype when it lacks the required proof or asset, cannot hold the real copy volume, harms mobile comprehension, or conflicts with the conversion path. Never ask the participant to decide the section order a second time unless two materially different research-supported routes remain; present the routes and one recommendation when that happens.
 
 ## Defaults
 
@@ -25,6 +31,7 @@ Before designing the structure, build the upstream-context ledger from `WEBSITE-
 - `02-research.md`: alternatives, customer language, audience situations, objections, trust signals, contradictions, safe claims, and unknowns;
 - `04-offer-and-positioning.md`: offer status, mechanism, deliverables, price or commitment, fit, exclusions, proof, differentiation, and claim limits;
 - `06-brand-concept.md`: essence, personality behavior, voice, messaging, distinctive-code candidates, and boundaries;
+- `assets/brand/visual-direction.md`: visual archetypes, composition constraints, assets, and restrictions to reconcile with the final content architecture;
 - relevant participant materials in `assets/`: founder voice, customer language, proof, constraints, and exact facts.
 
 Mark each material item `Used`, `Guardrail`, `Intentionally excluded`, or `Blocked`, with a source pointer and destination section when used. Do not put every answer on the website; require a reason when relevant context is omitted. Resolve no contradiction silently.
@@ -86,12 +93,7 @@ Include the final `D1`–`D10` content-coverage map in both files: `07` maps IDs
 
 Ensure the final section IDs, order, and CTA path match across both files. Update `SESSION.md` once after both files are saved.
 
-Finish with the saved files and this handoff, using the exact active-session paths:
-
-1. Open the Visual Direction tool.
-2. Use `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md` from the active session as inputs.
-3. Download and unzip the completed dashboard export. Move its language-specific Markdown file, such as `visual-direction-en.md`, into `assets/brand/`, rename it `visual-direction.md`, and add any required visual assets.
-4. Run `/build`.
+Finish with the saved files, the largest remaining blocker, and “Next: `/build`”.
 
 ## Quality gate
 
@@ -109,3 +111,4 @@ Finish with the saved files and this handoff, using the exact active-session pat
 - No prototype interaction simulates a successful real-world conversion.
 - Internal research labels, drafting commentary, and implementation placeholders do not appear as marketing copy.
 - No fact, quote, number, price, condition, or destination changed during the human-voice pass.
+- The final section order follows the research-backed belief journey; every block 05 archetype used has compatible content, proof, assets, and mobile behavior.

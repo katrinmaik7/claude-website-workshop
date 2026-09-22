@@ -25,7 +25,7 @@ Before running any stage except `/setup` or `/express-start`:
 1. Select the active session and read `SESSION.md`.
 2. Confirm that the command belongs to the path recorded in `SESSION.md`.
 3. Confirm that the previous required stage files exist, begin with `Status: Approved`, and contain the required output sections from their skills.
-4. Confirm that `SESSION.md` names this command as the next command. The only exception is `/build` when the recorded next step is Visual Direction; in that case validate the Visual Direction completion gate before proceeding.
+4. Confirm that `SESSION.md` names this command as the next command. The only exception is `/express-copy` or `/structure` when the recorded next step is `Complete Visual Direction`; in that case validate the Visual Direction completion gate before proceeding.
 5. If any check fails, stop before analysis or file creation. Name the unfinished stage, the missing or incomplete information, and the exact command to run next. Do not recreate a skipped stage inside a later command.
 
 A stage is complete only when every required field has one of these:
@@ -36,7 +36,7 @@ A stage is complete only when every required field has one of these:
 
 Blank fields, missing required sections, unapproved recommendations, and unlabeled assumptions are incomplete. Do not block progress merely because an answer is unknown when the participant has explicitly accepted the uncertainty and its consequence.
 
-Before `/build`, also require all ten Visual Direction blocks. Every website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Verify that the export and assets belong to the active project rather than an earlier session.
+Before `/express-copy` or `/structure`, require all ten Visual Direction blocks. Every website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Verify that the export and assets belong to the active project rather than an earlier session. Treat block 05 Page Architecture as visual input to the next structure stage; that stage owns the final pages, section IDs, order, message jobs, proof placement, and CTA path.
 
 ## Participant experience
 

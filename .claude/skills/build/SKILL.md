@@ -29,7 +29,7 @@ Require matching `D1`–`D10` coverage maps in `06`, `07`, and `08`. Verify that
 
 If an upstream `Test offer` or measurable objective became `Prototype only`, require an explicit recorded participant decision that names the lost CTA, follow-up, and learning. Otherwise return to the owning structure stage and default to `Connection required before launch`.
 
-Then require `assets/brand/visual-direction.md`. It must contain all ten current blocks from Visual Foundation through AI Visual Direction; each website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
+Then require the already approved `assets/brand/visual-direction.md`. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
 
 Run a cross-source visual consistency check before approving Visual Direction:
 
@@ -45,13 +45,13 @@ A later approved stage may resolve a specifically named open item from an earlie
 
 Read the conversion implementation state from `07-website-structure.md`. Require an exact destination and persistence/completion rule for `Connected`. If it says `Connection required before launch`, build the interface only when useful but keep the missing connection as a launch blocker and do not show real-success language. If it says `Prototype only`, implement the approved exploration path and never simulate submission, reservation, purchase, booking, preference capture, or list entry.
 
-After this visual gate passes, mark Visual Direction `Approved` and `/build` `In progress` in `SESSION.md`, then continue. Do not mark `/build` approved until the website and `09-build-notes.md` both pass the build checks.
+After this source-consistency check passes, mark `/build` `In progress` in `SESSION.md`, then continue. Do not mark `/build` approved until the website and `09-build-notes.md` both pass the build checks.
 
-If `visual-direction.md` is missing, inspect `assets/brand/` before responding:
+If `visual-direction.md` is missing, stop and return to the unfinished Visual Direction step; it should have been completed before `/express-copy` or `/structure`. Inspect `assets/brand/` before responding:
 
 - if there is exactly one language-specific export such as `visual-direction-en.md` or `visual-direction-es.md`, stop with one short instruction to rename that file to `assets/brand/visual-direction.md`, then run `/build` again;
 - if there is only a Visual Direction ZIP, stop with one short instruction to unzip it, move the exported Markdown file into `assets/brand/`, rename it `visual-direction.md`, then run `/build` again;
-- otherwise stop with one short instruction to complete Visual Direction using the three approved session files, then place the exported Markdown file at `assets/brand/visual-direction.md`.
+- otherwise stop with one short instruction to complete Visual Direction using `06-brand-concept.md` and the active research and offer files, then place the exported Markdown file at `assets/brand/visual-direction.md`.
 
 Do not treat a ZIP, language-specific filename, or incomplete export as an approved Visual Direction file.
 

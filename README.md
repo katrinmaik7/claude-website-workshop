@@ -79,7 +79,7 @@ The live two-hour workshop uses the **Express path**. It keeps the core business
 | | Express path | Full path |
 |---|---|---|
 | Best for | One live workshop session; every participant builds a first one-page website experiment | Working at your own pace over several sessions |
-| Commands | `/express-start` → `/express-research` → `/express-offer` → `/brand-concept` → `/express-copy` → Visual Direction → `/build` → `/review` | `/setup` → `/vision` → `/research` → `/audience` → `/offer` → `/positioning` → `/brand-concept` → `/structure` → `/copy` → Visual Direction → `/build` → `/review` |
+| Commands | `/express-start` → `/express-research` → `/express-offer` → `/brand-concept` → Visual Direction → `/express-copy` → `/build` → `/review` | `/setup` → `/vision` → `/research` → `/audience` → `/offer` → `/positioning` → `/brand-concept` → Visual Direction → `/structure` → `/copy` → `/build` → `/review` |
 | Questions asked | Six at the start, then at most one or two per stage | Several per stage, one at a time |
 | Research | One focused five-minute market-and-audience scan using a small, varied source set | Separate deeper market and audience passes |
 | Website format | One page by default | One or several pages, decided from the evidence |
@@ -112,7 +112,19 @@ At most two questions, then one proposal: what the customer receives, how it can
 
 Same stage as the Full path, limited to two questions. Saves `06-brand-concept.md`.
 
-### 5. Structure and copy
+### 5. Complete Visual Direction
+
+Open the Visual Direction tool after `/brand-concept`. Its questions and guidance are provided inside the tool. Use the approved `06-brand-concept.md` together with the current research and offer files as factual context.
+
+The dashboard's **Page Architecture** block is an early visual composition proposal. Choose useful section archetypes, focal points, rhythm, and alternation. If it asks for section order, treat that answer as a draft visual sequence rather than the final information architecture. The next Claude stage will reconcile it with the research, complete offer, proof, objections, conversion path, and real copy volume.
+
+Download the completed ZIP. Your computer may unzip it automatically. From the ZIP, take the language-specific Markdown file, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into `assets/brand/`, and rename it exactly:
+
+`visual-direction.md`
+
+The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path. Add any approved logo files, licensed fonts or web-font sources, images, illustrations, and icons required by the visual direction.
+
+### 6. Structure and copy
 
 `/express-copy`
 
@@ -122,9 +134,9 @@ The public page must visibly benefit from the research: it should express the re
 
 Across the workflow Claude carries one stable decision spine from research into the final website: customer situation, alternative friction, desired progress, offer and mechanism, meaningful difference, price or commitment, reason to believe, objections and fit, conversion action, and brand expression. Before saving the copy, Claude shows the complete customer-facing page in reading order rather than a headline-only summary.
 
-### 6. Visual Direction, build, review
+### 7. Build and review
 
-Identical to steps 6 and 7 of the Full path below.
+Identical to step 7 of the Full path below.
 
 ## Optional Full path after the workshop
 
@@ -152,39 +164,17 @@ Define what the customer receives, how it creates value, commitment, fit, proof,
 
 Claude imports the approved research, offer, and positioning decisions. It asks only for missing founder and identity choices, then creates the complete ten-block `06-brand-concept.md`. You do not complete a second Brand Concept questionnaire.
 
-### 5. Create the website content
+### 5. Complete Visual Direction
+
+Follow the Visual Direction instructions in the Express path above after `/brand-concept`.
+
+### 6. Create the website content
 
 `/structure` → `/copy`
 
 Decide the page architecture, visitor journey, proof placement, objections, CTA path, and exact build-ready website copy.
 
 The structure and copy must pass the same research-payoff test used on the Express path. If removing the research and offer work would leave substantially the same public page, the copy is not ready for `/build`.
-
-### 6. Complete Visual Direction
-
-Open the Visual Direction tool after `/express-copy` on the Express path or `/copy` on the Full path. Its questions and guidance are provided inside the tool.
-
-Use these three files from your active session:
-
-- `06-brand-concept.md`;
-- `07-website-structure.md`;
-- `08-website-copy.md`.
-
-Use them by responsibility while answering the dashboard:
-
-- `06-brand-concept.md` supplies the approved name state, desired perception, distinctive codes, visual boundaries, and image restrictions;
-- `07-website-structure.md` supplies the exact section IDs, order, section jobs, CTA path, and proof placement;
-- `08-website-copy.md` supplies the final wording, real content volume, available proof, and required assets.
-
-The dashboard adds visual execution. It must not create a new offer, audience, page order, claim, CTA, or proof source. When a dashboard choice conflicts with an approved workshop decision, keep the workshop decision unless the participant explicitly changes it and that change is recorded in the active session.
-
-Download the completed ZIP. Your computer may unzip it automatically. From the ZIP, take the language-specific Markdown file, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into `assets/brand/`, and rename it exactly:
-
-`visual-direction.md`
-
-The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path.
-
-Add any approved logo files, licensed fonts or web-font sources, images, illustrations, and icons required by the visual direction. The Markdown export defines the rules but does not replace the actual assets.
 
 ### 7. Build and review
 
@@ -296,7 +286,7 @@ You may inspect every file. Keep the `.claude/` names and paths unchanged so Cla
 | `assets/brand/README.md` | Instructions for the completed Visual Direction export and implementation assets. |
 | `sessions/` | Empty participant workspace. Claude creates a new project session here for research, decisions, copy, website, and review. |
 
-`visual-direction.md` is not included in the starter kit. You add the completed export after `/express-copy` or `/copy`, depending on the session path.
+`visual-direction.md` is not included in the starter kit. You add the completed export after `/brand-concept`, before `/express-copy` or `/structure`.
 
 ### Runtime and privacy files
 
