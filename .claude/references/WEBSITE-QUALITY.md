@@ -18,6 +18,16 @@ Visual Direction may change how content is presented, but it cannot silently cha
 
 Read all ten Visual Direction blocks, `Still to define`, and `Instructions for AI`. Resolve only gaps that materially change the website implementation.
 
+Check these concrete failure modes before proposing a layout:
+
+- two selected archetypes or alternation rules competing for the only permitted centered section;
+- figures, comparisons, images, or other archetype inputs missing from the approved structure, copy, proof, or assets;
+- lighting or photographic instructions when no positive photography direction has been approved;
+- signature moves that merely repeat composition rules without defining a recognisable visible treatment;
+- named fonts that are unavailable, unlicensed, missing required weights, or incompatible with the approved language;
+- no accessible text-color role for one or more approved section surfaces;
+- a system default conflicting with an explicit project answer, visual restriction, content requirement, or supplied asset reality.
+
 - Ask exactly one question per turn when a blocking decision is genuinely missing.
 - Do not reopen decisions already approved in the session files.
 - Ignore non-website applications such as packaging or signage during this build.
@@ -27,7 +37,7 @@ Read all ten Visual Direction blocks, `Still to define`, and `Instructions for A
 
 ## Intentional design loop
 
-Before coding, state in `09-build-notes.md` the page's purpose, priority visitor, main action, visual concept, and one recognisable quality carried from Visual Direction. Then work through four passes:
+Before coding, state in `09-build-notes.md` the page's purpose, priority visitor, main action, visual concept, and one recognisable quality carried from Visual Direction. Complete and approve the visual assembly checkpoint below before writing website code. Then work through four passes:
 
 1. **Shape:** decide hierarchy, composition, density, rhythm, and the role of each visual element before styling details.
 2. **Build:** implement the approved structure and copy with the simplest suitable code.
@@ -51,13 +61,14 @@ site-v1/
 │   ├── tokens.css
 │   ├── base.css
 │   ├── layout.css
+│   ├── archetypes.css
 │   └── sections.css
 ├── scripts/
 │   └── main.js
 └── assets/
 ```
 
-Create only files the website actually uses. Keep strategy and Visual Direction inputs in their existing locations; do not duplicate or edit them inside `site-v1/`.
+Create `archetypes.css` when block 05 defines reusable archetypes; keep section-specific exceptions in `sections.css`. Create only files the website actually uses. Keep strategy and Visual Direction inputs in their existing locations; do not duplicate or edit them inside `site-v1/`.
 
 ## Translate Visual Direction into the website
 
@@ -72,7 +83,7 @@ The current Visual Direction export uses these blocks:
 7. **Graphic Language** — implement only the approved patterns, separators, frames, borders, devices, and repeated motifs.
 8. **Distinctive Visual Codes** — make the signature moves perceptible early and consistently. Use a coherent combination in the first viewport when it supports clarity; do not force every code into the hero when that weakens comprehension.
 9. **Visual Restrictions** — treat every listed style, typography, composition, and photography prohibition as a review check.
-10. **AI Visual Direction** — preserve the supplied base prompt, negative prompt, variable-by-piece guidance, fixed rules, and approval checklist when image slots need a later generation handoff. Record them in `09-build-notes.md`; they are not permission to generate or approve imagery automatically.
+10. **AI Visual Direction** — preserve the supplied base prompt, negative prompt, variable-by-piece guidance, fixed rules, and approval checklist without paraphrasing when image slots need a later generation handoff. Record them in `09-build-notes.md`; they are not permission to generate or approve imagery automatically.
 
 If no photography direction exists, solve the site with approved typography, color, layout, graphic elements, illustration, and materials. Ask one question only when photography is essential to the approved content or offer. Otherwise use a clearly labelled local placeholder.
 
@@ -89,16 +100,24 @@ A system default never overrides an explicit project answer. For example, an ans
 
 Resolve every website-relevant item in `Still to define` or `Pendiente de definir` through an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Do not invent a new choice or treat a silent gap as approval.
 
-### Visual architecture precedence
+### Visual assembly checkpoint
 
-Create a compact implementation map before coding:
+Create a compact implementation map in `09-build-notes.md` before coding:
 
-| Section ID | Content job from `07` | Copy volume from `08` | Visual archetype from block 05 | Focal point | Surface/alignment/columns | Rule checked |
-|---|---|---|---|---|---|---|
+| Section ID | Content job from `07` | Copy volume from `08` | Visual archetype from block 05 | Focal point | Surface/alignment/columns | Density | Rule checked |
+|---|---|---|---|---|---|---|---|
+
+Below the table add two compact low-fidelity wireframes, one near 390 px and one near 1440 px. They may be ASCII outlines. Show section boundaries, column or stacking behavior, focal element, major image slot, background change, and intentional empty space. They must make repeated composition and mobile-order problems visible before styling.
+
+Check every explicit alternation, centering, focal-point, surface, and archetype rule against the map. Also compare the approximate surface allocation with the exported color proportions. Treat proportions as directional unless the export explicitly requires measurement; do not distort content merely to hit a percentage.
+
+Show the participant only the design intent, the map, the two wireframes, material conflicts or defaults, and one confirmation-or-correction question. Wait for approval before writing website code. Keep all detail in `09-build-notes.md`; do not create `LAYOUT.md`, `DECISIONS.md`, `COPY.md`, or `IMAGE-PROMPTS.md`.
 
 Apply every explicit `non-negotiable` rule from block 05 unless it would break accessibility, hide or reorder approved content, falsify the CTA hierarchy, or conflict with a material requirement in blocks 01–04 or 09. When a conflict exists, preserve the business and accessibility requirement, document the exact conflict, and ask one decision question only if the visual resolution materially changes the result.
 
 Do not interpret `Page Architecture` as permission to invent, remove, merge, or reorder sections. Do not force an archetype when the real copy volume cannot fit it at mobile and desktop widths.
+
+In the HTML, give every content section stable inspection attributes for the decisions that actually apply, such as `data-section`, `data-arch`, `data-theme`, `data-align`, `data-cols`, and `data-density`. Mark exactly one focal element per section with `data-focal`. Do not add meaningless attributes merely to satisfy a schema.
 
 ## Token system
 
@@ -110,6 +129,8 @@ Keep reusable brand values in `styles/tokens.css` and use semantic variables thr
 - corner, border, shadow, surface, and material rules;
 - motion durations and easing when motion is approved;
 - documented responsive breakpoints.
+
+Comment each token group with its Visual Direction block and whether the value is an explicit answer, system default, or derived implementation choice. Record the reasoning for derived values in `09-build-notes.md`.
 
 Use exact supplied brand colors. Derive accessible semantic roles from them without presenting a derived value as a new brand color. Do not scatter brand HEX values, font families, or reusable brand sizes through component files. One-off layout calculations and browser-safe technical values do not need artificial tokens.
 
@@ -192,6 +213,8 @@ At every width check:
 
 Compare the rendered result with the approved Visual Direction and intended composition, not only with the source code. Decorative shapes must never obscure copy, controls, or focus indicators.
 
+Compare each rendered viewport with the approved compact wireframe. For a grid-driven layout, provide a review-only grid overlay such as `?grid=1` when it can be implemented without affecting the normal page; use it to inspect columns, margins, and intentional exceptions. The overlay is an implementation aid, not customer-facing UI.
+
 Treat content or controls hidden or overlapping, an unusable primary action, broken navigation or forms, unreadable text, obstructive horizontal overflow, and severe mobile collapse as **Blockers**.
 
 Treat systematic misalignment, inconsistent containers, visibly broken spacing, accidental empty areas, poor line breaks, and repeated composition errors as **Important**, even when the page remains technically usable.
@@ -204,11 +227,12 @@ Before finishing `/build`:
 2. Check that the approved **Distinctive Visual Codes** are recognisable without obscuring the message or action.
 3. Check that color dominance and accent use follow the documented proportions. Treat proportions as directional unless the export explicitly requires exact measurement.
 4. Check that reusable brand colors, fonts, and size rules come from `tokens.css`.
-5. Check every explicit block 05 alternation, focal-point, centering, archetype, and surface rule against the full rendered page; record each as `Pass`, `Adapted with reason`, or `Blocked`.
-6. Exercise the primary action and any local form states.
+5. Check every explicit block 05 alternation, focal-point, centering, archetype, surface, and approximate color-allocation rule against both the section attributes and the full rendered page; record each as `Pass`, `Adapted with reason`, or `Blocked`. Use a lightweight DOM check when local browser tooling is available; otherwise record the manual evidence. Do not add a permanent validation script solely to satisfy this step.
+6. Compare the 390 px and 1440 px rendered pages with the approved wireframes and explain every material deviation. For grid-driven layouts, inspect the review overlay as well as the normal page.
+7. Exercise the primary action and any local form states.
    Verify through the actual destination, stored record, or network response that the conversion was received. A visual success message alone is not evidence.
-7. Inspect the complete rendered page at mobile, tablet, desktop, and any material breakpoint using the visual-layout-integrity checklist. Fix clear local defects before completing `/build`.
-8. Record the visual architecture map, rule-status checks, viewport sizes, rendered areas inspected, defects fixed, unresolved visual issues, derived implementation choices, missing assets, image prompt handoffs, and known limitations in `09-build-notes.md`.
+8. Inspect the complete rendered page at mobile, tablet, desktop, and any material breakpoint using the visual-layout-integrity checklist. Fix clear local defects before completing `/build`.
+9. Record the approved wireframes, visual architecture map, rule-status checks, viewport sizes, rendered areas inspected, deviations, defects fixed, unresolved visual issues, derived implementation choices, missing assets, image prompt handoffs, and known limitations in `09-build-notes.md`.
 
 ## Review outcome
 

@@ -33,7 +33,19 @@ If `visual-direction.md` is missing, stop with one short instruction: complete V
 
 Confirm that any `Instructions for AI` or `Instrucciones para la IA` section is preserved. Apply the direction-precedence rule in `WEBSITE-QUALITY.md`; do not let a system default override an explicit project answer. Verify that referenced logo, font, image, illustration, icon, and license files exist or have explicit placeholders. Calculate contrast from exported color values rather than trusting a written ratio.
 
-If an unresolved issue materially changes the code, identify the decision owner and ask exactly one question. Do not reopen approved decisions, ask about non-website applications, or request a batch of setup answers. Begin without another permission question when there is no material conflict.
+If an unresolved issue materially changes the code, identify the decision owner and ask exactly one question. Do not reopen approved decisions, ask about non-website applications, or request a batch of setup answers. Apart from the mandatory visual assembly checkpoint below, begin without another permission question when there is no material conflict.
+
+## Visual assembly checkpoint
+
+Before writing website code, initialize `09-build-notes.md` and complete the checkpoint in `WEBSITE-QUALITY.md`:
+
+1. write the short intentional design statement;
+2. map every approved content section to one block 05 archetype, focal point, surface, alignment, columns, and density;
+3. check the explicit alternation rules and approximate color allocation;
+4. draw compact 390 px and 1440 px wireframes;
+5. show the participant the proposed composition, material conflicts or defaults, and one confirmation-or-correction question.
+
+Wait for approval. Do not code first and ask the participant to approve the layout afterward. Keep this checkpoint in `09-build-notes.md`; do not create additional planning files.
 
 ## Build
 
@@ -44,6 +56,8 @@ If an unresolved issue materially changes the code, identify the decision owner 
 - Centralize reusable visual values in `site-v1/styles/tokens.css` and follow the token, visual translation, asset, responsive, accessibility, and verification rules in `WEBSITE-QUALITY.md`.
 - Use stable page and section IDs from `07-website-structure.md` to connect architecture, copy, visual applications, navigation, and review findings.
 - Create and follow the visual architecture implementation map from `WEBSITE-QUALITY.md`. Block 05 chooses visual archetypes and alternation for existing section IDs; it cannot add, remove, merge, or reorder the approved content architecture.
+- When block 05 defines reusable archetypes, implement them in `site-v1/styles/archetypes.css`; keep `sections.css` for genuine section-specific exceptions.
+- Add the applicable inspection attributes from `WEBSITE-QUALITY.md` to every content section and mark exactly one focal element per section.
 - Keep essential content and actions functional without JavaScript; use JavaScript only for progressive enhancement.
 - Use approved supplied assets or clearly labelled local placeholders. Do not invent photography direction, brand assets, proof, testimonials, customer logos, statistics, scarcity, guarantees, or results.
 - Treat block 10 AI prompts as a future asset handoff, not permission to generate or approve imagery automatically.
@@ -60,11 +74,12 @@ Create only `09-build-notes.md` in addition to the website. Include:
 
 - what was built and how to preview it;
 - exact strategy, structure, copy, Visual Direction, and asset sources used;
+- the approved content-to-archetype map and compact 390 px and 1440 px wireframes;
 - derived implementation decisions and their source;
 - missing content, proof, assets, licenses, and integrations;
 - image slots with purpose, aspect ratio, applicable base and negative prompts, and prohibited treatments when relevant;
 - responsive, interaction, accessibility, contrast, and visual checks performed;
-- exact viewport sizes inspected, visible layout defects found, and fixes applied;
+- exact viewport sizes inspected, wireframe deviations, visible layout defects found, and fixes applied;
 - checks not performed and known limitations.
 - conversion implementation state and evidence of destination, network response, stored record, or completed action; if unavailable, the exact launch blocker.
 

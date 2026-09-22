@@ -308,8 +308,8 @@ Both paths:
 | Command | Purpose |
 |---|---|
 | `/brand-concept` | Creates the approved ten-block brand concept without repeating research. |
-| `/build` | Combines approved structure, copy, visual direction, and assets into a local website. |
-| `/review` | Audits the local website and prioritizes launch fixes. |
+| `/build` | Maps approved content to the visual archetypes, pauses for one compact desktop/mobile wireframe approval, then builds and visually checks the local website. |
+| `/review` | Audits the complete rendered website against strategy, wireframes, visual rules, conversion behavior, and launch requirements. |
 
 ### Methods in `.claude/references/`
 

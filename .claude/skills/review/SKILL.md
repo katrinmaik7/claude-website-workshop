@@ -20,6 +20,7 @@ Evaluate:
 - consistency with offer and positioning;
 - fidelity to the approved brand concept and visual direction without weakening comprehension;
 - compliance with the block 05 visual architecture map, including section archetypes, focal points, alternation, centering, surface changes, and any explicit non-negotiable rules;
+- fidelity to the approved 390 px and 1440 px wireframes, with every material deviation explained rather than silently accepted;
 - clarity of message hierarchy and primary action;
 - claim-to-proof match;
 - objections, trust, and transparent limitations;
@@ -33,7 +34,9 @@ Evaluate:
 
 Inspect the complete rendered page at the viewport sizes required by `WEBSITE-QUALITY.md`, including mobile, tablet, desktop, and any material breakpoint. Scroll through every section rather than checking only the first viewport. Interact with navigation and the primary path. Distinguish manual checks, automated checks, and items not tested. Do not claim WCAG compliance or conversion impact without adequate evidence.
 
-For each block 05 rule, verify the rendered result rather than accepting the build notes. Report `Pass`, `Adapted with reason`, or `Failed`, and explain any conflict with content hierarchy, accessibility, responsiveness, or conversion clarity.
+For each block 05 rule, verify the rendered result rather than accepting the build notes. Cross-check the applicable section `data-*` attributes with what is visibly rendered. Use a lightweight DOM check when available and manual evidence otherwise. Report `Pass`, `Adapted with reason`, or `Failed`, and explain any conflict with content hierarchy, accessibility, responsiveness, or conversion clarity.
+
+Compare the 390 px and 1440 px renders with their approved wireframes. On grid-driven layouts, inspect the review-only grid overlay when present and confirm that it does not affect the normal page. Treat unexplained structural deviation, repeated composition, or systematic grid misalignment as `Important` even when the page remains usable.
 
 When rendering or visual inspection is unavailable, record `Visual QA not completed` as a launch blocker. Do not infer that the layout is acceptable from source code alone.
 
@@ -62,6 +65,6 @@ Fix clear local defects that do not change approved strategy. Ask before making 
 
 ## Save
 
-Write only `10-launch-audit.md`. Include passes as well as failures, the four readiness layers, a viewport-by-viewport visual QA table, offer status, remaining research and economics gaps, evidence from testing the actual conversion path, launch readiness, and the next three actions in priority order. Update `SESSION.md`.
+Write only `10-launch-audit.md`. Include passes as well as failures, the four readiness layers, a viewport-by-viewport visual QA table, wireframe deviations, offer status, remaining research and economics gaps, evidence from testing the actual conversion path, launch readiness, and the next three actions in priority order. Update `SESSION.md`.
 
 Finish with readiness status, blockers, saved file, and a reminder that publishing requires an explicit request.
