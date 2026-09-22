@@ -45,6 +45,8 @@ Create an internal evidence ledger from all previous stages:
 - sourced customer language and relevant search terms;
 - page roles, section IDs, belief changes, proof placement, and CTA path.
 
+Use the upstream-context ledger in `WEBSITE-COPY.md`. Reverse-scan every approved stage file and relevant supplied asset. Give each material input a source pointer and mark it `Used`, `Guardrail`, `Intentionally excluded`, or `Blocked`; name the destination page or section when used and the reason when excluded. Do not force every answer into public copy, but do not let a relevant decision, contradiction, qualification, founder boundary, or customer-language item disappear silently.
+
 Resolve no contradiction silently. Ask one decision question when conflicting approved files would materially change the copy.
 
 Treat the brand concept as expression guidance. It cannot override audience evidence, approved positioning, offer conditions, proof limits, legal requirements, accessibility, or the website's conversion path. Brand narrative pillars are not automatically website claims.
@@ -112,9 +114,10 @@ After approval, write only `08-website-copy.md` with:
 6. complete build-ready copy organized by page and stable section ID;
 7. form, error, confirmation, follow-up, and utility microcopy;
 8. asset, proof, integration, and specialist-review requirements;
-9. research-to-copy traceability table;
-10. semantic-integrity report;
-11. approved decisions and unresolved questions.
+9. upstream-context coverage table;
+10. research-to-copy traceability table;
+11. semantic-integrity report;
+12. approved decisions and unresolved questions.
 
 Update `SESSION.md`. Do not edit earlier stage files.
 
@@ -128,6 +131,7 @@ Finish with the approved copy direction, saved file, and unresolved content bloc
 ## Quality gate
 
 - Every approved page and section ID has final copy or an explicit evidence gap.
+- Every material upstream item has a source pointer and a coverage status; nothing material was dropped silently.
 - A visitor can identify relevance, credible value, offer, proof, fit, and action without reading internal research language.
 - Headlines are specific to this audience, offer, and situation.
 - A relevant competitor could not paste the hero unchanged onto its own website.

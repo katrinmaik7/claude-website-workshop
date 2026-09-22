@@ -17,6 +17,18 @@ Run the mandatory progression gate in `CLAUDE.md`. Require `Path: Express`, `Nex
 - Website language: the one approved in the session; ask once if unresolved.
 - Ask at most one further question, only if unknown: “What exactly happens when someone clicks the main button: which working page or system receives the action, what is saved or completed, and what confirmation does the person get?” Accept “not decided yet,” classify the website as `Connection required before launch` or `Prototype only`, and use a specific exploration action without simulating conversion.
 
+## Context coverage
+
+Before designing the structure, build the upstream-context ledger from `WEBSITE-COPY.md`. Reverse-scan every approved Express input:
+
+- `00-setup-and-vision.md`: founder intent, starting situation, desired change, traffic assumption, language, action, and boundaries;
+- `02-research.md`: alternatives, customer language, audience situations, objections, trust signals, contradictions, safe claims, and unknowns;
+- `04-offer-and-positioning.md`: offer status, mechanism, deliverables, price or commitment, fit, exclusions, proof, differentiation, and claim limits;
+- `06-brand-concept.md`: essence, personality behavior, voice, messaging, distinctive-code candidates, and boundaries;
+- relevant participant materials in `assets/`: founder voice, customer language, proof, constraints, and exact facts.
+
+Mark each material item `Used`, `Guardrail`, `Intentionally excluded`, or `Blocked`, with a source pointer and destination section when used. Do not put every answer on the website; require a reason when relevant context is omitted. Resolve no contradiction silently.
+
 ## Structure
 
 Design the belief journey for the priority visitor arriving from the expected traffic source: arrival → relevance → value → mechanism → difference → proof → offer and fit → risk → action → confirmation. Give every section a stable ID (`S01-hero`, `S02-situation`, …), a visitor question, a belief change, an evidence source, a claim limit, and a CTA or next question. Remove any section without a research-backed job. Place proof next to the claim it supports and objections where they arise.
@@ -50,7 +62,7 @@ Show a compact section-by-section preview: headline and one line per section, fu
 After approval, write both files:
 
 1. `07-website-structure.md` in compact form: objective and conversion event; conversion implementation state; destination, stored data or completed action, owner, consent/privacy, confirmation and error path; audience, traffic, and device assumptions; belief journey; section plan with IDs; first-screen requirements; claim-to-proof placement; objections; mobile priorities; analytics events; assumptions and exclusions.
-2. `08-website-copy.md` using the output structure in `WEBSITE-COPY.md`, including the research-to-copy traceability table and semantic-integrity report.
+2. `08-website-copy.md` using the output structure in `WEBSITE-COPY.md`, including the upstream-context coverage table, research-to-copy traceability table, and semantic-integrity report.
 
 Ensure the final section IDs, order, and CTA path match across both files. Update `SESSION.md` once after both files are saved.
 
@@ -65,6 +77,7 @@ Finish with the saved files and this handoff, using the exact active-session pat
 
 - A first-time visitor can identify what this is, who it is for, the credible value, and the next action from the first screen.
 - Every section ID has final copy or a named evidence gap.
+- Every material upstream item has a source pointer and a coverage status; nothing material was dropped silently.
 - Material claims trace to `02-research.md` or `04-offer-and-positioning.md` and keep their qualifications.
 - A relevant competitor could not paste the hero unchanged onto its own website.
 - One primary CTA; its implementation state, destination, persistence, confirmation, and launch consequence are explicit.

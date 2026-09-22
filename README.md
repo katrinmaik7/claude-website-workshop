@@ -116,7 +116,7 @@ Same stage as the Full path, limited to two questions. Saves `06-brand-concept.m
 
 `/express-copy`
 
-One page. Claude proposes the section list, first screen, and exact conversion path, then writes the complete build-ready copy. A lead, signup, booking, reservation, purchase, or research response is treated as real only when a working destination records it. Saves `07-website-structure.md` and `08-website-copy.md`.
+One page. Claude checks every material decision from the earlier answers and research, marking it as used, a copy guardrail, intentionally excluded, or blocked. It then proposes the section list, first screen, and exact conversion path before writing the complete build-ready copy. A lead, signup, booking, reservation, purchase, or research response is treated as real only when a working destination records it. Saves `07-website-structure.md` and `08-website-copy.md`.
 
 ### 6. Visual Direction, build, review
 
@@ -298,7 +298,7 @@ Express path only:
 | `/express-start` | Creates a clean Express session; six questions covering setup and vision. |
 | `/express-research` | Runs a five-minute market-and-audience scan using 6–8 varied sources, then records the strongest evidence, contradiction, and website implications. |
 | `/express-offer` | Defines the offer and the positioning decision in one stage. |
-| `/express-copy` | Designs a one-page structure and writes the complete website copy. |
+| `/express-copy` | Checks upstream context coverage, designs a one-page structure, and writes the complete website copy. |
 
 Full path only:
 

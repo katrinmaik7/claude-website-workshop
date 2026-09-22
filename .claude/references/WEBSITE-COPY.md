@@ -6,12 +6,19 @@
 
 The copy stage may clarify expression. It must not revise the approved audience, offer, positioning, architecture, proof, brand boundaries or commercial conditions.
 
-## 1. Build the research-to-copy ledger
+## 1. Build the upstream-context ledger
 
-Extract only material that changes a message, proof requirement, action or guardrail:
+Read every approved upstream stage file and relevant supplied asset. Extract every material item that changes a message, proof requirement, action, voice choice, exclusion, or guardrail:
 
-| Research or decision | Customer meaning | Copy implication | Page/section ID | Proof or qualification |
-|---|---|---|---|---|
+| Source pointer | Research or decision | Customer meaning | Copy implication | Page/section ID | Coverage status | Proof or qualification |
+|---|---|---|---|---|---|---|
+
+Use one coverage status:
+
+- `Used` — appears in a specific page, section, CTA, proof block, or interaction;
+- `Guardrail` — constrains wording, claims, tone, audience fit, or what must not appear;
+- `Intentionally excluded` — relevant upstream material that does not belong on this website, with a short reason;
+- `Blocked` — should affect the website but cannot yet be used because evidence, a decision, proof, or implementation is missing.
 
 Include:
 
@@ -25,6 +32,8 @@ Include:
 - proof and its limitations;
 - approved brand voice, narrative pillars and boundaries;
 - CTA destination and post-action experience.
+
+Run a reverse coverage check after drafting: scan each upstream stage file again and confirm that every material approved decision, useful observation, contradiction, qualification, founder boundary, and exact customer-language item has one ledger row. Do not force every answer onto the public page; some inputs belong only as guardrails or justified exclusions. Nothing material may disappear silently.
 
 ## 2. Define the copy foundation
 
@@ -357,6 +366,7 @@ Provide one approved version by default. Add a variant only when it expresses a 
 
 The copy is complete when:
 
+- every material upstream item is marked `Used`, `Guardrail`, `Intentionally excluded`, or `Blocked` with a source pointer;
 - every approved page and stable section ID has exact copy or a named blocker;
 - proof and asset placeholders cannot be mistaken for real content;
 - the CTA path includes destination, errors, confirmation and follow-up;
@@ -382,6 +392,7 @@ Use this structure:
 ## Voice and terminology
 ## Claims, proof and prohibited language
 ## CTA and conversion path
+## Upstream-context coverage
 
 ## Page: [name]
 ### [SECTION-ID] [section name]
