@@ -156,7 +156,7 @@ Decide the page architecture, visitor journey, proof placement, objections, CTA 
 
 ### 6. Complete Visual Direction
 
-Open the Visual Direction tool after `/copy`. Its questions and guidance are provided inside the tool.
+Open the Visual Direction tool after `/express-copy` on the Express path or `/copy` on the Full path. Its questions and guidance are provided inside the tool.
 
 Use these three files from your active session:
 
@@ -164,9 +164,19 @@ Use these three files from your active session:
 - `07-website-structure.md`;
 - `08-website-copy.md`.
 
-Download the completed export and save it as:
+Use them by responsibility while answering the dashboard:
 
-`assets/brand/visual-direction.md`
+- `06-brand-concept.md` supplies the approved name state, desired perception, distinctive codes, visual boundaries, and image restrictions;
+- `07-website-structure.md` supplies the exact section IDs, order, section jobs, CTA path, and proof placement;
+- `08-website-copy.md` supplies the final wording, real content volume, available proof, and required assets.
+
+The dashboard adds visual execution. It must not create a new offer, audience, page order, claim, CTA, or proof source. When a dashboard choice conflicts with an approved workshop decision, keep the workshop decision unless the participant explicitly changes it and that change is recorded in the active session.
+
+Download the completed ZIP. Your computer may unzip it automatically. From the ZIP, take the language-specific Markdown file, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into `assets/brand/`, and rename it exactly:
+
+`visual-direction.md`
+
+The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path.
 
 Add any approved logo files, licensed fonts or web-font sources, images, illustrations, and icons required by the visual direction. The Markdown export defines the rules but does not replace the actual assets.
 

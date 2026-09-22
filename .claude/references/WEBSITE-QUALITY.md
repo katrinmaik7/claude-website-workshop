@@ -14,6 +14,8 @@ Use this reference during `/build` and `/review`. It translates approved strateg
 
 Visual Direction may change how content is presented, but it cannot silently change what the page says, its argument order, or its proof limits. Structure and copy may require a visual solution, but they cannot silently replace the approved identity. If two authorities materially conflict, identify the conflict and ask one decision question.
 
+A later approved stage may resolve a specifically named open item from an earlier stage only when it explicitly records the participant's decision. This is a documented resolution, not permission for silent overrides.
+
 ## Pre-build gap scan
 
 Read all ten Visual Direction blocks, `Still to define`, and `Instructions for AI`. Resolve only gaps that materially change the website implementation.
@@ -22,6 +24,11 @@ Check these concrete failure modes before proposing a layout:
 
 - two selected archetypes or alternation rules competing for the only permitted centered section;
 - figures, comparisons, images, or other archetype inputs missing from the approved structure, copy, proof, or assets;
+- placeholder or instructional text exported as a project answer, especially in `Section order`;
+- a block 05 section order, section job, proof requirement, or CTA path that conflicts with `07-website-structure.md` or `08-website-copy.md`;
+- the same quality appearing in both positive and negative direction, including conflicts between blocks 01, 09, and 10;
+- block 08 signature moves that only repeat generic grid, alignment, or material settings and do not create a recognisable project-specific cue;
+- block 09 omitting a material visual boundary already approved in `06-brand-concept.md`;
 - lighting or photographic instructions when no positive photography direction has been approved;
 - signature moves that merely repeat composition rules without defining a recognisable visible treatment;
 - named fonts that are unavailable, unlicensed, missing required weights, or incompatible with the approved language;
@@ -86,6 +93,8 @@ The current Visual Direction export uses these blocks:
 10. **AI Visual Direction** — preserve the supplied base prompt, negative prompt, variable-by-piece guidance, fixed rules, and approval checklist without paraphrasing when image slots need a later generation handoff. Record them in `09-build-notes.md`; they are not permission to generate or approve imagery automatically.
 
 If no photography direction exists, solve the site with approved typography, color, layout, graphic elements, illustration, and materials. Ask one question only when photography is essential to the approved content or offer. Otherwise use a clearly labelled local placeholder.
+
+The archetypes in block 05 form a palette unless they are explicitly assigned to approved section IDs. Use only the archetypes supported by the actual content and proof. The exact section order always comes from `07-website-structure.md`; placeholder or instructional text in the export is not architecture. Review block 09 together with the conceptual and visual boundaries in `06-brand-concept.md`, so a dashboard omission cannot erase an approved restriction.
 
 ### Direction precedence inside the export
 

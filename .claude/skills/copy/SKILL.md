@@ -125,7 +125,7 @@ Finish with the approved copy direction, saved file, and unresolved content bloc
 
 1. Open the Visual Direction tool.
 2. Use `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md` from the active session as inputs.
-3. Save the completed export as `assets/brand/visual-direction.md` and add any required visual assets.
+3. Download and unzip the completed dashboard export. Move its language-specific Markdown file, such as `visual-direction-en.md`, into `assets/brand/`, rename it `visual-direction.md`, and add any required visual assets.
 4. Run `/build`.
 
 ## Quality gate

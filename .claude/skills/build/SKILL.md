@@ -25,11 +25,29 @@ Run the mandatory progression gate in `CLAUDE.md`. Require every stage file for 
 
 Then require `assets/brand/visual-direction.md`. It must contain all ten current blocks from Visual Foundation through AI Visual Direction; each website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
 
+Run a cross-source visual consistency check before approving Visual Direction:
+
+- compare the name state, desired perception, distinctive codes, image policy, and every brand boundary in `06-brand-concept.md` with blocks 01, 02, 08, 09, and 10;
+- compare block 05 with the exact section IDs, order, jobs, proof, CTA path, and copy volume in `07-website-structure.md` and `08-website-copy.md`;
+- treat the block 05 archetype list as a palette unless the export explicitly maps archetypes to approved section IDs; never force figures, quotes, comparisons, or image layouts when their required content or proof does not exist;
+- ignore a placeholder or instructional `Section order` value as a source of architecture and use `07-website-structure.md` instead;
+- identify direct internal conflicts such as the same attribute appearing in both positive and negative direction, or explicit separators competing with explicit no-line rules;
+- calculate the declared text/background combinations before approval. If a dominant pairing fails WCAG AA for its intended text size, constrain it to a valid use or select an accessible semantic text role from the approved palette; if neither is possible, ask one decision question;
+- confirm that named fonts and weights are supplied or that an explicit approved fallback will be used.
+
+A later approved stage may resolve a specifically named open item from an earlier stage only when it records the participant's decision explicitly. Treat that as a resolution. Never infer a silent override. Record every non-blocking reconciliation in `09-build-notes.md`; stop for one decision when a material conflict remains.
+
 Read the conversion implementation state from `07-website-structure.md`. Require an exact destination and persistence/completion rule for `Connected`. If it says `Connection required before launch`, build the interface only when useful but keep the missing connection as a launch blocker and do not show real-success language. If it says `Prototype only`, implement the approved exploration path and never simulate submission, reservation, purchase, booking, preference capture, or list entry.
 
 After this visual gate passes, mark Visual Direction `Approved` and `/build` `In progress` in `SESSION.md`, then continue. Do not mark `/build` approved until the website and `09-build-notes.md` both pass the build checks.
 
-If `visual-direction.md` is missing, stop with one short instruction: complete Visual Direction using the three approved session files, then save the export as `assets/brand/visual-direction.md`.
+If `visual-direction.md` is missing, inspect `assets/brand/` before responding:
+
+- if there is exactly one language-specific export such as `visual-direction-en.md` or `visual-direction-es.md`, stop with one short instruction to rename that file to `assets/brand/visual-direction.md`, then run `/build` again;
+- if there is only a Visual Direction ZIP, stop with one short instruction to unzip it, move the exported Markdown file into `assets/brand/`, rename it `visual-direction.md`, then run `/build` again;
+- otherwise stop with one short instruction to complete Visual Direction using the three approved session files, then place the exported Markdown file at `assets/brand/visual-direction.md`.
+
+Do not treat a ZIP, language-specific filename, or incomplete export as an approved Visual Direction file.
 
 Confirm that any `Instructions for AI` or `Instrucciones para la IA` section is preserved. Apply the direction-precedence rule in `WEBSITE-QUALITY.md`; do not let a system default override an explicit project answer. Verify that referenced logo, font, image, illustration, icon, and license files exist or have explicit placeholders. Calculate contrast from exported color values rather than trusting a written ratio.
 

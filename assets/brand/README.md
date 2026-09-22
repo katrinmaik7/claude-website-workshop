@@ -27,11 +27,13 @@ Use these three workshop files as context:
 - `sessions/<your-session>/07-website-structure.md`;
 - `sessions/<your-session>/08-website-copy.md`.
 
-Download the completed export and save it here with the exact name:
+Use `06` for brand character, distinctive codes, restrictions, and name state; `07` for the exact section IDs, order, section jobs, CTA path, and proof placement; and `08` for final copy, content volume, available proof, and assets. Visual Direction controls how that approved content is expressed. It does not create a different offer, audience, page order, claim, CTA, or proof source.
+
+Download the completed ZIP. Your computer may unzip it automatically. Find the language-specific Markdown file inside, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into this folder, and rename it exactly:
 
 `visual-direction.md`
 
-`/build` reads that file automatically.
+The final path must be `assets/brand/visual-direction.md`. Keep the Markdown file, not the ZIP, at that path. `/build` reads it automatically.
 
 ## Implementation assets
 
@@ -48,6 +50,8 @@ The Markdown export describes the system; it does not replace the actual assets.
 You may organize these in subfolders such as `logos/`, `fonts/`, `images/`, `illustrations/`, and `icons/`. Keep `visual-direction.md` at the top of `assets/brand/` so Claude can find it reliably.
 
 The **Page Architecture** block controls visual section archetypes, focal points, alternation, and composition. It does not replace the page list, section order, belief journey, or CTA path approved in `07-website-structure.md`. Apply its visual rules to the stable section IDs and make sure they accommodate the actual content volume in `08-website-copy.md`.
+
+An archetype list is a visual palette, not a requirement to use every archetype. Do not assign a figures band, quote, comparison, image layout, or similar component unless the approved structure, copy, proof, and supplied assets contain what it needs. A placeholder or instructional sentence in the export's `Section order` field never overrides the exact order in `07-website-structure.md`.
 
 Treat the completed visual files as read-only. Claude may implement them during `/build` but must not silently redesign the identity.
 
