@@ -144,7 +144,7 @@ Before approving the structure, assign the conversion implementation one state:
 - **Connection required before launch:** the exact integration and required data are specified, but it is not yet connected.
 - **Prototype only:** no data will be recorded. A public concept page uses a navigational or exploration CTA and does not imitate a form submission, preference capture, booking, order, or confirmation.
 
-For a conversion-focused project, `Connection required before launch` is the default when the intended destination is missing. `Prototype only` is an explicit change of objective. Before accepting it, show the participant which CTA, follow-up, measurement, and business learning will disappear.
+For a conversion-focused project, `Connection required before launch` is the default when the intended destination is missing. Before accepting that state, offer the simplest truthful existing routes: email, Instagram, WhatsApp, a simple form, booking, or checkout. `Prototype only` is an explicit request for a presentation-only page, not the default live-workshop outcome. Before accepting it, show the participant which CTA, follow-up, measurement, and business learning will disappear.
 
 A decision to collect no contact data is compatible with an anonymous preference test only when the selected response is actually persisted through a suitable structured event or form endpoint. If nothing is persisted, change the website objective from demand validation to prototype review.
 
@@ -153,12 +153,14 @@ For `Prototype only`:
 - do not ask the visitor to enter, choose, or “submit” information that is discarded;
 - do not create validation or success states for an action that does not occur;
 - use an on-page destination such as offer details, mechanism, examples, or `See what’s included`;
-- use at most one concise availability disclosure when needed, such as `Concept preview — ordering is not open`;
+- use at most one natural availability statement when needed, such as `Opening soon` or `Orders open in October`; never publish `Concept preview`, `Prototype`, `Demo only`, `there is no list to join`, or other internal workflow language;
 - do not create a dedicated disclosure section as a substitute for customer value or proof;
-- keep the complete approved proposition visible; an approved experiment price may use truthful proposed-price framing, while the internal plan states that no price learning is produced without a recorded response;
+- keep the complete approved proposition visible; an approved experiment price uses one natural qualifier such as `Expected price: €12` or `Around €12`, while the evidence status stays internal;
 - if the actual goal is a facilitated UX prototype, keep that mock interaction clearly separate from the public marketing page and do not treat it as business evidence.
 
 A request to “fake it,” “mock it,” or “make the button look real” defaults to a non-collecting concept presentation with an exploration CTA. It is not permission to build a fake conversion flow.
+
+A scroll-to-details action can support exploration but cannot be the only primary action for a converting or launch-oriented website. The first screen and closing section must offer the same useful next step to a real destination. The closing section must state what the visitor gets and what happens next.
 
 Do not defer the measurement mechanism to `/build` without specifying what will be recorded, where it will go, and what success means. Build may implement an approved mechanism; it must not invent the conversion model.
 

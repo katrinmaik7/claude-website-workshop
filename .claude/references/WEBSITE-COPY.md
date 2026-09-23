@@ -97,8 +97,8 @@ Evidence labels guide what the website may claim. They are not automatically cus
 - Keep `Hypothesis`, `Unknown`, `Test offer`, `evidence limit`, research caveats, and validation notes in the internal ledger unless a visitor genuinely needs the information to make an informed decision.
 - Translate uncertainty into claim strength: make a narrower truthful claim, use the known mechanism, describe the relevant situation, or omit the unsupported statement.
 - Do not announce missing proof. Remove the unsupported proof claim and use process, specification, fit, provenance, or transparent scope when these are known.
-- Do not publish drafting language such as “we are testing,” “working preview,” “still figuring this out,” “real price TBD,” “hypothesis,” or “not validated” as marketing copy.
-- When a prototype could otherwise mislead a visitor, use one concise contextual disclosure near the action or in the footer, such as `Concept preview — ordering is not open.` Do not repeat the disclosure through the hero, offer, and every CTA.
+- Do not publish drafting or workflow language such as “we are testing,” “working preview,” “concept preview,” “prototype,” “still figuring this out,” “real price TBD,” “proposed launch price,” “hypothesis,” “not validated,” or “there is no list to join” as marketing copy.
+- When current availability matters, state the customer reality once in natural language: `Opening soon`, `Orders open in October`, or another approved fact. Do not narrate what the internal prototype cannot do.
 - A public disclosure should explain the visitor's actual limitation, not narrate the team's research process.
 
 Unknown commercial information is not a copy opportunity. If price, availability, fulfillment, or terms are structurally required but unresolved, return the decision to the owning stage or omit the element when the approved structure permits it.
@@ -138,6 +138,8 @@ The first meaningful viewport normally needs:
 
 Do not force every item into the headline. Distribute the work across the eyebrow, headline, subheadline, supporting note, proof cue and CTA according to the approved structure.
 
+For a launch-oriented or conversion-focused page, the first-screen CTA must lead to a useful real destination rather than only scrolling to more information. An internal anchor may be secondary. Repeat the same primary action in the final section with clear next-step support.
+
 Before choosing the first screen, create three materially different message routes when the evidence supports them:
 
 1. **Situation or desired-progress route** — starts with the moment or change the audience recognises.
@@ -147,6 +149,8 @@ Before choosing the first screen, create three materially different message rout
 Each route includes eyebrow, headline, subheadline, CTA, and optional proof or fit cue. Recommend one using relevance, specificity, differentiation, credibility, and action clarity. Do not present three superficial rewrites of the same sentence.
 
 Reject a headline when a direct competitor could paste it onto their own page unchanged. Abstract words such as `ritual`, `experience`, `meaningful`, `elevated`, `thoughtful`, `simple`, or `different` require a concrete product, situation, or mechanism nearby.
+
+Check the headline promise against the actual customer effort and operating model. Do not promise `no planning`, `instant`, `effortless`, `delivered`, or similar convenience when the approved process still requires visiting, scheduling, collecting, assembling, or handing over. Name the narrower true convenience instead.
 
 ## 5. Body-copy roles
 
@@ -178,7 +182,8 @@ If a price is still an experiment:
 
 - do not write “still figuring out the real price” or similar drafting commentary;
 - distinguish communicating the proposition from validating willingness to pay;
-- label it with concise truthful language such as `Proposed launch price` only when that framing is approved;
+- use one natural customer-facing qualifier only, such as `Expected price: €12`, `Around €12`, or `From €12 at launch`, when that wording is approved;
+- never combine multiple uncertainty markers and never expose the internal label `Proposed launch price`;
 - when no response is captured, record internally that the page produces no price evidence, but do not remove an approved price solely for that reason;
 - omit it only when the amount is genuinely undecided, unsafe to disclose, or intentionally excluded by the participant for a business reason;
 - never present an economically unsupported price as an available live offer.
@@ -191,6 +196,10 @@ Answer genuine doubts with evidence, transparency, policy or a fit boundary. Do 
 
 CTA copy should state or strongly imply the next step. Supporting text should clarify effort, timing, destination and follow-up when relevant.
 
+For a pre-launch website, prefer a small real commitment or continuing relationship: get the opening update, follow the launch account, start a WhatsApp conversation, email interest, join a working form, book, or buy. `See what’s included` may support exploration but cannot be the only primary CTA when the stated goal is conversion or launch.
+
+The closing section must repeat the primary action, give one reason to act now without false urgency, and explain what happens next. A closing slogan without an action fails the page.
+
 ### System-state truth
 
 Copy describing a completed action is a factual claim about the system. Match it to the approved implementation state:
@@ -198,7 +207,7 @@ Copy describing a completed action is a factual claim about the system. Match it
 - Use “Join the list” and “You’re on the list” only when the contact is actually persisted.
 - Use “Reserve” or “Order confirmed” only when a real system records that commitment.
 - Use “Response received” only when the response reaches a working destination.
-- For a local prototype with no persistence, do not simulate success. Use navigation or exploration actions such as `See what’s included`, `Explore the concept`, or another specific destination inside the page. Add one concise disclosure only when needed to prevent misunderstanding.
+- For a presentation-only prototype with no persistence, do not simulate success. Use navigation or exploration actions only when the participant explicitly chose a non-converting objective. State availability naturally rather than exposing prototype terminology.
 
 If structure does not name a real destination or an explicit prototype state, stop and return to `/structure` or `/express-copy`. Do not solve an unconnected action with persuasive wording.
 
@@ -217,6 +226,8 @@ Specify exact text where relevant for:
 - descriptive link labels and image-purpose notes for future alt text.
 
 Use approved search language naturally. Do not add filler sections, repeat phrases mechanically or write to an arbitrary word count.
+
+Render language selectors only for languages that have complete working destinations or implemented page versions. Never use `EN`, `ES`, `CA`, or similar labels as decorative placeholders.
 
 Do not place implementation placeholders, missing-proof notes, research caveats, or instructions to the builder inside final customer-facing copy. Keep them in the section's internal `Required proof or asset` field and the integration requirements.
 
@@ -403,6 +414,8 @@ The copy is complete when:
 - the public page passes the research-payoff and subtraction tests rather than merely documenting upstream material in an internal table.
 - the final `D1`–`D10` map links each applicable decision to exact customer-facing wording;
 - every section passes the decision-density test.
+- the first screen and closing section contain the same useful primary action and exact destination;
+- no internal status, evidence, pricing-process, or prototype label appears in customer-facing copy;
 
 ## Method sources
 

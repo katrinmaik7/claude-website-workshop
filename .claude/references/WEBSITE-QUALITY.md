@@ -55,6 +55,8 @@ Do not use visual novelty as a substitute for the approved concept. Avoid a gene
 
 Content remains primary. `Low density`, `one idea per screen`, generous whitespace, short sentences, or a restrained visual system controls grouping and emphasis; it does not authorize deleting decision-critical content or stretching one generic sentence into an oversized section. Use content-driven section height. A deliberate brand-moment section may be sparse only when the surrounding page already carries the complete buying decision and the moment has a distinct narrative job.
 
+Allocate visual emphasis according to decision value. A researched comparison, offer, proof, or primary action must not be rendered as tiny secondary text while an unsupported manifesto or decorative statement receives the dominant section. Reusing the same hero image in another major section requires a distinct narrative or product-detail purpose; otherwise use a different approved asset or a non-image composition.
+
 ## Implementation profile
 
 For the Express path, build a dependency-free static one-page site with semantic HTML, CSS, and minimal JavaScript. It must work locally without a build step or external code and font CDNs.

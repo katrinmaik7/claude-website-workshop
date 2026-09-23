@@ -25,6 +25,8 @@ Run the mandatory progression gate in `CLAUDE.md`. Require every stage file for 
 
 Before visual work, run the research-payoff and subtraction tests in `WEBSITE-COPY.md` against the customer-facing copy. Stop and return to `/express-copy` or `/copy` when the page omits an applicable audience situation, alternative friction, differentiated mechanism, complete offer or approved commitment, reason to believe or transparent status, researched objections and fit, or meaningful action without a material evidence or decision blocker. A traceability table does not compensate for generic or missing public content. Also stop if an approved price, difference, or offer detail was removed solely because analytics or a destination is not connected.
 
+Reject the copy before layout when the primary CTA only scrolls to another section on a launch-oriented or conversion-focused page, when the closing section has no action, or when customer-facing text contains internal language such as `concept preview`, `prototype`, `demo only`, `proposed launch price`, `there is no list to join`, evidence labels, or implementation commentary. Require one useful real destination in the first screen and closing section. A supporting internal anchor may remain secondary.
+
 Require matching `D1`–`D10` coverage maps in `06`, `07`, and `08`. Verify that every applicable ID reaches exact public copy and that every section passes the decision-density test. Do not begin visual assembly when a section only repeats a slogan or when the site would be substantially unchanged without the research.
 
 If an upstream `Test offer` or measurable objective became `Prototype only`, require an explicit recorded participant decision that names the lost CTA, follow-up, and learning. Otherwise return to the owning structure stage and default to `Connection required before launch`.
@@ -87,10 +89,14 @@ Wait for approval. Do not code first and ask the participant to approve the layo
 - Treat block 10 AI prompts as a future asset handoff, not permission to generate or approve imagery automatically.
 - Treat every explicit block 05 `non-negotiable` rule as a rendered review requirement, with `Pass`, `Adapted with reason`, or `Blocked` recorded in `09-build-notes.md`.
 - Implement the primary action according to its recorded state. For `Connected`, verify the real destination or persisted/completed action and truthful post-action state. For `Prototype only`, use a specific exploration action and a concise availability disclosure when needed. Never display `You're on the list`, `Reserved`, `Order confirmed`, or equivalent unless that result actually occurred.
+- Repeat the exact primary action in the first screen and final conversion section. Explain what the visitor receives and what happens next. Do not substitute a slogan, `Opening soon`, or an internal page anchor for the final action.
 - For a public `Prototype only` page, do not build discarded-input forms, fake preference capture, fake validation, or fake confirmation. Use the approved exploration CTA and on-page destination. Keep facilitated UX mock interactions separate from the public marketing page.
+- Render language selectors only when each label leads to a complete implemented language version. Do not display decorative `EN`, `ES`, `CA`, or similar placeholders.
+- Do not repeat the same image as the main focal asset in multiple large sections unless the approved visual direction gives that repetition a deliberate narrative job. Use an approved alternate asset, a detail crop with a distinct job, a non-image composition, or a labelled placeholder.
 - Render and inspect the complete page using the visual-layout-integrity checklist in `WEBSITE-QUALITY.md`. Check mobile, tablet, desktop, and any width where the composition changes. Fix clear overlap, clipping, alignment, spacing, wrapping, stacking, and responsive defects before completing the build.
 - Reject generic repeated-card or centered-section layouts that ignore the approved Visual Direction. Confirm that the result has one recognisable visual quality from the supplied direction without compromising clarity.
 - Treat `low density`, `one idea per screen`, generous space, or concise voice as composition guidance. Do not delete, shrink, or visually trivialize decision-critical copy to satisfy it. Avoid oversized empty sections and arbitrary viewport-height blocks when the content does not warrant them.
+- Give research-critical comparison and reason-to-believe content enough visual weight to affect the decision. Do not reduce them to tiny columns, captions, or footnotes while decorative manifesto copy dominates the page.
 - Do not publish or deploy.
 
 ## Build notes

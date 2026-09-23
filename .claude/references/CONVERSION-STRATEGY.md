@@ -51,7 +51,7 @@ Keep three decisions distinct:
 2. **Pricing metric:** what the customer pays per, when relevant.
 3. **Price point:** the actual amount and terms.
 
-Competitor prices are comparison evidence, not a target. Cost creates a practical floor; it does not by itself establish customer value. For an early offer, distinguish communication from validation. A participant-approved experiment price may be communicated with truthful framing such as `Proposed launch price`; it becomes price evidence only when the site captures a meaningful response to that price. Never present it as validated, viable, or currently purchasable when those facts are unknown.
+Competitor prices are comparison evidence, not a target. Cost creates a practical floor; it does not by itself establish customer value. For an early offer, distinguish communication from validation. A participant-approved experiment price may be communicated with one concise customer-facing qualifier; it becomes price evidence only when the site captures a meaningful response to that price. Never present it as validated, viable, or currently purchasable when those facts are unknown.
 
 ## Desirability, feasibility, and viability gate
 
@@ -79,7 +79,7 @@ Cover at minimum:
 
 If price is materially below the observed market range, require an explicit cost or model rationale. If none exists, preserve it as an **experiment price**, not an approved viable price.
 
-An experiment price may appear on a public page when the participant approves its truthful status and wording. Use framing such as `Proposed launch price` or `Expected price`, and keep economic uncertainty internal. If the page records no response, state internally that it communicates the proposition but does not validate willingness to pay. Omit the price only when it is genuinely undecided, unsafe to disclose, or intentionally excluded by the participant for a business reason.
+An experiment price may appear on a public page when the participant approves its truthful status and wording. Use one natural qualifier only: `Expected price: €12`, `Around €12`, or `From €12 at launch`, depending on what is true. Never stack uncertainty (`proposed`, `about`, `expected`) and never publish the internal label `Proposed launch price`. Keep the evidence and unit-economics uncertainty internal. If the page records no response, state internally that it communicates the proposition but does not validate willingness to pay. Omit the price only when it is genuinely undecided, unsafe to disclose, or intentionally excluded by the participant for a business reason.
 
 Assign one offer status:
 
@@ -131,6 +131,8 @@ If proof does not exist, weaken the claim or state it as an intended outcome.
 ## Calls to action
 
 - Use one primary action per page goal.
+- A conversion-focused page must lead somewhere useful beyond scrolling to another section. For pre-launch, use an existing email, Instagram, WhatsApp, form, booking, checkout, or other truthful destination that continues the relationship.
+- Put the primary action in the first screen and repeat it in the closing section with the same promised result.
 - State what happens next.
 - Ask only for information needed at that step.
 - Use visible labels and helpful validation.
@@ -159,9 +161,10 @@ The primary action must produce an observable result that matches its label:
 | Share a preference or vote | The structured response is actually persisted or sent to a working analytics/form endpoint |
 | Book | A working calendar or request destination receives the booking |
 | Buy or reserve | A real checkout/reservation system records the commitment and states terms |
-| Demo or preview | Clearly says no submission, reservation, or list entry occurs |
+| Follow, message, or email | Opens the exact approved profile, conversation, or addressed message route |
+| Demo or preview | Clearly behaves only as navigation and is never presented as a completed workshop launch outcome |
 
-If the action is not connected, change the language to an explicit prototype/demo state. Never display “you joined”, “saved”, “reserved”, “ordered”, or “confirmed” when nothing was persisted.
+If a promised stored action is not connected, keep it as `Connection required before launch` and do not claim completion. Use a simpler real destination when the participant approves one. Never display “you joined”, “saved”, “reserved”, “ordered”, or “confirmed” when nothing was persisted.
 
 A public `Demo only` page should normally use navigation or exploration actions and request no input. Do not create a disposable preference form, fake order flow, fake validation, or fake confirmation merely to make the prototype feel interactive. A facilitated UX mock-up may demonstrate those states outside the public conversion journey, but it produces no demand evidence.
 

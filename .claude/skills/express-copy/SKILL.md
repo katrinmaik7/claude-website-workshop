@@ -21,7 +21,7 @@ Reconcile the block 05 proposal with the research-backed belief journey. Preserv
 
 - One page. Add a separate page only for a legal or privacy requirement, and only as a stub.
 - Website language: the one approved in the session; ask once if unresolved.
-- Ask at most one further question, only if unknown: “What exactly happens when someone clicks the main button: which working page or system receives the action, what is saved or completed, and what confirmation does the person get?” A form, email, Instagram DM, WhatsApp conversation, booking page, checkout, or other external destination can qualify when the promised action genuinely reaches and remains with its owner. If it is not decided, default a conversion-focused project to `Connection required before launch`. Use `Prototype only` only after the participant explicitly accepts that the page will collect no response and cannot validate demand.
+- Ask at most one further question, only if unknown: “What useful real destination should the main button open: your email, Instagram, WhatsApp, a simple form, booking page, checkout, or something else?” Use the simplest truthful route already available. If none is supplied, set `Connection required before launch` and keep it as a blocker. Use `Prototype only` only when the participant explicitly asks for a presentation-only page after seeing the lost CTA, follow-up, and learning.
 
 ## Context coverage
 
@@ -42,11 +42,13 @@ Import the `D1`–`D10` Website message handoff from `06-brand-concept.md`. Crea
 
 Design the belief journey for the priority visitor arriving from the expected traffic source: arrival → relevance → value → mechanism → difference → proof → offer and fit → risk → action → confirmation. Give every section a stable ID (`S01-hero`, `S02-situation`, …), a visitor question, a belief change, an evidence source, a claim limit, and a CTA or next question. Remove any section without a research-backed job. Place proof next to the claim it supports and objections where they arise.
 
+The first screen must state the concrete offer or mechanism, not only an emotional promise. When the meaningful difference depends on an alternative, give the comparison enough space to help the visitor decide rather than hiding it in a small note. Give `D7` a visible reason-to-believe treatment through actual proof, specification, provenance, process, or transparent operating standard. End with a closing section that repeats the real primary action and explains what happens next.
+
 Record the conversion implementation state as `Connected`, `Connection required before launch`, or `Prototype only`. Specify the exact destination, stored data or completed action, owner, consent/privacy need, success evidence, error state, and follow-up. Do not describe an unrecorded click as demand validation.
 
 Do not silently downgrade an approved `Test offer` or measurable website objective to prototype review merely because the destination is not connected yet. Show the participant the concrete consequence in the checkpoint: what CTA, learning, follow-up, and launch capability will be lost. Preserve the intended conversion and use `Connection required before launch` unless the participant explicitly changes the website objective after seeing that consequence.
 
-For `Prototype only`, use a useful on-page destination and request no discarded input. Do not create a fake form, preference picker, validation, submission, or confirmation. Use at most one concise availability disclosure when needed. Keep the complete approved proposition visible. A participant-approved experiment price may appear as `Proposed launch price`, `Expected price`, or another approved truthful label even when the prototype does not capture a price response; make clear internally that no price learning is produced. Lack of tracking is never by itself a reason to remove the offer, price, meaningful difference, fit, or objections from the page.
+For an explicitly requested `Prototype only` page, use a useful on-page destination and request no discarded input. Do not create a fake form, preference picker, validation, submission, or confirmation. State availability naturally once. Keep the complete approved proposition visible. A participant-approved experiment price may use one approved customer-facing qualifier such as `Expected price: €12` or `Around €12`; keep the evidence status internal. Lack of tracking is never by itself a reason to remove the offer, price, meaningful difference, fit, or objections from the page.
 
 ## Research-payoff gate
 
@@ -72,9 +74,11 @@ After confirmation, retain the approved structure for this stage but do not save
 
 Write exact, build-ready copy for every section ID: navigation labels, eyebrow, headline, subheadline, body, proof introductions and exact approved quotations, offer details, objection answers, CTA labels, form labels, validation, consent, confirmation, footer and legal labels, SEO title, meta description, and social preview. Keep missing proof, integration notes, and implementation placeholders in internal requirements rather than customer-facing copy.
 
-Use `Join`, `Reserve`, `Order`, `Book`, `You're on the list`, or equivalent success language only when the action is genuinely connected and persisted or completed. For `Prototype only`, use a specific exploration CTA such as `See what’s included` and add one concise disclosure only when needed to prevent misunderstanding. Do not repeat “we are testing,” “working preview,” `TBD`, evidence labels, or similar internal commentary. For `Connection required before launch`, treat the missing connection as a launch blocker.
+Use `Join`, `Reserve`, `Order`, `Book`, `You're on the list`, or equivalent success language only when the action is genuinely connected and persisted or completed. For an explicitly requested presentation-only prototype, use a specific exploration CTA and natural availability wording. Never publish `concept preview`, `prototype`, `demo only`, `proposed launch price`, `there is no list to join`, “we are testing,” “working preview,” `TBD`, evidence labels, or similar internal commentary. For `Connection required before launch`, treat the missing connection as a launch blocker.
 
-If price is experimental, follow `WEBSITE-COPY.md`: use truthful approved framing and never present it as a validated live price. Capturing a response determines whether the page tests price; it does not determine whether the approved proposed price can be communicated.
+If price is experimental, follow `WEBSITE-COPY.md`: use one natural approved qualifier and never present it as a validated live price. Do not combine `proposed`, `about`, and `expected`. Capturing a response determines whether the page tests price; it does not determine whether the approved price can be communicated.
+
+Use FAQs only for genuine remaining questions that were not answered more effectively in the mechanism, offer, comparison, proof, or action sections. Do not turn every internal uncertainty into a public FAQ.
 
 Run the seven focused conversion sweeps and the five integrity checks from `WEBSITE-COPY.md`. Freeze facts, prices, quotations, necessary public qualifications, and CTA destinations before editing. For launch copy, add the conversion, UX, skeptical target-visitor, and brand perspectives; every requested change needs a concrete reason.
 
@@ -108,6 +112,9 @@ Finish with the saved files, the largest remaining blocker, and “Next: `/build
 - Material claims trace to `02-research.md` or `04-offer-and-positioning.md` and keep their qualifications.
 - A relevant competitor could not paste the hero unchanged onto its own website.
 - One primary CTA; its implementation state, destination, persistence, confirmation, and launch consequence are explicit.
+- The primary CTA leads beyond an internal scroll, appears in the first screen and closing section, and states what the visitor receives next.
+- A visible comparison carries the researched alternative when differentiation depends on it, and a visible reason to believe supports the main promise.
+- No customer-facing sentence exposes internal prototype, research, price-status, evidence, or missing-integration language.
 - No prototype interaction simulates a successful real-world conversion.
 - Internal research labels, drafting commentary, and implementation placeholders do not appear as marketing copy.
 - No fact, quote, number, price, condition, or destination changed during the human-voice pass.

@@ -18,7 +18,7 @@ Ask at most two questions, one per turn, and only for material gaps not already 
 - What exactly does the customer receive, how will it be sourced or delivered, and what price, material costs, time, or operational dependencies are known?
 - What proof and delivery capability exist today: work you can show, relevant customer behavior or feedback, credentials, suppliers, capacity, or results with context?
 
-Recommend everything else from the evidence — who it is not for, what happens after the action — and mark it `Hypothesis` if unconfirmed. Never invent pricing, guarantees, scarcity, outcomes, credentials, or proof.
+Recommend everything else from the evidence — who it is not for and what happens after the action — and mark it `Hypothesis` if unconfirmed. Require `D9` to name one useful real destination. For a pre-launch offer, prefer the simplest existing route that can genuinely continue the relationship: an email address, Instagram profile, WhatsApp link, simple form, booking page, or checkout. Never invent pricing, guarantees, scarcity, outcomes, credentials, proof, or a destination.
 
 ## Develop
 
@@ -28,7 +28,7 @@ Run the compact desirability, feasibility, and viability gate from `CONVERSION-S
 
 Assign the result one status: `Evidence-backed offer`, `Test offer`, or `Demo only`. If direct customer or commercial evidence is weak, frame the downstream website as a measured test and define what must be captured. If the action cannot capture evidence, use `Demo only`.
 
-If the result is a `Test offer`, record that later stages must preserve the intended measurable action as `Connected` or `Connection required before launch`. They may change it to a non-collecting prototype only after the participant explicitly accepts which CTA, follow-up, and learning will be lost. Missing implementation is a launch blocker, not a reason to strip the public proposition of its approved offer, price, differentiation, or fit.
+If the result is a `Test offer`, record that later stages must preserve the intended measurable action as `Connected` or `Connection required before launch`. The live workshop does not default to a brochure, an on-page scroll CTA, or `Demo only`. They may change it to a non-collecting prototype only after the participant explicitly asks for a presentation-only page and accepts which CTA, follow-up, and learning will be lost. Missing implementation is a launch blocker, not a reason to strip the public proposition of its approved offer, price, differentiation, or fit.
 
 Then build the positioning chain: genuine alternatives in the priority situation → what differs → the value that creates → who cares most → market frame → proof available and proof still needed. Output a plain-language positioning decision, not a slogan.
 
@@ -38,7 +38,7 @@ Offer a second option only when the evidence supports a real choice, and say whi
 
 ## Checkpoint
 
-Show at most five bullets: the offer and its status, commitment and price status, alternative and meaningful difference, reason to believe and its limit, and the largest desirability, feasibility, or viability risk plus the planned test. Ask one confirmation or correction question.
+Show at most five bullets: the offer and its status, commitment and customer-facing price wording, alternative and meaningful difference, reason to believe and its limit, and the primary CTA with its exact destination and next step. Include the largest desirability, feasibility, or viability risk within the relevant bullet. Ask one confirmation or correction question.
 
 ## Save
 

@@ -84,9 +84,11 @@ After direction approval, write exact, build-ready copy for every approved page 
 - footer, contact, trust, and required legal-navigation labels;
 - internal placeholder annotations for missing content, proof, or integrations, clearly separated from final customer-facing copy.
 
-System-state copy must be true. Use `Join`, `Reserve`, `Order`, `Book`, `Submitted`, or equivalent success language only when the action reaches a real destination and is stored or completed. For a prototype, use a specific navigation or exploration CTA and one concise disclosure only when needed to prevent misunderstanding. Do not repeat internal labels or research caveats across the page. A missing connection remains a launch blocker rather than a copy problem.
+System-state copy must be true. Use `Join`, `Reserve`, `Order`, `Book`, `Submitted`, or equivalent success language only when the action reaches a real destination and is stored or completed. For an explicitly requested presentation-only prototype, use a specific navigation or exploration CTA and natural availability wording. Never publish `concept preview`, `prototype`, `demo only`, `proposed launch price`, `there is no list to join`, evidence labels, or research caveats. A missing connection remains a launch blocker rather than a copy problem.
 
-Keep placeholders and implementation notes outside the customer-facing copy. If a required price, term, proof item, or integration is unresolved, either return to its owning stage or omit the element when the approved structure allows it. Never publish “still figuring out,” “TBD,” “hypothesis,” “working preview,” or equivalent drafting language.
+Keep placeholders and implementation notes outside the customer-facing copy. If a required price, term, proof item, or integration is unresolved, either return to its owning stage or omit the element when the approved structure allows it. Never publish “still figuring out,” “TBD,” “hypothesis,” “working preview,” stacked price uncertainty, or equivalent drafting language.
+
+The first screen must make the concrete offer or mechanism clear and include the real primary action. Repeat that action in the closing section with what happens next. Let a research-critical comparison occupy a meaningful section rather than a minor note. Give the main promise an honest visible reason to believe through proof, process, specification, provenance, or operating standard. Use FAQs only for genuine questions that remain after the main argument.
 
 Use the stable IDs from `07-website-structure.md`. Do not add a page or section merely to fit unused research. Do not omit a structurally required section because its copy is difficult; flag the missing evidence or decision.
 
@@ -141,6 +143,8 @@ Finish with the approved copy direction, saved file, unresolved content blockers
 - Proof is introduced in the context of the claim it supports.
 - Objections are answered where they arise rather than hidden in a generic FAQ.
 - CTA and form microcopy describe what happens next.
+- The primary CTA leads beyond an internal scroll and appears in both the first screen and closing section.
+- No public copy exposes internal prototype, evidence, research, pricing-process, or missing-integration terminology.
 - CTA, loading, validation, confirmation, and follow-up copy match the actual implementation state.
 - Copy is clear, natural, scannable, and consistent without invented personality.
 - Internal evidence labels, validation notes, drafting commentary, and implementation placeholders do not appear as marketing copy.
