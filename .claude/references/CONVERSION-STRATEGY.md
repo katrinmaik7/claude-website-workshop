@@ -131,7 +131,7 @@ If proof does not exist, weaken the claim or state it as an intended outcome.
 ## Calls to action
 
 - Use one primary action per page goal.
-- A conversion-focused page must lead somewhere useful beyond scrolling to another section. For pre-launch, use an existing email, Instagram, WhatsApp, form, booking, checkout, or other truthful destination that continues the relationship.
+- A conversion-focused page must lead somewhere useful beyond scrolling to another section. Choose the destination from the approved business objective, customer commitment, operating model, and intended learning; do not default to a communication channel or generic lead capture.
 - Put the primary action in the first screen and repeat it in the closing section with the same promised result.
 - State what happens next.
 - Ask only for information needed at that step.

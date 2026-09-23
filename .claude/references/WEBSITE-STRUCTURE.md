@@ -144,7 +144,7 @@ Before approving the structure, assign the conversion implementation one state:
 - **Connection required before launch:** the exact integration and required data are specified, but it is not yet connected.
 - **Prototype only:** no data will be recorded. A public concept page uses a navigational or exploration CTA and does not imitate a form submission, preference capture, booking, order, or confirmation.
 
-For a conversion-focused project, `Connection required before launch` is the default when the intended destination is missing. Before accepting that state, offer the simplest truthful existing routes: email, Instagram, WhatsApp, a simple form, booking, or checkout. `Prototype only` is an explicit request for a presentation-only page, not the default live-workshop outcome. Before accepting it, show the participant which CTA, follow-up, measurement, and business learning will disappear.
+For a conversion-focused project, `Connection required before launch` is the default when the intended destination is missing. Before accepting that state, derive the smallest suitable mechanism from the business model, customer journey, website objective, commitment required, and intended learning. Do not default to a particular channel. `Prototype only` is an explicit request for a presentation-only page, not the default live-workshop outcome. Before accepting it, show the participant which CTA, follow-up, measurement, and business learning will disappear.
 
 A decision to collect no contact data is compatible with an anonymous preference test only when the selected response is actually persisted through a suitable structured event or form endpoint. If nothing is persisted, change the website objective from demand validation to prototype review.
 

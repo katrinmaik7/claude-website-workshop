@@ -56,7 +56,7 @@ Review four readiness layers separately:
 
 An unconnected primary action is always a `Blocker` when the stated objective is leads, waitlist signups, bookings, reservations, purchases, votes, preferences, or any captured learning. Visual confirmation alone is not evidence of a successful conversion. Launch readiness cannot be `Ready` until the action is connected and verified, or until the objective and all relevant copy are explicitly changed to a non-collecting prototype.
 
-For the live workshop, treat a scroll-only primary CTA, a closing section without a real action, or a page whose only outcome is passive concept viewing as a content `Blocker`. A real email, Instagram, WhatsApp, form, booking, checkout, or equivalent approved route is sufficient when its label truthfully describes the action.
+For the live workshop, treat a scroll-only primary CTA, a closing section without a real action, or a page whose only outcome is passive concept viewing as a content `Blocker`. The action passes only when its destination, observable result, owner, and follow-up match the approved business objective; a generic communication link does not pass merely because it works.
 
 On a public `Prototype only` page, discarded-input forms, fake preference capture, fake validation, fake submission, and fake confirmation are `Important` at minimum and `Blocker` when they could make a visitor believe an action occurred. Replace them with a useful exploration path.
 

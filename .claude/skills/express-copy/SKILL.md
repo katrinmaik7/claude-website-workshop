@@ -21,7 +21,7 @@ Reconcile the block 05 proposal with the research-backed belief journey. Preserv
 
 - One page. Add a separate page only for a legal or privacy requirement, and only as a stub.
 - Website language: the one approved in the session; ask once if unresolved.
-- Ask at most one further question, only if unknown: “What useful real destination should the main button open: your email, Instagram, WhatsApp, a simple form, booking page, checkout, or something else?” Use the simplest truthful route already available. If none is supplied, set `Connection required before launch` and keep it as a blocker. Use `Prototype only` only when the participant explicitly asks for a presentation-only page after seeing the lost CTA, follow-up, and learning.
+- Ask at most one further question, only if unknown: “What exactly should happen after the main button: where does the person go, what is recorded or completed, who owns it, and what happens next?” Recommend the smallest mechanism appropriate to the approved business goal; do not default to a communication channel. If no real mechanism is supplied, set `Connection required before launch` and keep it as a blocker. Use `Prototype only` only when the participant explicitly asks for a presentation-only page after seeing the lost CTA, follow-up, and learning.
 
 ## Context coverage
 

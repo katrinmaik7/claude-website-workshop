@@ -18,7 +18,7 @@ Ask at most two questions, one per turn, and only for material gaps not already 
 - What exactly does the customer receive, how will it be sourced or delivered, and what price, material costs, time, or operational dependencies are known?
 - What proof and delivery capability exist today: work you can show, relevant customer behavior or feedback, credentials, suppliers, capacity, or results with context?
 
-Recommend everything else from the evidence — who it is not for and what happens after the action — and mark it `Hypothesis` if unconfirmed. Require `D9` to name one useful real destination. For a pre-launch offer, prefer the simplest existing route that can genuinely continue the relationship: an email address, Instagram profile, WhatsApp link, simple form, booking page, or checkout. Never invent pricing, guarantees, scarcity, outcomes, credentials, proof, or a destination.
+Recommend everything else from the evidence — who it is not for and what happens after the action — and mark it `Hypothesis` if unconfirmed. Require `D9` to name one useful real destination, observable result, owner, and follow-up appropriate to the business model and website objective. Prefer the smallest mechanism that genuinely performs the approved action; never default to a particular communication channel. Never invent pricing, guarantees, scarcity, outcomes, credentials, proof, or a destination.
 
 ## Develop
 

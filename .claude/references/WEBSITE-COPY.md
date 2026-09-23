@@ -196,7 +196,7 @@ Answer genuine doubts with evidence, transparency, policy or a fit boundary. Do 
 
 CTA copy should state or strongly imply the next step. Supporting text should clarify effort, timing, destination and follow-up when relevant.
 
-For a pre-launch website, prefer a small real commitment or continuing relationship: get the opening update, follow the launch account, start a WhatsApp conversation, email interest, join a working form, book, or buy. `See what’s included` may support exploration but cannot be the only primary CTA when the stated goal is conversion or launch.
+For a pre-launch website, use the smallest real commitment that answers the approved business question and fits the customer journey. The action may capture interest, preference, application, booking, reservation, purchase, attendance, download, location intent, or another relevant outcome, but it must be selected from the project rather than from a generic channel list. `See what’s included` may support exploration but cannot be the only primary CTA when the stated goal is conversion or launch.
 
 The closing section must repeat the primary action, give one reason to act now without false urgency, and explain what happens next. A closing slogan without an action fails the page.
 

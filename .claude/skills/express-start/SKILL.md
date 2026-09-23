@@ -19,10 +19,10 @@ Ask these questions in order, one per turn. Skip any question already clearly an
 2. Who do you think will buy or use it, in which place and language?
 3. Tell me about one real person or situation that shows why someone would look for this. What happened?
 4. If this works, what becomes different for that person in practical terms?
-5. What one real action should the website generate first, where should that action lead, and where will the first visitors most likely come from? For a pre-launch idea, the destination can be an existing email address, Instagram profile, WhatsApp link, simple form, booking page, or checkout.
+5. What one real action should the website generate first, where should that action lead, what observable result should it create, and where will the first visitors most likely come from?
 6. What must the website never promise, imply, or pressure people to do?
 
-Accept “I don’t know” for questions 3–4. For question 5, offer the three simplest truthful actions available to this participant and let them choose one; if no usable destination exists, record `Connection required before launch` rather than silently changing the goal to a brochure or scroll-only prototype. Do not ask for an essay.
+Accept “I don’t know” for questions 3–4. For question 5, derive no more than three suitable action-and-destination options from the business model, stage, website objective, and intended learning; do not default to a particular communication channel. If no usable destination exists, record `Connection required before launch` rather than silently changing the goal to a brochure or scroll-only prototype. Do not ask for an essay.
 
 ## Checkpoint
 
