@@ -114,11 +114,13 @@ Approval means all of the following are true:
 4. the skill's quality gate passes;
 5. `SESSION.md` is updated with the stage as `Approved` and the exact next command or Visual Direction step.
 
+`/build` has no participant checkpoint. Its file uses `Approved after checkpoint: Not applicable — /build runs without a participant checkpoint`, and conditions 2–5 alone approve it.
+
 Approval records the participant's decision to use an output in this website version. It does not upgrade a founder belief, desk-research finding, or unknown into customer evidence. Preserve the original evidence label and confidence after approval.
 
 An output file without this metadata, with blank required sections, or with unresolved unapproved recommendations is incomplete even if its filename is correct.
 
-Visual Direction is complete only when all ten current blocks are present, website-relevant `Still to define` or `Pendiente de definir` items are resolved by an explicit answer, a named system default, or a justified `Not applicable`, and the export matches the active project's brand concept and upstream business context. `/express-copy` or `/structure` performs this check before marking the visual step approved.
+Visual Direction is complete only when the export follows the current Brandbook OS format in `BRANDBOOK-OS-MAP.md` (blocks 01–08 plus `09. Page Format & Structure`), website-relevant `Still to define` or `Pendiente de definir` items are resolved by an explicit answer, a named system default, or a justified `Not applicable`, and the export matches the active project's brand concept and upstream business context. `/express-copy` or `/structure` performs this check before marking the visual step approved.
 
 When `/express-copy` or `/structure` validates Visual Direction, update its progress row to `Approved`, set the current content stage to `In progress`, and continue in the same command. Mark `/build` approved only after both `site-v1/` and the approved `09-build-notes.md` exist and pass the build quality gate.
 
@@ -214,7 +216,7 @@ A `Decision` is not evidence that the decision is correct. For every material co
 
 ## Approval checkpoint
 
-Before writing a stage file:
+Before writing a stage file, except in `/build`, which runs without a checkpoint:
 
 1. Present at most five bullets: the proposed decisions or conclusions, one of which is the strongest uncertainty or contradiction.
 2. Ask one confirmation question.

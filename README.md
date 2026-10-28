@@ -116,7 +116,7 @@ Same stage as the Full path, limited to two questions. Saves `06-brand-concept.m
 
 Open the Visual Direction tool after `/brand-concept`. Its questions and guidance are provided inside the tool. Use the approved `06-brand-concept.md` together with the current research and offer files as factual context.
 
-The dashboard's **Page Architecture** block is an early visual composition proposal. Choose useful section archetypes, focal points, rhythm, and alternation. If it asks for section order, treat that answer as a draft visual sequence rather than the final information architecture. The next Claude stage will reconcile it with the research, complete offer, proof, objections, conversion path, and real copy volume.
+The dashboard's **Page Architecture** block is an early visual composition proposal: choose one section recipe for the hero, rhythm, and alternation. Its recipe run is a visual pattern rather than the final information architecture. The next Claude stage will reconcile it with the research, complete offer, proof, objections, conversion path, and real copy volume.
 
 Download the completed ZIP. Your computer may unzip it automatically. From the ZIP, take the language-specific Markdown file, such as `visual-direction-en.md` or `visual-direction-es.md`, move it into `assets/brand/`, and rename it exactly:
 
@@ -326,7 +326,7 @@ Both paths:
 | Command | Purpose |
 |---|---|
 | `/brand-concept` | Creates the approved ten-block brand concept without repeating research. |
-| `/build` | Maps approved content to the visual archetypes, pauses for one compact desktop/mobile wireframe approval, then builds and visually checks the local website. |
+| `/build` | Reads the approved session files and the Visual Direction export, then maps content to the visual archetypes, builds, and visually checks the local website in one run, without asking questions. Every decision it makes on its own is recorded in `09-build-notes.md`. |
 | `/review` | Audits the complete rendered website against strategy, wireframes, visual rules, conversion behavior, and launch requirements. |
 
 ### Methods in `.claude/references/`

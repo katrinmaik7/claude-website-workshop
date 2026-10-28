@@ -12,30 +12,29 @@ Use this reference during `/build` and `/review`. It translates approved strateg
 | Exact customer-facing wording and microcopy | `08-website-copy.md` |
 | Color, typography, composition, graphic language, imagery treatment, and visual restrictions | `assets/brand/visual-direction.md` |
 
-Visual Direction may change how content is presented, but it cannot silently change what the page says, its argument order, or its proof limits. Structure and copy may require a visual solution, but they cannot silently replace the approved identity. If two authorities materially conflict, identify the conflict and ask one decision question.
+Visual Direction may change how content is presented, but it cannot silently change what the page says, its argument order, or its proof limits. Structure and copy may require a visual solution, but they cannot silently replace the approved identity. If two authorities materially conflict, `/build` resolves the conflict with the decision order in its skill and records it in `09-build-notes.md`; `/review` reports it.
 
 A later approved stage may resolve a specifically named open item from an earlier stage only when it explicitly records the participant's decision. This is a documented resolution, not permission for silent overrides.
 
 ## Pre-build gap scan
 
-Read all ten Visual Direction blocks, `Still to define`, and `Instructions for AI`. Resolve only gaps that materially change the website implementation.
+Read every section of the Visual Direction export as described in `BRANDBOOK-OS-MAP.md`: `00` when present, blocks `01`–`08`, `09. Page Format & Structure`, `Still to define`, `Responsive — desktop and phone, non-negotiable`, and `Instructions for AI`. Blocks 01, 06, and 08 disappear from the export when unanswered and are then named only in `Still to define`; blocks 02, 03, 04, 05, and 07 always appear, and their system defaults apply in full when unanswered. Resolve only gaps that materially change the website implementation.
 
 Check these concrete failure modes before proposing a layout:
 
-- two selected archetypes or alternation rules competing for the only permitted centered section;
-- figures, comparisons, images, or other archetype inputs missing from the approved structure, copy, proof, or assets;
-- placeholder or instructional text exported as a project answer, especially in `Section order`;
-- a block 05 section order, section job, proof requirement, or CTA path that conflicts with `07-website-structure.md` or `08-website-copy.md`;
-- the same quality appearing in both positive and negative direction, including conflicts between blocks 01, 09, and 10;
-- block 08 signature moves that only repeat generic grid, alignment, or material settings and do not create a recognisable project-specific cue;
-- block 09 omitting a material visual boundary already approved in `06-brand-concept.md`;
+- the recipe's hero, a centred alignment answer, or another section competing for the only permitted centred section;
+- figures, quotes, images, or other inputs of a recipe section type missing from the approved structure, copy, proof, or assets;
+- placeholder or instructional text exported as a project answer;
+- a block 05 recipe run or a `09` format, goal, or order of parts that conflicts with `07-website-structure.md` or `08-website-copy.md`;
+- `Single screen, chosen by the brand` when `07` approves more content than one screen can hold;
+- the same quality appearing in both positive and negative direction, including conflicts between block 01 keywords, other block answers, block 01 anti-keywords, and block 08;
+- block 08 missing, or omitting a material visual boundary already approved in `06-brand-concept.md`;
 - lighting or photographic instructions when no positive photography direction has been approved;
-- signature moves that merely repeat composition rules without defining a recognisable visible treatment;
 - named fonts that are unavailable, unlicensed, missing required weights, or incompatible with the approved language;
 - no accessible text-color role for one or more approved section surfaces;
 - a system default conflicting with an explicit project answer, visual restriction, content requirement, or supplied asset reality.
 
-- Ask exactly one question per turn when a blocking decision is genuinely missing.
+- Do not ask the participant during `/build`; resolve a missing decision with the build's decision order and record it.
 - Do not reopen decisions already approved in the session files.
 - Ignore non-website applications such as packaging or signage during this build.
 - Use an explicit local placeholder for a missing non-blocking asset or integration.
@@ -44,7 +43,7 @@ Check these concrete failure modes before proposing a layout:
 
 ## Intentional design loop
 
-Before coding, state in `09-build-notes.md` the page's purpose, priority visitor, main action, visual concept, and one recognisable quality carried from Visual Direction. Complete and approve the visual assembly checkpoint below before writing website code. Then work through four passes:
+Before coding, state in `09-build-notes.md` the page's purpose, priority visitor, main action, visual concept, and one recognisable quality carried from Visual Direction. Complete the visual assembly plan below before writing website code. Then work through four passes:
 
 1. **Shape:** decide hierarchy, composition, density, rhythm, and the role of each visual element before styling details.
 2. **Build:** implement the approved structure and copy with the simplest suitable code.
@@ -79,26 +78,30 @@ site-v1/
 └── assets/
 ```
 
-Create `archetypes.css` when block 05 defines reusable archetypes; keep section-specific exceptions in `sections.css`. Create only files the website actually uses. Keep strategy and Visual Direction inputs in their existing locations; do not duplicate or edit them inside `site-v1/`.
+Create `archetypes.css` for the reusable section types of the block 05 recipe and the accordion pattern; keep section-specific exceptions in `sections.css`. Create only files the website actually uses. Keep strategy and Visual Direction inputs in their existing locations; do not duplicate or edit them inside `site-v1/`.
 
 ## Translate Visual Direction into the website
 
-The current Visual Direction export uses these blocks:
+The Visual Direction export comes from the Brandbook OS dashboard. `BRANDBOOK-OS-MAP.md` lists every question, option, and exact exported sentence; use it to tell a catalog option from an *Other* answer, a note, or an unanswered field. The export uses these sections:
 
-1. **Visual Foundation** — translate territory, tension, desired qualities, and prohibited qualities into the overall visual character and final review criteria.
-2. **Name & Typography** — implement the approved brand-name casing, primary and secondary type roles, display/body scale, tracking, leading, italics, and typography restrictions. Use supplied licensed font files or an approved system fallback; do not fetch fonts from a CDN. A descriptive typeface direction is not a licensed font asset.
-3. **Color System** — use the supplied color values, roles, proportions, allowed pairings, and prohibited combinations. Calculate text contrast from the actual exported values.
-4. **Composition** — translate the approved grid, alignment, symmetry, density, margins, rhythm, spacing scale, layering, block treatment, dividers, and image/text ratios into responsive layout rules.
-5. **Page Architecture** — supplies an upstream palette of visual archetypes, focal points, alternation, surface changes, alignment rules, and possibly a draft sequence. `/express-copy` or `/structure` reconciles that palette with the business argument and assigns compatible archetypes to stable section IDs. The later `07-website-structure.md` controls which sections exist, their order, their message jobs, proof placement, and the CTA path.
-6. **Illustration & Materiality** — implement the approved illustration position and surface, paper, texture, grain, and material cues. Do not infer a positive photography style from this block.
-7. **Graphic Language** — implement only the approved patterns, separators, frames, borders, devices, and repeated motifs.
-8. **Distinctive Visual Codes** — make the signature moves perceptible early and consistently. Use a coherent combination in the first viewport when it supports clarity; do not force every code into the hero when that weakens comprehension.
-9. **Visual Restrictions** — treat every listed style, typography, composition, and photography prohibition as a review check.
-10. **AI Visual Direction** — preserve the supplied base prompt, negative prompt, variable-by-piece guidance, fixed rules, and approval checklist without paraphrasing when image slots need a later generation handoff. Record them in `09-build-notes.md`; they are not permission to generate or approve imagery automatically.
+0. **Brand copy and voice** (optional) — brand text pasted into the dashboard. In this workshop `08-website-copy.md` owns the exact public wording; use `00` only as voice evidence, and never stop because it is missing.
+1. **Visual Foundation** — translate territory, tension, keywords, and anti-keywords into the overall visual character and final review criteria. The first quality of the tension usually lives in material (texture, image, stroke) and the second in structure (grid, type, margins).
+2. **Name & Typography** — implement the brand name exactly as written, the primary and secondary families with their exported stacks and weights, the case, weight, and hierarchy settings, and the system-default type scale. The catalog families (Libre Caslon Text, Inter, Nunito, JetBrains Mono) use the SIL Open Font License: bundle the required weights in `site-v1/assets/fonts/` rather than loading them from Google Fonts or another CDN; if the files cannot be obtained, use the exported stack and record it. A family typed through *Other* is not a licensed font asset until it is supplied.
+3. **Color System** — use the five exported tones, function and proportion, color rules, and the computed `Interface surfaces` and `Buttons and calls to action` blocks as tokens. Verify every stated contrast ratio from the actual exported values. Proportions refer to visible surface, not element count. A dark Neutral, as in the `Night` palette, means a dark page background.
+4. **Composition** — translate grid, alignment, symmetry, density, and white space, plus the defaults for columns, measure, margins, rhythm, spacing, breakpoints, layers, dividers, and image/text splits, into responsive layout rules.
+5. **Page Architecture** — one section recipe (`Editorial`, `Alternating`, `Grid`, `Cinematic`, or an *Other* text), the `Alternation rules — non-negotiable`, the accordion pattern, and defaults for header, hero, hero on mobile, calls to action, and section heads. `/express-copy` or `/structure` reconciles the recipe with the business argument and assigns compatible section types to stable section IDs. The later `07-website-structure.md` controls which sections exist, their order, their message jobs, proof placement, and the CTA path.
+6. **Illustration & Materiality** — implement the illustration style, line quality, and level of detail, and the paper and texture finish. `None` means no illustrative SVG. On the web, `Matte` means flat surfaces without shine, `Gloss` smooth surfaces with a subtle reflection, and `Textured` subtle CSS or SVG grain, never stock paper images. Do not infer a positive photography style from this block.
+7. **Graphic Language** — implement only the approved shapes, patterns, icons, and separators plus the frame, border, device, and motif defaults. `Shapes` sets the border radius for the whole page, buttons included.
+8. **Visual Restrictions** — treat every `What to avoid` row and every block 01 anti-keyword as a review check.
+9. **Page Format & Structure** — honor the format in point 1; `From your copy` applies the map's word-count rule to `08`. Points 2 and 3 are fallbacks for a page with no structure stage; here `07` owns the goal, primary action, and order. Apply point 4 navigation unless `07` defines navigation.
 
-If no photography direction exists, solve the site with approved typography, color, layout, graphic elements, illustration, and materials. Ask one question only when photography is essential to the approved content or offer. Otherwise use a clearly labelled local placeholder.
+Every export also ends with `Responsive — desktop and phone, non-negotiable` and `Instructions for AI`. Obey both as fixed rules, except that `/build` never asks the participant: where `Instructions for AI` would ask, apply the build's decision order.
 
-The archetypes in block 05 form a palette. Use only the archetypes supported by the actual content, proof, and assets. The exact section order always comes from the later `07-website-structure.md`; a dashboard draft, placeholder, or instructional text is not final architecture. Review block 09 together with the conceptual and visual boundaries in `06-brand-concept.md`, so a dashboard omission cannot erase an approved restriction.
+There is no Distinctive Visual Codes block and no AI Visual Direction block. Carry the recognisable visual quality from blocks 01, 06, and 07 and the distinctive codes approved in `06-brand-concept.md`. Do not write image-generation prompts.
+
+If no photography direction exists, solve the site with approved typography, color, layout, graphic elements, illustration, and materials. Use a clearly labelled local placeholder for any image slot; when photography is essential to the approved content or offer, also record the missing photography direction as a launch blocker.
+
+The block 05 recipe forms a palette. Use only the section types supported by the actual content, proof, and assets. The exact section order always comes from the later `07-website-structure.md`; the recipe's run, `09` point 3, a placeholder, or instructional text is not final architecture. Review block 08 together with the conceptual and visual boundaries in `06-brand-concept.md`, so a dashboard omission cannot erase an approved restriction.
 
 ### Direction precedence inside the export
 
@@ -109,24 +112,24 @@ When two instructions appear to differ, use this order:
 3. system default, only where the project answer is silent;
 4. expressive or derivable guidance, inferred conservatively from stronger decisions.
 
-A system default never overrides an explicit project answer. For example, an answered six-column grid overrides a generic twelve-column desktop default; responsive implementation may derive compatible tablet and mobile behavior without changing the approved desktop character. Record each applied default or derived decision in `09-build-notes.md`.
+An *Other* answer carries the same weight as a catalog option; interpret it rather than snapping it to the nearest option. A note (` — <note>` or `_Note: <note>_`) refines the option it follows and wins when the two contradict. A system default never overrides an explicit project answer. For example, an answered six-column grid overrides a generic twelve-column desktop default; responsive implementation may derive compatible tablet and mobile behavior without changing the approved desktop character. Record each applied default or derived decision in `09-build-notes.md`.
 
 Resolve every website-relevant item in `Still to define` or `Pendiente de definir` through an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Do not invent a new choice or treat a silent gap as approval.
 
-### Visual assembly checkpoint
+### Visual assembly plan
 
-Create a compact implementation map in `09-build-notes.md` before coding:
+Create a compact implementation map in `09-build-notes.md` before coding. Head it with the page format from block 09 and the goal and primary action from `07`, so the map also serves as the numbered structure that block 09 asks for:
 
-| Section ID | Content job from `07` | Copy volume from `08` | Visual archetype from block 05 | Focal point | Surface/alignment/columns | Density | Rule checked |
+| Section ID | Content job from `07` | First words and copy volume from `08` | Section type from the block 05 recipe | Focal point | Surface/alignment/columns | Density | Rule checked |
 |---|---|---|---|---|---|---|---|
 
 Below the table add two compact low-fidelity wireframes, one near 390 px and one near 1440 px. They may be ASCII outlines. Show section boundaries, column or stacking behavior, focal element, major image slot, background change, and intentional empty space. They must make repeated composition and mobile-order problems visible before styling.
 
 Check every explicit alternation, centering, focal-point, surface, and archetype rule against the map. Also compare the approximate surface allocation with the exported color proportions. Treat proportions as directional unless the export explicitly requires measurement; do not distort content merely to hit a percentage.
 
-Show the participant only the design intent, the map, the two wireframes, material conflicts or defaults, and one confirmation-or-correction question. Wait for approval before writing website code. Keep all detail in `09-build-notes.md`; do not create `LAYOUT.md`, `DECISIONS.md`, `COPY.md`, or `IMAGE-PROMPTS.md`.
+Do not show the plan for approval or wait for confirmation: fix any rule the map breaks, then continue to code. Keep all detail in `09-build-notes.md`; do not create `LAYOUT.md`, `DECISIONS.md`, `COPY.md`, or `IMAGE-PROMPTS.md`.
 
-Apply every explicit `non-negotiable` rule from block 05 unless it would break accessibility, hide or reorder approved content, falsify the CTA hierarchy, or conflict with a material requirement in blocks 01–04 or 09. When a conflict exists, preserve the business and accessibility requirement, document the exact conflict, and ask one decision question only if the visual resolution materially changes the result.
+Apply every explicit `non-negotiable` rule from block 05 unless it would break accessibility, hide or reorder approved content, falsify the CTA hierarchy, or conflict with a material requirement in blocks 01–04 or 08. When a conflict exists, preserve the business and accessibility requirement, choose the closest visual resolution, and document the exact conflict.
 
 Do not interpret `Page Architecture` as permission to invent, remove, merge, or reorder sections. Do not force an archetype when the real copy volume cannot fit it at mobile and desktop widths.
 
@@ -169,7 +172,7 @@ CSS custom properties cannot be used directly in standard media-query conditions
 - Do not use stock images, external placeholder services, or unapproved remote assets.
 - Give informative images useful alternative text. Give decorative images empty alternative text.
 - Provide intrinsic `width` and `height` for raster images and lazy-load below-the-fold images.
-- Record each missing image slot, intended purpose, aspect ratio, applicable AI Visual Direction, and prohibited treatments in `09-build-notes.md`.
+- Record each missing image slot, intended purpose, aspect ratio, and the prohibited treatments from block 08 and the block 01 anti-keywords in `09-build-notes.md`.
 
 ## Responsive behavior, access, and trust
 
@@ -229,7 +232,7 @@ At every width check:
 
 Compare the rendered result with the approved Visual Direction and intended composition, not only with the source code. Decorative shapes must never obscure copy, controls, or focus indicators.
 
-Compare each rendered viewport with the approved compact wireframe. For a grid-driven layout, provide a review-only grid overlay such as `?grid=1` when it can be implemented without affecting the normal page; use it to inspect columns, margins, and intentional exceptions. The overlay is an implementation aid, not customer-facing UI.
+Compare each rendered viewport with the planned compact wireframe. For a grid-driven layout, provide a review-only grid overlay such as `?grid=1` when it can be implemented without affecting the normal page; use it to inspect columns, margins, and intentional exceptions. The overlay is an implementation aid, not customer-facing UI.
 
 Treat content or controls hidden or overlapping, an unusable primary action, broken navigation or forms, unreadable text, obstructive horizontal overflow, and severe mobile collapse as **Blockers**.
 
@@ -239,16 +242,16 @@ Treat systematic misalignment, inconsistent containers, visibly broken spacing, 
 
 Before finishing `/build`:
 
-1. Recheck block 09, **Visual Restrictions**, against the rendered site.
-2. Check that the approved **Distinctive Visual Codes** are recognisable without obscuring the message or action.
+1. Recheck block 08, **Visual Restrictions**, and the block 01 anti-keywords against the rendered site.
+2. Check that the recognisable visual quality named in the design statement is visible without obscuring the message or action.
 3. Check that color dominance and accent use follow the documented proportions. Treat proportions as directional unless the export explicitly requires exact measurement.
 4. Check that reusable brand colors, fonts, and size rules come from `tokens.css`.
 5. Check every explicit block 05 alternation, focal-point, centering, archetype, surface, and approximate color-allocation rule against both the section attributes and the full rendered page; record each as `Pass`, `Adapted with reason`, or `Blocked`. Use a lightweight DOM check when local browser tooling is available; otherwise record the manual evidence. Do not add a permanent validation script solely to satisfy this step.
-6. Compare the 390 px and 1440 px rendered pages with the approved wireframes and explain every material deviation. For grid-driven layouts, inspect the review overlay as well as the normal page.
+6. Compare the 390 px and 1440 px rendered pages with the planned wireframes and explain every material deviation. For grid-driven layouts, inspect the review overlay as well as the normal page.
 7. Exercise the primary action and any local form states.
    Verify through the actual destination, stored record, or network response that the conversion was received. A visual success message alone is not evidence.
 8. Inspect the complete rendered page at mobile, tablet, desktop, and any material breakpoint using the visual-layout-integrity checklist. Fix clear local defects before completing `/build`.
-9. Record the approved wireframes, visual architecture map, rule-status checks, viewport sizes, rendered areas inspected, deviations, defects fixed, unresolved visual issues, derived implementation choices, missing assets, image prompt handoffs, and known limitations in `09-build-notes.md`.
+9. Record the planned wireframes, visual architecture map, rule-status checks, viewport sizes, rendered areas inspected, deviations, defects fixed, unresolved visual issues, derived implementation choices, missing assets, and known limitations in `09-build-notes.md`.
 
 ## Review outcome
 

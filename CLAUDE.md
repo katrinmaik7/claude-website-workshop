@@ -36,13 +36,14 @@ A stage is complete only when every required field has one of these:
 
 Blank fields, missing required sections, unapproved recommendations, and unlabeled assumptions are incomplete. Do not block progress merely because an answer is unknown when the participant has explicitly accepted the uncertainty and its consequence.
 
-Before `/express-copy` or `/structure`, require all ten Visual Direction blocks. Every website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Verify that the export and assets belong to the active project rather than an earlier session. Treat block 05 Page Architecture as visual input to the next structure stage; that stage owns the final pages, section IDs, order, message jobs, proof placement, and CTA path.
+Before `/express-copy` or `/structure`, require a complete Visual Direction export in the current Brandbook OS format described in `.claude/references/BRANDBOOK-OS-MAP.md`: blocks 01–08 plus `09. Page Format & Structure`. Every website-relevant item in `Still to define` or `Pendiente de definir` must be resolved by an explicit answer, a named system default already present in the export, or `Not applicable` with a reason. Verify that the export and assets belong to the active project rather than an earlier session. Treat block 05 Page Architecture as visual input to the next structure stage; that stage owns the final pages, section IDs, order, message jobs, proof placement, and CTA path.
 
 ## Participant experience
 
 - Speak in the participant's current language unless they request another.
 - Ask exactly one question per turn in Workshop mode.
 - A checkpoint is at most five bullets and one question. Everything else goes into the stage file.
+- `/build` is the exception: it asks no questions and has no checkpoint. It resolves open items with the rules in its skill, records them in `09-build-notes.md`, and finishes in one run.
 - Explain unfamiliar terms in plain language.
 - Do not display internal planning, tool choice, chain of thought, or comments about how you will ask a question.
 - Avoid long setup summaries. Reflect back only what needs confirmation.
@@ -76,7 +77,7 @@ Status: Approved
 Approved after checkpoint: Yes
 ```
 
-- Set `Status: Approved` only after the participant confirms the stage checkpoint and the skill's quality gate passes.
+- Set `Status: Approved` only after the participant confirms the stage checkpoint and the skill's quality gate passes. `/build` sets it when its own build checks pass and writes `Approved after checkpoint: Not applicable — /build runs without a participant checkpoint`.
 - Keep a progress table in `SESSION.md` with every stage, expected output, status (`Not started`, `In progress`, or `Approved`), and the exact next command or Visual Direction step.
 - Update the progress table only after the corresponding output passes its completion check. File existence alone never marks a stage complete.
 

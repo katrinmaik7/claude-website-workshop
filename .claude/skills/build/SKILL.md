@@ -1,11 +1,26 @@
 ---
 name: build
-description: Build the first local website from the active session's approved strategy, brand concept, structure, copy, and Visual Direction without publishing it. Use after copy and visual inputs are ready.
+description: Build the first local website from the active session's approved strategy, brand concept, structure, copy, and Visual Direction without publishing it. Runs start to finish without asking the participant anything. Use after copy and visual inputs are ready.
+allowed-tools: Read Write Edit Glob Grep Bash(mkdir *) Bash(cp *) Bash(unzip *) Bash(curl *)
 ---
 
 # Build
 
-Read `CLAUDE.md`, the active session's `SESSION.md` and stage files through `08-website-copy.md`, `.claude/references/WEBSITE-QUALITY.md`, and the completed Visual Direction export and implementation assets in `assets/brand/`.
+Read `CLAUDE.md`, the active session's `SESSION.md` and stage files through `08-website-copy.md`, `.claude/references/WEBSITE-QUALITY.md`, `.claude/references/BRANDBOOK-OS-MAP.md`, and the completed Visual Direction export and implementation assets in `assets/brand/`.
+
+## Run without questions
+
+`/build` asks the participant nothing. The approved session files and the participant's Visual Direction export are the complete brief. Do not ask for approval, confirmation, preferences, or missing information, and do not pause between steps. Resolve every open item with the rules below, record each resolution in `09-build-notes.md`, and finish the website in the same run. `/review` reports anything that still needs a human decision.
+
+Stop only when a required input does not exist at all: an approved `07-website-structure.md`, an approved `08-website-copy.md`, or any Visual Direction export (see below). Then name the missing file and the exact command or step that creates it in one short message.
+
+When sources disagree, decide in this order and record the decision:
+
+1. keep approved content, proof limits, truthful claims, accessibility, and the primary action intact;
+2. follow the source authority below and the direction-precedence rule in `WEBSITE-QUALITY.md`;
+3. if still tied, choose the more conservative option: the export's system default, fewer elements, or the option closer to the block 01 keywords.
+
+The export's `Instructions for AI` say to ask when something material is missing. During `/build`, apply this decision order instead.
 
 ## Source authority
 
@@ -19,59 +34,71 @@ Use the ownership rules in `WEBSITE-QUALITY.md`:
 
 Do not replace the approved structure with a generic landing-page sequence. Do not rewrite approved copy during layout. Do not let visual choices weaken comprehension, proof integrity, accessibility, or the primary action.
 
+## Visual Direction export
+
+`BRANDBOOK-OS-MAP.md` describes the mold every export comes from: `00. Brand copy and voice` (optional), blocks `01`–`08`, `09. Page Format & Structure`, `Still to define`, `Responsive — desktop and phone, non-negotiable`, and `Instructions for AI`. Use its option tables to tell a catalog option from an *Other* answer, a note, or an unanswered field. Never fill an unanswered field with the dashboard's *Suggest one* option; apply the block's system default when one exists, and otherwise derive conservatively from blocks 01–04.
+
+There are no other blocks. `Distinctive Visual Codes`, `AI Visual Direction`, a `Section order` field, and `Visual Restrictions` numbered as block 09 belong to an earlier export format. Visual restrictions are block 08, and there are no image-generation prompts to hand off.
+
+The map is written for the dashboard on its own. In this workshop the approved session files come first:
+
+- `08-website-copy.md` is the brand copy. Section `00`, when present, is earlier voice input; when it differs from `08` on public wording, `08` wins. Never stop or ask for copy because `00` is missing.
+- `07-website-structure.md` owns sections, order, the goal, and the primary action. Do not use `09` point 2 or the fallback order in `09` point 3.
+- Honor the `09` point 1 format. For `From your copy`, apply the map's word-count rule to `08`. When `Single screen, chosen by the brand` cannot hold the sections approved in `07`, build a scrolling landing whose first screen is a complete single-screen composition (hero and primary action within `100svh`), and record the adaptation. Never drop approved content to fit one screen.
+- Apply `09` point 4 navigation unless `07` defines navigation.
+- Block 05 `Section archetypes` is one recipe (`Editorial`, `Alternating`, `Grid`, or `Cinematic`) or an *Other* text. Its hero line defines the hero; its run is the vocabulary for the remaining sections, not their order. The `Alternation rules — non-negotiable` and the accordion pattern always apply.
+- The visual assembly plan below is the numbered structure that `09` asks for before building.
+
+### Find the export
+
+Use `assets/brand/visual-direction.md`. If it is missing, use the participant's export where it is, without renaming or moving anything:
+
+- exactly one `visual-direction-*.md`, such as `visual-direction-en.md`, in `assets/brand/`, the active session folder, or the project root → read that file;
+- several → the most recently modified one whose block 02 `Brand name` matches the active project, otherwise the most recent;
+- only a ZIP containing an export → read the Markdown inside it (for example with `unzip -p`) without extracting into `assets/`.
+
+Record which file was used in `09-build-notes.md`. If no export exists anywhere, stop as described above.
+
 ## Pre-build check
 
 Run the mandatory progression gate in `CLAUDE.md`. Require every stage file for the recorded path through complete approved `06-brand-concept.md`, `07-website-structure.md`, and `08-website-copy.md`.
 
-Before visual work, run the research-payoff and subtraction tests in `WEBSITE-COPY.md` against the customer-facing copy. Stop and return to `/express-copy` or `/copy` when the page omits an applicable audience situation, alternative friction, differentiated mechanism, complete offer or approved commitment, reason to believe or transparent status, researched objections and fit, or meaningful action without a material evidence or decision blocker. A traceability table does not compensate for generic or missing public content. Also stop if an approved price, difference, or offer detail was removed solely because analytics or a destination is not connected.
+Run the research-payoff and subtraction tests in `WEBSITE-COPY.md` against the customer-facing copy, compare the `D1`–`D10` coverage maps in `06`, `07`, and `08`, and apply the decision-density test to every section. Build with the approved copy as written. Record every gap under `Copy findings for /review` in `09-build-notes.md`: an omitted audience situation, alternative friction, differentiated mechanism, complete offer or approved commitment, reason to believe or transparent status, researched objection, fit, or meaningful action; a section that only repeats a slogan; or an approved price, difference, or offer detail removed because a destination is not connected. A traceability table does not compensate for generic or missing public content, so never mark such a gap resolved.
 
-Reject the copy before layout when the primary CTA only scrolls to another section on a launch-oriented or conversion-focused page, when the closing section has no action, or when customer-facing text contains internal language such as `concept preview`, `prototype`, `demo only`, `proposed launch price`, `there is no list to join`, evidence labels, or implementation commentary. Require one useful real destination in the first screen and closing section. A supporting internal anchor may remain secondary.
+Never render evidence labels, internal notes, or implementation commentary that leaked into `08`; record each omission. When approved customer-facing text contains internal language such as `concept preview`, `prototype`, `demo only`, `proposed launch price`, or `there is no list to join`, keep the approved wording and record it as a copy finding. When the primary CTA only scrolls to another section on a launch-oriented or conversion-focused page, or the closing section has no action, use the real destination recorded in `07` if one exists; otherwise keep the approved action and record the missing destination as a launch blocker.
 
-Require matching `D1`–`D10` coverage maps in `06`, `07`, and `08`. Verify that every applicable ID reaches exact public copy and that every section passes the decision-density test. Do not begin visual assembly when a section only repeats a slogan or when the site would be substantially unchanged without the research.
+If an upstream `Test offer` or measurable objective became `Prototype only` without a recorded participant decision that names the lost CTA, follow-up, and learning, implement `Connection required before launch` instead and record it.
 
-If an upstream `Test offer` or measurable objective became `Prototype only`, require an explicit recorded participant decision that names the lost CTA, follow-up, and learning. Otherwise return to the owning structure stage and default to `Connection required before launch`.
+Then run a cross-source visual consistency check:
 
-Then require the already approved `assets/brand/visual-direction.md`. Confirm that the export and supplied assets match the active project's brand concept, structure, and copy rather than an earlier session.
+- compare the name state, desired perception, distinctive codes, image policy, and every brand boundary in `06-brand-concept.md` with blocks 01, 02, 06, and 08; `06` wins on meaning and boundaries, the export on visual execution;
+- compare the block 05 recipe and the `09` format with the exact section IDs, order, jobs, proof, CTA path, and copy volume in `07-website-structure.md` and `08-website-copy.md`;
+- treat the block 05 recipe as a palette of section types; never force the Grid figures band, the Cinematic display quote, image rows, or a full-bleed image when the required content, proof, or asset does not exist;
+- never use the recipe's run or `09` point 3 as a source of architecture; use `07-website-structure.md` instead;
+- resolve direct internal conflicts, such as a block 01 keyword or another block answer contradicted by an anti-keyword or block 08, or explicit separators competing with explicit no-line rules, with the decision order above;
+- calculate the declared text/background combinations, including the computed `Interface surfaces` and `Buttons and calls to action` in block 03. If a pairing fails WCAG AA for its intended text size, constrain it to a valid use or switch to an accessible text role from the palette; if no palette tone passes, derive a darker or lighter step of the Neutral as a semantic text role, not a new brand color;
+- use the exported font families as described in `WEBSITE-QUALITY.md`; when the files cannot be obtained, use the exported stack.
 
-Run a cross-source visual consistency check before approving Visual Direction:
+If the export's block 02 `Brand name` does not match the active project, keep its visual decisions, use the name state from `06-brand-concept.md`, and record the mismatch for `/review`.
 
-- compare the name state, desired perception, distinctive codes, image policy, and every brand boundary in `06-brand-concept.md` with blocks 01, 02, 08, 09, and 10;
-- compare block 05 with the exact section IDs, order, jobs, proof, CTA path, and copy volume in `07-website-structure.md` and `08-website-copy.md`;
-- treat the block 05 archetype list as a palette unless the export explicitly maps archetypes to approved section IDs; never force figures, quotes, comparisons, or image layouts when their required content or proof does not exist;
-- ignore a placeholder or instructional `Section order` value as a source of architecture and use `07-website-structure.md` instead;
-- identify direct internal conflicts such as the same attribute appearing in both positive and negative direction, or explicit separators competing with explicit no-line rules;
-- calculate the declared text/background combinations before approval. If a dominant pairing fails WCAG AA for its intended text size, constrain it to a valid use or select an accessible semantic text role from the approved palette; if neither is possible, ask one decision question;
-- confirm that named fonts and weights are supplied or that an explicit approved fallback will be used.
+A later approved stage may resolve a specifically named open item from an earlier stage only when it records the participant's decision explicitly. Treat that as a resolution. Never infer a silent override. Record every reconciliation in `09-build-notes.md`.
 
-A later approved stage may resolve a specifically named open item from an earlier stage only when it records the participant's decision explicitly. Treat that as a resolution. Never infer a silent override. Record every non-blocking reconciliation in `09-build-notes.md`; stop for one decision when a material conflict remains.
+Read the conversion implementation state from `07-website-structure.md`. `Connected` needs an exact destination and persistence/completion rule; without them, treat the action as `Connection required before launch` and record it. If it says `Connection required before launch`, build the interface only when useful but keep the missing connection as a launch blocker and do not show real-success language. If it says `Prototype only`, implement the approved exploration path and never simulate submission, reservation, purchase, booking, preference capture, or list entry.
 
-Read the conversion implementation state from `07-website-structure.md`. Require an exact destination and persistence/completion rule for `Connected`. If it says `Connection required before launch`, build the interface only when useful but keep the missing connection as a launch blocker and do not show real-success language. If it says `Prototype only`, implement the approved exploration path and never simulate submission, reservation, purchase, booking, preference capture, or list entry.
+Apply the direction-precedence rule in `WEBSITE-QUALITY.md`; do not let a system default override an explicit project answer. Use referenced logo, font, image, illustration, icon, and license files when they exist and clearly labelled local placeholders when they do not. Calculate contrast from exported color values rather than trusting a written ratio. Do not reopen approved decisions or consider non-website applications.
 
-After this source-consistency check passes, mark `/build` `In progress` in `SESSION.md`, then continue. Do not mark `/build` approved until the website and `09-build-notes.md` both pass the build checks.
+After this check, mark `/build` `In progress` in `SESSION.md` and continue.
 
-If `visual-direction.md` is missing, stop and return to the unfinished Visual Direction step; it should have been completed before `/express-copy` or `/structure`. Inspect `assets/brand/` before responding:
+## Visual assembly plan
 
-- if there is exactly one language-specific export such as `visual-direction-en.md` or `visual-direction-es.md`, stop with one short instruction to rename that file to `assets/brand/visual-direction.md`, then run `/build` again;
-- if there is only a Visual Direction ZIP, stop with one short instruction to unzip it, move the exported Markdown file into `assets/brand/`, rename it `visual-direction.md`, then run `/build` again;
-- otherwise stop with one short instruction to complete Visual Direction using `06-brand-concept.md` and the active research and offer files, then place the exported Markdown file at `assets/brand/visual-direction.md`.
-
-Do not treat a ZIP, language-specific filename, or incomplete export as an approved Visual Direction file.
-
-Confirm that any `Instructions for AI` or `Instrucciones para la IA` section is preserved. Apply the direction-precedence rule in `WEBSITE-QUALITY.md`; do not let a system default override an explicit project answer. Verify that referenced logo, font, image, illustration, icon, and license files exist or have explicit placeholders. Calculate contrast from exported color values rather than trusting a written ratio.
-
-If an unresolved issue materially changes the code, identify the decision owner and ask exactly one question. Do not reopen approved decisions, ask about non-website applications, or request a batch of setup answers. Apart from the mandatory visual assembly checkpoint below, begin without another permission question when there is no material conflict.
-
-## Visual assembly checkpoint
-
-Before writing website code, initialize `09-build-notes.md` and complete the checkpoint in `WEBSITE-QUALITY.md`:
+Before writing website code, initialize `09-build-notes.md` and complete the plan in `WEBSITE-QUALITY.md`:
 
 1. write the short intentional design statement;
-2. map every approved content section to one block 05 archetype, focal point, surface, alignment, columns, and density;
-3. check the explicit alternation rules and approximate color allocation;
-4. draw compact 390 px and 1440 px wireframes;
-5. show the participant the proposed composition, material conflicts or defaults, and one confirmation-or-correction question.
+2. map every approved content section to one section type from the block 05 recipe, focal point, surface, alignment, columns, and density;
+3. check the explicit alternation rules and approximate color allocation, and fix any rule the map breaks;
+4. draw compact 390 px and 1440 px wireframes.
 
-Wait for approval. Do not code first and ask the participant to approve the layout afterward. Keep this checkpoint in `09-build-notes.md`; do not create additional planning files.
+Do not show the plan for approval or wait; continue straight to the build. Keep the plan in `09-build-notes.md`; do not create additional planning files.
 
 ## Build
 
@@ -81,12 +108,13 @@ Wait for approval. Do not code first and ask the participant to approve the layo
 - For a Full session, implement the approved architecture with the simplest maintainable approach that supports its actual requirements.
 - Centralize reusable visual values in `site-v1/styles/tokens.css` and follow the token, visual translation, asset, responsive, accessibility, and verification rules in `WEBSITE-QUALITY.md`.
 - Use stable page and section IDs from `07-website-structure.md` to connect architecture, copy, visual applications, navigation, and review findings.
-- Create and follow the visual architecture implementation map from `WEBSITE-QUALITY.md`. Block 05 chooses visual archetypes and alternation for existing section IDs; it cannot add, remove, merge, or reorder the approved content architecture.
-- When block 05 defines reusable archetypes, implement them in `site-v1/styles/archetypes.css`; keep `sections.css` for genuine section-specific exceptions.
+- Create and follow the visual architecture implementation map from `WEBSITE-QUALITY.md`. The block 05 recipe chooses visual section types and alternation for existing section IDs; it cannot add, remove, merge, or reorder the approved content architecture.
+- Implement the recipe's reusable section types and the block 05 accordion pattern in `site-v1/styles/archetypes.css`; keep `sections.css` for genuine section-specific exceptions.
 - Add the applicable inspection attributes from `WEBSITE-QUALITY.md` to every content section and mark exactly one focal element per section.
 - Keep essential content and actions functional without JavaScript; use JavaScript only for progressive enhancement.
 - Use approved supplied assets or clearly labelled local placeholders. Do not invent photography direction, brand assets, proof, testimonials, customer logos, statistics, scarcity, guarantees, or results.
-- Treat block 10 AI prompts as a future asset handoff, not permission to generate or approve imagery automatically.
+- Use the block 05 accordion pattern wherever the approved copy offers collapsible options such as FAQs, plans, or steps.
+- Obey the export's `Responsive — desktop and phone, non-negotiable` section as fixed rules.
 - Treat every explicit block 05 `non-negotiable` rule as a rendered review requirement, with `Pass`, `Adapted with reason`, or `Blocked` recorded in `09-build-notes.md`.
 - Implement the primary action according to its recorded state. For `Connected`, verify the real destination or persisted/completed action and truthful post-action state. For `Prototype only`, use a specific exploration action and a concise availability disclosure when needed. Never display `You're on the list`, `Reserved`, `Order confirmed`, or equivalent unless that result actually occurred.
 - Repeat the exact primary action in the first screen and final conversion section. Explain what the visitor receives and what happens next. Do not substitute a slogan, `Opening soon`, or an internal page anchor for the final action.
@@ -101,19 +129,32 @@ Wait for approval. Do not code first and ask the participant to approve the layo
 
 ## Build notes
 
-Create only `09-build-notes.md` in addition to the website. Include:
+Create only `09-build-notes.md` in addition to the website. Begin it with:
+
+```text
+Stage: Build
+Path: Express | Full
+Status: Approved
+Approved after checkpoint: Not applicable — /build runs without a participant checkpoint
+```
+
+Include:
 
 - what was built and how to preview it;
-- exact strategy, structure, copy, Visual Direction, and asset sources used;
-- the approved content-to-archetype map and compact 390 px and 1440 px wireframes;
+- exact strategy, structure, copy, Visual Direction file, and asset sources used;
+- the content-to-archetype map and compact 390 px and 1440 px wireframes;
+- every decision made without the participant, with its source and reason;
 - derived implementation decisions and their source;
+- `Copy findings for /review`;
 - missing content, proof, assets, licenses, and integrations;
-- image slots with purpose, aspect ratio, applicable base and negative prompts, and prohibited treatments when relevant;
+- image slots with purpose, aspect ratio, and the prohibited treatments from block 08 and the block 01 anti-keywords;
 - responsive, interaction, accessibility, contrast, and visual checks performed;
 - exact viewport sizes inspected, wireframe deviations, visible layout defects found, and fixes applied;
-- checks not performed and known limitations.
+- checks not performed and known limitations;
 - conversion implementation state and evidence of destination, network response, stored record, or completed action; if unavailable, the exact launch blocker.
 
-Update `SESSION.md`.
+Set `Status: Approved` once the website exists, every fixable defect found in the checks has been fixed, and the notes are complete. Record anything the build could not fix or verify, including visual QA that could not be rendered, as a launch blocker or known limitation rather than holding back approval.
 
-Finish with the local result, preview instructions, saved locations, and “Next: `/review`”.
+Update `SESSION.md`: `/build` `Approved` and `Next command: /review`.
+
+Finish with the local result, preview instructions, saved locations, at most five bullets on the decisions made without the participant, and “Next: `/review`”.
